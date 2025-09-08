@@ -66,11 +66,13 @@ const HomePage = () => {
   }, [filters]);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid py-4">
       <div className="row">
         <div className="col-12">
-          <h1 className="mb-4">Exam Tasks Application</h1>
-          <p className="lead mb-4">Browse and explore exam tasks with different solution approaches.</p>
+          <div className="text-center mb-5">
+            <h1 className="display-4 fw-bold text-primary mb-3">Exam Tasks Application</h1>
+            <p className="lead text-muted">Browse and explore exam tasks with different solution approaches</p>
+          </div>
           
           {/* Filter Bar */}
           <FilterBar 
@@ -79,49 +81,50 @@ const HomePage = () => {
           />
 
           {/* Task List */}
-          <div className="row">
-            <div className="col-12">
-              {filteredTasks.length > 0 ? (
-                <>
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <h2>Available Tasks</h2>
-                    <span className="badge bg-secondary">
-                      {filteredTasks.length} task{filteredTasks.length !== 1 ? 's' : ''} found
-                    </span>
-                  </div>
-                  
-                  <div className="row">
-                    {filteredTasks.map(task => (
-                      <div key={task.taskId} className="col-lg-6 col-xl-4 mb-4">
-                        <TaskCard
-                          task={task}
-                          selectedSolution={selectedSolutions[task.taskId]}
-                          onSolutionChange={handleSolutionChange}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </>
-              ) : (
-                <div className="text-center py-5">
-                  <div className="card">
-                    <div className="card-body">
-                      <h3 className="card-title text-muted">No tasks found</h3>
-                      <p className="card-text text-muted">
-                        Try adjusting your filters or search query to find tasks.
-                      </p>
-                      <button 
-                        className="btn btn-outline-primary"
-                        onClick={() => setFilters({ year: null, skill: null, query: '' })}
-                      >
-                        Clear all filters
-                      </button>
+          {filteredTasks.length > 0 ? (
+            <>
+              <div className="d-flex justify-content-between align-items-center mb-4">
+                <h2 className="h3 mb-0">Available Tasks</h2>
+                <span className="badge bg-primary fs-6">
+                  {filteredTasks.length} task{filteredTasks.length !== 1 ? 's' : ''} found
+                </span>
+              </div>
+              
+              <div className="row g-4">
+                {filteredTasks.map(task => (
+                  <div key={task.taskId} className="col-lg-6 col-xl-4">
+                    <div className="task-card">
+                      <TaskCard
+                        task={task}
+                        selectedSolution={selectedSolutions[task.taskId]}
+                        onSolutionChange={handleSolutionChange}
+                      />
                     </div>
                   </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-5">
+              <div className="card border-0 shadow-sm">
+                <div className="card-body py-5">
+                  <div className="mb-4">
+                    <i className="bi bi-search text-muted" style={{ fontSize: '3rem' }}></i>
+                  </div>
+                  <h3 className="card-title text-muted mb-3">No tasks found</h3>
+                  <p className="card-text text-muted mb-4">
+                    Try adjusting your filters or search query to find tasks.
+                  </p>
+                  <button 
+                    className="btn btn-outline-primary"
+                    onClick={() => setFilters({ year: null, skill: null, query: '' })}
+                  >
+                    Clear all filters
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

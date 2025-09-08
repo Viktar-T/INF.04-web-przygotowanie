@@ -4,23 +4,16 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <nav style={{ 
-      padding: '10px', 
-      borderBottom: '1px solid #ccc', 
-      marginBottom: '20px',
-      backgroundColor: '#f5f5f5'
-    }}>
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-        <Link to="/" style={{ 
-          textDecoration: 'none', 
-          color: '#333'
-        }}>
-          Home
+    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div className="container-fluid">
+        <Link to="/" className="navbar-brand fw-bold text-primary">
+          Exam Tasks
         </Link>
-        <span style={{ color: '#666' }}>|</span>
-        <span style={{ fontSize: '14px', color: '#666' }}>
-          Exam Tasks Application
-        </span>
+        <div className="navbar-nav ms-auto">
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+        </div>
       </div>
     </nav>
   );

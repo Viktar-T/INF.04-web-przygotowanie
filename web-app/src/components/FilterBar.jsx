@@ -19,11 +19,13 @@ const FilterBar = ({ filters, onFiltersChange }) => {
   };
 
   return (
-    <div className="filter-bar mb-4">
+    <div className="filter-bar">
       <div className="row g-3">
         {/* Year Filter */}
         <div className="col-md-3">
-          <label htmlFor="year-filter" className="form-label">Year</label>
+          <label htmlFor="year-filter" className="form-label fw-semibold">
+            <i className="bi bi-calendar3 me-1"></i>Year
+          </label>
           <select 
             id="year-filter"
             className="form-select" 
@@ -40,7 +42,9 @@ const FilterBar = ({ filters, onFiltersChange }) => {
 
         {/* Skill Filter */}
         <div className="col-md-3">
-          <label htmlFor="skill-filter" className="form-label">Skill</label>
+          <label htmlFor="skill-filter" className="form-label fw-semibold">
+            <i className="bi bi-tags me-1"></i>Skill
+          </label>
           <select 
             id="skill-filter"
             className="form-select" 
@@ -57,7 +61,9 @@ const FilterBar = ({ filters, onFiltersChange }) => {
 
         {/* Search Input */}
         <div className="col-md-6">
-          <label htmlFor="search-input" className="form-label">Search</label>
+          <label htmlFor="search-input" className="form-label fw-semibold">
+            <i className="bi bi-search me-1"></i>Search
+          </label>
           <input
             id="search-input"
             type="text"
