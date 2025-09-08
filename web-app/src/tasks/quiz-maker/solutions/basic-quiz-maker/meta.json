@@ -1,0 +1,9 @@
+{
+  "name": "Basic Quiz Maker",
+  "description": "Simple quiz maker application for creating and taking quizzes",
+  "difficulty": "Beginner",
+  "skills": ["React", "useState", "Forms", "Bootstrap", "Quiz Management"],
+  "approach": "Uses React's useState hook to manage quiz data with basic functionality for creating questions and taking quizzes",
+  "examYear": "2024",
+  "examDate": "2024-01-01"
+}

@@ -58,6 +58,58 @@ export const tasks = [
         label: 'Gallery basic'
       }
     ]
+  },
+  {
+    taskId: 'book-management',
+    title: 'Book Management',
+    examCode: 'INF.04-BOOK-MGMT',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'crud', 'arrays'],
+    solutions: [
+      {
+        solutionType: 'basic-book-management',
+        label: 'Basic Book Management'
+      }
+    ]
+  },
+  {
+    taskId: 'diet-planing',
+    title: 'Diet Planning',
+    examCode: 'INF.04-DIET-PLAN',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'data-management', 'arrays'],
+    solutions: [
+      {
+        solutionType: 'basic-diet-planning',
+        label: 'Basic Diet Planning'
+      }
+    ]
+  },
+  {
+    taskId: 'expense-tracking',
+    title: 'Expense Tracking',
+    examCode: 'INF.04-EXPENSE-TRACK',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'financial-management', 'arrays'],
+    solutions: [
+      {
+        solutionType: 'basic-expense-tracking',
+        label: 'Basic Expense Tracking'
+      }
+    ]
+  },
+  {
+    taskId: 'quiz-maker',
+    title: 'Quiz Maker',
+    examCode: 'INF.04-QUIZ-MAKER',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'quiz-management', 'arrays'],
+    solutions: [
+      {
+        solutionType: 'basic-quiz-maker',
+        label: 'Basic Quiz Maker'
+      }
+    ]
   }
 ];
 
