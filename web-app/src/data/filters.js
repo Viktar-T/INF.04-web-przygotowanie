@@ -1,28 +1,23 @@
 // Filter data for year and skill lists
+// This file exports controlled vocabularies for filtering tasks
 
-export const years = [2022, 2023, 2024, 2025];
+// Years present in tasks, sorted in descending order (newest first)
+export const YEARS = [2025, 2023, 2022];
 
-export const skills = [
-  'React',
-  'JavaScript',
-  'HTML',
-  'CSS',
-  'Forms',
-  'State Management',
-  'Components',
-  'Hooks',
-  'Gallery',
-  'Images'
-];
-
-export const difficultyLevels = [
-  'Beginner',
-  'Intermediate',
-  'Advanced'
+// Controlled vocabulary for skill tags - all task skillTags must use only these values
+// Keep in lowercase, kebab-case format for consistency
+export const SKILLS = [
+  'forms',        // Form handling and validation
+  'state',        // React state management (useState, etc.)
+  'refs',         // React refs (useRef, etc.)
+  'bootstrap',    // Bootstrap CSS framework
+  'console.log',  // Console logging and debugging
+  'arrays',       // Array manipulation and methods
+  'filtering',    // Data filtering functionality
+  'images'        // Image handling and display
 ];
 
 export default {
-  years,
-  skills,
-  difficultyLevels
+  YEARS,
+  SKILLS
 };

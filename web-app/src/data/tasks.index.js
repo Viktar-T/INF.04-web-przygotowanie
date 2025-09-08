@@ -1,57 +1,61 @@
 // Registry of tasks and solutions - Step Three
-// This file will contain the index of all available tasks and their solutions
+// This file contains the centralized index of all available tasks and their solutions
+// 
+// Field naming conventions:
+// - taskId: kebab-case identifier (e.g., '2022-02-22-06')
+// - solutionType: kebab-case identifier for solution (e.g., 'controlled-useState')
+// - label: human-readable text for UI display
+// - skillTags: array of strings from controlled vocabulary in filters.js
 
 export const tasks = [
   {
-    id: '2022-02-22-06',
-    title: 'INF.04-02-22.06-SG - Course Registration Form',
-    year: 2022,
-    month: 6,
-    day: 2,
+    // Task identifier in kebab-case format (YYYY-MM-DD-NN)
+    taskId: '2022-02-22-06',
+    // Human-readable title for display
+    title: 'Course Registration Form',
+    // Official exam code
     examCode: 'INF.04-02-22.06-SG',
-    description: 'Course registration application with course list display and form validation',
+    // Year for filtering
+    year: 2022,
+    // Skills from controlled vocabulary - used for filtering and tagging
+    skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log'],
+    // Available solutions - first solution is the default
     solutions: [
       {
-        id: 'controlled-useState',
-        name: 'Controlled useState',
-        description: 'Course registration form using controlled components with useState hook'
+        // Solution identifier in kebab-case
+        solutionType: 'controlled-useState',
+        // Human-readable label for dropdown/UI display
+        label: 'Controlled form (useState)'
       },
       {
-        id: 'uncontrolled-useRef',
-        name: 'Uncontrolled useRef',
-        description: 'Course registration form using uncontrolled components with useRef hook'
+        solutionType: 'uncontrolled-useRef',
+        label: 'Uncontrolled form (useRef)'
       }
     ]
   },
   {
-    id: '2023-03-23-06',
-    title: 'INF.04-03-23.06-SG - Movie Form',
-    year: 2023,
-    month: 6,
-    day: 3,
+    taskId: '2023-03-23-06',
+    title: 'Movie Form',
     examCode: 'INF.04-03-23.06-SG',
-    description: 'Movie form with title and genre selection using form elements',
+    year: 2023,
+    skillTags: ['forms', 'bootstrap', 'console.log'],
     solutions: [
       {
-        id: 'basic-form',
-        name: 'Basic Form',
-        description: 'Movie form with title and genre selection using uncontrolled form elements'
+        solutionType: 'basic-form',
+        label: 'Basic form'
       }
     ]
   },
   {
-    id: '2025-01-25-01',
-    title: 'INF.04-01-25.01-SG - Photo Gallery',
-    year: 2025,
-    month: 1,
-    day: 25,
+    taskId: '2025-01-25-01',
+    title: 'Photo Gallery',
     examCode: 'INF.04-01-25.01-SG',
-    description: 'Photo gallery with category filtering and download counter functionality',
+    year: 2025,
+    skillTags: ['arrays', 'filtering', 'images', 'state', 'bootstrap'],
     solutions: [
       {
-        id: 'gallery-basic',
-        name: 'Gallery Basic',
-        description: 'Photo gallery with category filtering and download counter functionality'
+        solutionType: 'gallery-basic',
+        label: 'Gallery basic'
       }
     ]
   }
