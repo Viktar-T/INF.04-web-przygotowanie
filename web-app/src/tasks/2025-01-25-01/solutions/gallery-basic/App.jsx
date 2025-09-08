@@ -70,7 +70,7 @@ function App() {
             <div className="row">
                 {filteredPhotos.map(p => (
                     <div key={p.id} className="col">
-                        <img src={"assets/" + p.filename} alt={p.alt} className="rounded" style={{ margin: "5px" }} />
+                        <img src={"/assets/2025/" + p.filename} alt={p.alt} className="rounded" style={{ margin: "5px" }} />
                         <h4>Pobrań: {p.downloads}</h4>
                         <button className="btn btn-success" onClick={() => updateDownloads(p.id)}>Pobierz</button>
                     </div>
