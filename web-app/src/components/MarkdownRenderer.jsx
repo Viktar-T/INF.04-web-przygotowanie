@@ -21,7 +21,8 @@ const MarkdownRenderer = ({ content, taskId }) => {
       imagePath = src;
     } else {
       const cleanSrc = src.replace(/^\.\//, '');
-      imagePath = `/src/tasks/${taskId}/${cleanSrc}`;
+      // Use public folder path for production, fallback to src for development
+      imagePath = `/tasks/${taskId}/${cleanSrc}`;
     }
     
     return (

@@ -2,6 +2,7 @@
 import React, { useState, useEffect, Suspense, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { tasks } from '../data/tasks.index';
+import { getSolutionComponent, hasSolutionComponent } from '../data/solutionComponents';
 
 const AppPage = () => {
   const { taskId, solutionType } = useParams();
@@ -19,23 +20,28 @@ const AppPage = () => {
     if (!task || !solution) return null;
 
     try {
-      // Use React.lazy to dynamically import the solution App component
+      // Check if the solution component exists
+      if (!hasSolutionComponent(taskId, solutionType)) {
+        throw new Error(`No solution component found for taskId: ${taskId}, solutionType: ${solutionType}`);
+      }
+
+      // Create a lazy component using the centralized import system
       return React.lazy(() => 
-        import(`../tasks/${taskId}/solutions/${solutionType}/App.jsx`)
-          .catch(error => {
-            console.error('Failed to load solution:', error);
-            setLoadingError(`Failed to load solution: ${error.message}`);
-            // Return a fallback component
-            return {
-              default: () => (
-                <div className="alert alert-danger">
-                  <h4>Solution Loading Error</h4>
-                  <p>Failed to load the solution component.</p>
-                  <p><strong>Error:</strong> {error.message}</p>
-                </div>
-              )
-            };
-          })
+        getSolutionComponent(taskId, solutionType).catch(error => {
+          console.error('Failed to load solution component:', error);
+          // Return a fallback component that shows an error
+          return {
+            default: () => (
+              <div className="alert alert-danger">
+                <h4>Solution Loading Error</h4>
+                <p>Failed to load the solution component.</p>
+                <p><strong>Error:</strong> {error.message}</p>
+                <p><strong>Task:</strong> {taskId}</p>
+                <p><strong>Solution:</strong> {solutionType}</p>
+              </div>
+            )
+          };
+        })
       );
     } catch (error) {
       console.error('Error creating dynamic import:', error);

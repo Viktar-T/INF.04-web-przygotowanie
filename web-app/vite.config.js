@@ -15,7 +15,8 @@ export default defineConfig({
           vendor: ['react', 'react-dom'],
           router: ['react-router-dom'],
           bootstrap: ['bootstrap'],
-          syntax: ['react-syntax-highlighter']
+          syntax: ['react-syntax-highlighter'],
+          markdown: ['react-markdown', 'remark-gfm', 'rehype-raw']
         },
         // Optimize asset naming
         assetFileNames: 'assets/[name]-[hash][extname]',
@@ -37,7 +38,7 @@ export default defineConfig({
   },
   // Optimize dependencies
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'bootstrap', 'react-syntax-highlighter']
+    include: ['react', 'react-dom', 'react-router-dom', 'bootstrap', 'react-syntax-highlighter', 'react-markdown', 'remark-gfm', 'rehype-raw']
   },
   // Development server configuration
   server: {

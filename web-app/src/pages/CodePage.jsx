@@ -31,10 +31,15 @@ const CodePage = () => {
         setLoading(true);
         setError(null);
 
-        // Use dynamic import to load the source file as raw text
-        // File path: src/tasks/<taskId>/solutions/<solutionType>/App.jsx
-        const sourceModule = await import(`../tasks/${taskId}/solutions/${solutionType}/App.jsx?raw`);
-        setSourceCode(sourceModule.default);
+        // Load source code from public folder
+        // File path: /tasks/<taskId>/solutions/<solutionType>/App.jsx
+        // Load source code from public folder
+        const response = await fetch(`/tasks/${taskId}/solutions/${solutionType}/App.jsx`);
+        if (!response.ok) {
+          throw new Error(`Failed to load source file: ${response.status}`);
+        }
+        const sourceCode = await response.text();
+        setSourceCode(sourceCode);
       } catch (err) {
         console.error('Error loading source code:', err);
         setError(`Failed to load source code: ${err.message}`);
@@ -239,7 +244,7 @@ const CodePage = () => {
           <div className="card mb-3">
             <div className="card-body py-2">
               <small className="text-muted">
-                <strong>File:</strong> <code>src/tasks/{taskId}/solutions/{solutionType}/App.jsx</code>
+                <strong>File:</strong> <code>/tasks/{taskId}/solutions/{solutionType}/App.jsx</code>
               </small>
             </div>
           </div>

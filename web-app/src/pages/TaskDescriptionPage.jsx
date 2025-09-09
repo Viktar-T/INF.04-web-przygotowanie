@@ -26,10 +26,13 @@ const TaskDescriptionPage = () => {
         setLoading(true);
         setError(null);
 
-        // Use dynamic import to load the markdown file
-        // This approach works with Vite's file serving
-        const markdownModule = await import(`../tasks/${taskId}/problem.md?raw`);
-        setMarkdownContent(markdownModule.default);
+        // Load markdown file from public folder
+        const response = await fetch(`/tasks/${taskId}/problem.md`);
+        if (!response.ok) {
+          throw new Error(`Failed to load markdown file: ${response.status}`);
+        }
+        const markdownContent = await response.text();
+        setMarkdownContent(markdownContent);
       } catch (err) {
         console.error('Error loading markdown:', err);
         setError(`Failed to load task description: ${err.message}`);
