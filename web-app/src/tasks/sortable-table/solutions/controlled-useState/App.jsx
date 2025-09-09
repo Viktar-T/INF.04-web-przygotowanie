@@ -215,7 +215,7 @@ function App() {
                   <h6 className="text-danger">
                     {sortedData.filter(item => item.score < 80).length}
                   </h6>
-                  <small className="text-muted"><80</small>
+                  <small className="text-muted">&lt;80</small>
                 </div>
               </div>
             </div>

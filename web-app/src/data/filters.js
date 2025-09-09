@@ -19,7 +19,33 @@ export const SKILLS = [
   'data-management', // Data management and manipulation
   'financial-management', // Financial data handling
   'quiz-management', // Quiz creation and management
-  'capacity-management' // Course capacity and enrollment management
+  'capacity-management', // Course capacity and enrollment management
+  'duplicate-detection', // Duplicate data detection
+  'conditional-rendering', // Conditional UI rendering
+  'validation',   // Form and data validation
+  'calculations', // Mathematical calculations
+  'date-time',    // Date and time handling
+  'character-count', // Character counting functionality
+  'search',       // Search functionality
+  'navigation',   // Navigation and routing
+  'accordion',    // Accordion UI components
+  'intervals',    // Timer and interval management
+  'timers',       // Timer functionality
+  'priority',     // Priority-based functionality
+  'keyboard-events', // Keyboard event handling
+  'accessibility', // Accessibility features
+  'pagination',   // Pagination functionality
+  'memoization',  // Performance optimization with memoization
+  'sorting',      // Data sorting functionality
+  'bidirectional', // Bidirectional data flow
+  'color-calculations', // Color-related calculations
+  'focus-management', // Focus management
+  'multi-step',   // Multi-step processes
+  'wizard',       // Wizard-style interfaces
+  'random-selection', // Random data selection
+  'statistics',   // Statistical calculations
+  'inline-styles', // Inline CSS styling
+  'form-validation' // Form validation
 ];
 
 export default {

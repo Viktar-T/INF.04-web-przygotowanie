@@ -228,7 +228,7 @@ function App() {
                     </tr>
                     <tr className={parseFloat(contrastInfo.contrast) >= 3 ? 'table-warning' : 'table-danger'}>
                       <td>Nieodpowiedni</td>
-                      <td>< 3.0</td>
+                        <td>&lt; 3.0</td>
                       <td>Niewystarczający</td>
                     </tr>
                   </tbody>

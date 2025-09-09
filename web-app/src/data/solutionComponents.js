@@ -31,6 +31,72 @@ const solutionComponents = {
   
   // movie-watchlist solutions
   'movie-watchlist-controlled-useState': () => import('../tasks/movie-watchlist/solutions/controlled-useState/App.jsx'),
+  
+  // tag-filtered-gallery solutions
+  'tag-filtered-gallery-controlled-useState': () => import('../tasks/tag-filtered-gallery/solutions/controlled-useState/App.jsx'),
+  
+  // single-answer-quiz solutions
+  'single-answer-quiz-controlled-useState': () => import('../tasks/single-answer-quiz/solutions/controlled-useState/App.jsx'),
+  
+  // mini-shop-line-total solutions
+  'mini-shop-line-total-controlled-useState': () => import('../tasks/mini-shop-line-total/solutions/controlled-useState/App.jsx'),
+  
+  // parking-meter solutions
+  'parking-meter-controlled-useState': () => import('../tasks/parking-meter/solutions/controlled-useState/App.jsx'),
+  
+  // appointment-picker solutions
+  'appointment-picker-controlled-useState': () => import('../tasks/appointment-picker/solutions/controlled-useState/App.jsx'),
+  
+  // feedback-form-counter solutions
+  'feedback-form-counter-controlled-useState': () => import('../tasks/feedback-form-counter/solutions/controlled-useState/App.jsx'),
+  
+  // searchable-list solutions
+  'searchable-list-controlled-useState': () => import('../tasks/searchable-list/solutions/controlled-useState/App.jsx'),
+  
+  // tabs-nav-pills solutions
+  'tabs-nav-pills-controlled-useState': () => import('../tasks/tabs-nav-pills/solutions/controlled-useState/App.jsx'),
+  
+  // faq-accordion solutions
+  'faq-accordion-controlled-useState': () => import('../tasks/faq-accordion/solutions/controlled-useState/App.jsx'),
+  
+  // stopwatch solutions
+  'stopwatch-controlled-useState': () => import('../tasks/stopwatch/solutions/controlled-useState/App.jsx'),
+  
+  // todo-with-priority solutions
+  'todo-with-priority-controlled-useState': () => import('../tasks/todo-with-priority/solutions/controlled-useState/App.jsx'),
+  
+  // star-rating-widget solutions
+  'star-rating-widget-controlled-useState': () => import('../tasks/star-rating-widget/solutions/controlled-useState/App.jsx'),
+  
+  // pagination-demo solutions
+  'pagination-demo-controlled-useState': () => import('../tasks/pagination-demo/solutions/controlled-useState/App.jsx'),
+  
+  // sortable-table solutions
+  'sortable-table-controlled-useState': () => import('../tasks/sortable-table/solutions/controlled-useState/App.jsx'),
+  
+  // dependent-dropdowns solutions
+  'dependent-dropdowns-controlled-useState': () => import('../tasks/dependent-dropdowns/solutions/controlled-useState/App.jsx'),
+  
+  // controlled-uncontrolled-toggle solutions
+  'controlled-uncontrolled-toggle-controlled-useState': () => import('../tasks/controlled-uncontrolled-toggle/solutions/controlled-useState/App.jsx'),
+  
+  // unit-converter solutions
+  'unit-converter-controlled-useState': () => import('../tasks/unit-converter/solutions/controlled-useState/App.jsx'),
+  
+  // color-preview-contrast solutions
+  'color-preview-contrast-controlled-useState': () => import('../tasks/color-preview-contrast/solutions/controlled-useState/App.jsx'),
+  
+  // keyboard-shortcuts solutions
+  'keyboard-shortcuts-controlled-useState': () => import('../tasks/keyboard-shortcuts/solutions/controlled-useState/App.jsx'),
+  
+  // two-step-form solutions
+  'two-step-form-controlled-useState': () => import('../tasks/two-step-form/solutions/controlled-useState/App.jsx'),
+  
+  // random-quote solutions
+  'random-quote-controlled-useState': () => import('../tasks/random-quote/solutions/controlled-useState/App.jsx'),
+  
+  // visual-bar-list solutions
+  'visual-bar-list-controlled-useState': () => import('../tasks/visual-bar-list/solutions/controlled-useState/App.jsx'),
 };
 
 // Function to get the dynamic import for a specific task and solution
