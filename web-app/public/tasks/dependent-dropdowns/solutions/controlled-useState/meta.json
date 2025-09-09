@@ -1,0 +1,23 @@
+{
+  "name": "Controlled useState",
+  "description": "Dependent dropdowns for country and city selection with controlled components using useState hook",
+  "difficulty": "Intermediate",
+  "skills": ["React", "useState", "useMemo", "Controlled Components", "Bootstrap", "Form Validation", "Dependent Data", "Event Handling"],
+  "approach": "Uses React's useState hook to manage selected country and city states. Implements dependent dropdown logic with useMemo for efficient city filtering. Provides form validation and console logging.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "Country and city dependent dropdowns",
+    "Controlled dependency between inputs",
+    "City dropdown disabled until country selected",
+    "Console logging in required format: { country, city }",
+    "Form validation preventing empty submissions",
+    "Bootstrap form styling with responsive design",
+    "Success message display after submission",
+    "Country details panel with city list",
+    "Statistics panel showing totals and averages",
+    "Edge case handling for countries with no cities",
+    "Form state management and validation",
+    "Performance optimization with useMemo"
+  ]
+}

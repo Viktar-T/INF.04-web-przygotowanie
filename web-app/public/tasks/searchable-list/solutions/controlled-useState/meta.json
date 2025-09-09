@@ -1,0 +1,21 @@
+{
+  "name": "Controlled useState",
+  "description": "Searchable list with real-time filtering using controlled components with useState hook",
+  "difficulty": "Beginner",
+  "skills": ["React", "useState", "useEffect", "Controlled Components", "Bootstrap", "Array Filtering", "Case-insensitive Search"],
+  "approach": "Uses React's useState hook to manage search input and filtered results. Implements real-time filtering with case-insensitive substring matching and console logging of filtered length after each change.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "Static list of 30 names",
+    "Real-time search input with filtering",
+    "Case-insensitive substring matching",
+    "Console logging of filtered results count",
+    "Bootstrap card layout with organized display",
+    "Results counter with search term display",
+    "Clear search functionality",
+    "Two-column layout for better readability",
+    "Empty state handling",
+    "Numbered list with badges"
+  ]
+}

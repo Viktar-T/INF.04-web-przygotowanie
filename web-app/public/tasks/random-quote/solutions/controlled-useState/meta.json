@@ -1,0 +1,23 @@
+{
+  "name": "Controlled useState",
+  "description": "Random quote display with no immediate repeats and view count tracking using controlled components with useState and useEffect hooks",
+  "difficulty": "Intermediate",
+  "skills": ["React", "useState", "useEffect", "Controlled Components", "Bootstrap", "Random Selection", "Array Manipulation", "State Management", "Console Logging", "Statistics Calculation"],
+  "approach": "Uses React's useState hook to manage current quote index, view counts array, and viewed quotes set. Implements random selection with exclusion logic and view count tracking. Provides console logging of quote indices and comprehensive statistics.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "Random quote selection with no immediate repeats",
+    "View count tracking for each quote",
+    "Console logging in format: 'Quote: i' where i is index",
+    "Most viewed quote highlighting with badges",
+    "Comprehensive statistics (total views, average, unique viewed)",
+    "Bootstrap card and list group styling",
+    "Current quote highlighting",
+    "Button state management (disabled for single quote)",
+    "Real-time statistics updates",
+    "Most viewed quotes panel",
+    "Responsive design with two-column layout",
+    "Quote preview in list (truncated for readability)"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Controlled useState",
+  "description": "Appointment picker with date/time validation using controlled components with useState hook",
+  "difficulty": "Intermediate",
+  "skills": ["React", "useState", "Controlled Components", "Forms", "Bootstrap", "Date/Time Validation", "ISO Formatting"],
+  "approach": "Uses React's useState hook to manage form inputs (name, date, time) and validation states. Implements real-time validation against current time and creates ISO datetime strings for logging.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "Text input for name with validation",
+    "Date input with minimum date restriction",
+    "Time input with dynamic minimum time",
+    "Real-time past time validation",
+    "Console logging of appointment data in JSON format",
+    "Bootstrap card layout with success/error states",
+    "Form validation with error messages",
+    "ISO datetime string generation",
+    "Clear form functionality"
+  ]
+}

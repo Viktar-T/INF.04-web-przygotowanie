@@ -1,0 +1,24 @@
+{
+  "name": "Controlled useState",
+  "description": "Visual bar list with percentage values and clickable bars for updating selected items using controlled components with useState hooks",
+  "difficulty": "Intermediate",
+  "skills": ["React", "useState", "Controlled Components", "Bootstrap", "Inline Styles", "Form Validation", "Array Manipulation", "Event Handling", "Console Logging", "Accessibility"],
+  "approach": "Uses React's useState hook to manage items array with label and valuePercent properties, selected item state, and form validation. Implements clickable progress bars with inline styles, form updates, and comprehensive statistics calculation.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "Visual horizontal bars representing percentage values (0-100)",
+    "Clickable bars for item selection with console logging",
+    "Console logging in format: 'Klik: label=value'",
+    "Form for updating selected item values with validation",
+    "Real-time bar width updates using inline styles",
+    "Comprehensive statistics (sum, average, min, max, count)",
+    "Bootstrap progress bars with custom colors",
+    "Accessible labels and ARIA attributes",
+    "Form validation (0-100 range, integer values)",
+    "Selected item highlighting and info panel",
+    "Responsive design with two-column layout",
+    "Color-coded bars for visual distinction",
+    "Keyboard accessibility for bar selection"
+  ]
+}

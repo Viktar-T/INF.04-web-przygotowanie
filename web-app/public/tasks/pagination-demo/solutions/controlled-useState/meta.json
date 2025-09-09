@@ -1,0 +1,23 @@
+{
+  "name": "Controlled useState",
+  "description": "Pagination demo with 42 static items, selectable page size, and navigation controls using controlled components with useState hook",
+  "difficulty": "Intermediate",
+  "skills": ["React", "useState", "useMemo", "Controlled Components", "Bootstrap", "Array Slicing", "Mathematical Calculations", "Event Handling"],
+  "approach": "Uses React's useState hook to manage current page and page size states. Implements pagination logic with useMemo for efficient item slicing. Provides proper boundary checking and console logging.",
+  "examYear": "2024",
+  "examDate": "2024-09-09",
+  "features": [
+    "42 static items with pagination",
+    "Selectable page size (5 or 10 items)",
+    "Previous/Next navigation buttons",
+    "Console logging in required format: 'Strona: N' and 'Rozmiar: K'",
+    "Position display: 'Pozycje X–Y z 42'",
+    "Automatic page boundary checking",
+    "Button disabling at boundaries",
+    "Bootstrap card layout with responsive design",
+    "Statistics panel showing totals",
+    "Page preview with active page indication",
+    "Navigation help and instructions",
+    "Efficient item slicing with useMemo"
+  ]
+}
