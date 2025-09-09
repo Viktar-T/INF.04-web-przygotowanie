@@ -24,6 +24,13 @@ const solutionComponents = {
   
   // quiz-maker solutions
   'quiz-maker-basic-quiz-maker': () => import('../tasks/quiz-maker/solutions/basic-quiz-maker/App.jsx'),
+  
+  // course-waitlist-capacity solutions
+  'course-waitlist-capacity-controlled-useState': () => import('../tasks/course-waitlist-capacity/solutions/controlled-useState/App.jsx'),
+  'course-waitlist-capacity-uncontrolled-useRef': () => import('../tasks/course-waitlist-capacity/solutions/uncontrolled-useRef/App.jsx'),
+  
+  // movie-watchlist solutions
+  'movie-watchlist-controlled-useState': () => import('../tasks/movie-watchlist/solutions/controlled-useState/App.jsx'),
 };
 
 // Function to get the dynamic import for a specific task and solution

@@ -1,0 +1,16 @@
+{
+  "name": "Controlled useState",
+  "description": "Course waitlist and capacity management using controlled components with useState hook",
+  "difficulty": "Beginner",
+  "skills": ["React", "useState", "Controlled Components", "Forms", "Bootstrap", "State Management"],
+  "approach": "Uses React's useState hook to manage form state and course enrollment data with real-time capacity tracking and validation",
+  "examYear": "2024",
+  "examDate": "2024-01-01",
+  "features": [
+    "Course capacity management",
+    "Real-time enrollment tracking", 
+    "Form validation",
+    "Bootstrap styling",
+    "Console logging for verification"
+  ]
+}

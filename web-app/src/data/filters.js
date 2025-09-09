@@ -18,7 +18,8 @@ export const SKILLS = [
   'crud',         // Create, Read, Update, Delete operations
   'data-management', // Data management and manipulation
   'financial-management', // Financial data handling
-  'quiz-management' // Quiz creation and management
+  'quiz-management', // Quiz creation and management
+  'capacity-management' // Course capacity and enrollment management
 ];
 
 export default {

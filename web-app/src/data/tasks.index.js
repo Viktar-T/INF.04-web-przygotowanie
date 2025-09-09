@@ -110,6 +110,36 @@ export const tasks = [
         label: 'Basic Quiz Maker'
       }
     ]
+  },
+  {
+    taskId: 'course-waitlist-capacity',
+    title: 'Course Waitlist & Capacity',
+    examCode: 'INF.04-Course-Waitlist-Capacity',
+    year: 2024,
+    skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'capacity-management'],
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Controlled form (useState)'
+      },
+      {
+        solutionType: 'uncontrolled-useRef',
+        label: 'Uncontrolled form (useRef)'
+      }
+    ]
+  },
+  {
+    taskId: 'movie-watchlist',
+    title: 'Movie Watchlist with Rating',
+    examCode: 'INF.04-Movie-Watchlist',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'duplicate-detection'],
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Controlled form (useState)'
+      }
+    ]
   }
 ];
 
