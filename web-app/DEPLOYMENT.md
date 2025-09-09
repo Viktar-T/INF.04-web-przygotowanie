@@ -72,32 +72,7 @@ Vercel provides excellent support for React applications with automatic deployme
 - Add your custom domain
 - Configure DNS records as instructed
 
-### 2. Netlify
-
-Netlify offers great static site hosting with continuous deployment.
-
-#### Setup Steps:
-1. **Connect Repository**:
-   - Go to [netlify.com](https://netlify.com)
-   - Sign in and click "New site from Git"
-   - Connect your repository
-
-2. **Configure Build Settings**:
-   - Build Command: `npm run build`
-   - Publish Directory: `dist`
-   - Node Version: `18` (or latest)
-
-3. **Deploy**:
-   - Click "Deploy site"
-   - Netlify will build and deploy automatically
-   - You'll get a URL like `https://your-app.netlify.app`
-
-#### Custom Domain:
-- Go to Site Settings → Domain Management
-- Add your custom domain
-- Configure DNS records
-
-### 3. GitHub Pages
+### 2. GitHub Pages
 
 Deploy directly from your GitHub repository.
 
@@ -112,7 +87,7 @@ Deploy directly from your GitHub repository.
    {
      "scripts": {
        "deploy": "gh-pages -d dist"
-     }
+     },
      "homepage": "https://yourusername.github.io/your-repo-name"
    }
    ```
@@ -128,74 +103,6 @@ Deploy directly from your GitHub repository.
    - Select "Deploy from a branch"
    - Choose `gh-pages` branch
    - Your site will be available at `https://yourusername.github.io/your-repo-name`
-
-### 4. Firebase Hosting
-
-Google's Firebase provides reliable hosting with global CDN.
-
-#### Setup Steps:
-1. **Install Firebase CLI**:
-   ```bash
-   npm install -g firebase-tools
-   ```
-
-2. **Login and Initialize**:
-   ```bash
-   firebase login
-   firebase init hosting
-   ```
-
-3. **Configure Firebase**:
-   - Select your project
-   - Public directory: `dist`
-   - Single-page app: `Yes`
-   - Overwrite index.html: `No`
-
-4. **Deploy**:
-   ```bash
-   npm run build
-   firebase deploy
-   ```
-
-### 5. AWS S3 + CloudFront
-
-For enterprise-level hosting with custom infrastructure.
-
-#### Setup Steps:
-1. **Create S3 Bucket**:
-   - Create a new S3 bucket
-   - Enable static website hosting
-   - Set index document to `index.html`
-
-2. **Upload Files**:
-   ```bash
-   npm run build
-   aws s3 sync dist/ s3://your-bucket-name --delete
-   ```
-
-3. **Configure CloudFront**:
-   - Create CloudFront distribution
-   - Set origin to your S3 bucket
-   - Configure custom error pages for SPA routing
-
-### 6. DigitalOcean App Platform
-
-Simple deployment with managed infrastructure.
-
-#### Setup Steps:
-1. **Create App**:
-   - Go to DigitalOcean App Platform
-   - Create new app from GitHub
-   - Select your repository
-
-2. **Configure Build**:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-   - Environment: `Node.js`
-
-3. **Deploy**:
-   - Click "Create Resources"
-   - App will build and deploy automatically
 
 ## 🔧 Build Optimization
 
