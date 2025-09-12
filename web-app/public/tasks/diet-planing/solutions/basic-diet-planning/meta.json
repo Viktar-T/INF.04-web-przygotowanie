@@ -1,9 +1,0 @@
-{
-  "name": "Basic Diet Planning",
-  "description": "Simple diet planning application for tracking meals and calories",
-  "difficulty": "Beginner",
-  "skills": ["React", "useState", "Forms", "Bootstrap", "Data Management"],
-  "approach": "Uses React's useState hook to manage meal data with basic functionality for planning daily diet",
-  "examYear": "2024",
-  "examDate": "2024-01-01"
-}

@@ -7,8 +7,8 @@ export const YEARS = [2025, 2024, 2023, 2022];
 // Complexity levels for filtering
 export const COMPLEXITY_LEVELS = ['Level 1', 'Level 2'];
 
-// Week numbers for filtering (1-31 based on current task count)
-export const WEEK_NUMBERS = Array.from({ length: 31 }, (_, i) => i + 1);
+// Week numbers for filtering (0-31 based on current task count)
+export const WEEK_NUMBERS = Array.from({ length: 32 }, (_, i) => i);
 
 // Controlled vocabulary for skill tags - all task skillTags must use only these values
 // Keep in lowercase, kebab-case format for consistency

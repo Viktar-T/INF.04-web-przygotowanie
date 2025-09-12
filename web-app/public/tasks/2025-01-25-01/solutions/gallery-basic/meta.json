@@ -1,9 +1,0 @@
-{
-  "name": "Gallery Basic",
-  "description": "Photo gallery with category filtering and download counter functionality",
-  "difficulty": "Intermediate",
-  "skills": ["React", "Gallery", "Images", "useState", "Filtering", "Bootstrap", "Conditional Rendering"],
-  "approach": "Uses React useState to manage category filters and photo data, with conditional rendering for filtered photos and download counter updates",
-  "examYear": "2025",
-  "examDate": "2025-01-25"
-}

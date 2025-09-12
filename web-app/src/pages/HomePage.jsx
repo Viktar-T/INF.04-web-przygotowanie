@@ -11,7 +11,7 @@ const HomePage = () => {
     skill: null, 
     query: '',
     complexityLevel: null,
-    weekNumber: null
+    weekNumbers: null
   });
   
   // Track selected solutions per task (persists across filter changes)
@@ -51,9 +51,15 @@ const HomePage = () => {
       filtered = filtered.filter(task => task.complexityLevel === filters.complexityLevel);
     }
 
-    // Apply week number filter
-    if (filters.weekNumber) {
-      filtered = filtered.filter(task => task.weekNumber === filters.weekNumber);
+    // Apply week numbers filter
+    if (filters.weekNumbers !== null) {
+      if (filters.weekNumbers.length === 0) {
+        // If empty array, show no tasks
+        filtered = [];
+      } else {
+        // If has items, filter by selected weeks
+        filtered = filtered.filter(task => filters.weekNumbers.includes(task.weekNumber));
+      }
     }
 
     // Apply search query filter
@@ -129,7 +135,7 @@ const HomePage = () => {
                   </p>
                   <button 
                     className="btn btn-outline-primary"
-                    onClick={() => setFilters({ year: null, skill: null, query: '', complexityLevel: null, weekNumber: null })}
+                    onClick={() => setFilters({ year: null, skill: null, query: '', complexityLevel: null, weekNumbers: null })}
                   >
                     Clear all filters
                   </button>

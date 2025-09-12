@@ -24,8 +24,27 @@ const FilterBar = ({ filters, onFiltersChange }) => {
   };
 
   const handleWeekChange = (event) => {
-    const weekNumber = event.target.value === 'all' ? null : parseInt(event.target.value);
-    onFiltersChange({ ...filters, weekNumber });
+    const weekNumber = parseInt(event.target.value);
+    const currentWeeks = filters.weekNumbers || [];
+    
+    let newWeeks;
+    if (event.target.checked) {
+      // Add week to selection
+      newWeeks = [...currentWeeks, weekNumber];
+    } else {
+      // Remove week from selection
+      newWeeks = currentWeeks.filter(w => w !== weekNumber);
+    }
+    
+    onFiltersChange({ ...filters, weekNumbers: newWeeks.length > 0 ? newWeeks : null });
+  };
+
+  const handleSelectAllWeeks = () => {
+    onFiltersChange({ ...filters, weekNumbers: null });
+  };
+
+  const handleClearAllWeeks = () => {
+    onFiltersChange({ ...filters, weekNumbers: [] });
   };
 
   return (
@@ -88,23 +107,71 @@ const FilterBar = ({ filters, onFiltersChange }) => {
           </select>
         </div>
 
-        {/* Week Number Filter */}
+        {/* Week Numbers Filter */}
         <div className="col-md-2">
           <label htmlFor="week-filter" className="form-label fw-semibold">
             <i className="bi bi-calendar-week me-1"></i>Week
           </label>
-          <select 
-            id="week-filter"
-            className="form-select" 
-            value={filters.weekNumber || 'all'}
-            onChange={handleWeekChange}
-            aria-label="Filter by week number"
-          >
-            <option value="all">All Weeks</option>
-            {WEEK_NUMBERS.map(week => (
-              <option key={week} value={week}>Week {week}</option>
-            ))}
-          </select>
+          <div className="dropdown">
+            <button 
+              className="form-select dropdown-toggle" 
+              type="button" 
+              id="week-filter"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style={{ textAlign: 'left' }}
+            >
+              {filters.weekNumbers ? `${filters.weekNumbers.length} selected` : 'All weeks'}
+            </button>
+            <ul className="dropdown-menu" style={{ minWidth: '300px', maxHeight: '300px', overflowY: 'auto' }} onClick={(e) => e.stopPropagation()}>
+              <li className="px-3 py-2 border-bottom">
+                <div className="d-flex justify-content-between align-items-center">
+                  <small className="text-muted">Select weeks:</small>
+                  <div className="btn-group btn-group-sm">
+                    <button 
+                      type="button" 
+                      className="btn btn-outline-primary btn-sm"
+                      onClick={handleSelectAllWeeks}
+                      title="Select all weeks"
+                    >
+                      All
+                    </button>
+                    <button 
+                      type="button" 
+                      className="btn btn-outline-secondary btn-sm"
+                      onClick={handleClearAllWeeks}
+                      title="Clear all weeks"
+                    >
+                      None
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="px-3 py-2">
+                  <div className="row g-1">
+                    {WEEK_NUMBERS.map(week => (
+                      <div key={week} className="col-4">
+                        <div className="form-check">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            id={`week-${week}`}
+                            value={week}
+                            checked={!filters.weekNumbers || filters.weekNumbers.includes(week)}
+                            onChange={handleWeekChange}
+                          />
+                          <label className="form-check-label small" htmlFor={`week-${week}`}>
+                            W{week}
+                          </label>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Search Input */}
