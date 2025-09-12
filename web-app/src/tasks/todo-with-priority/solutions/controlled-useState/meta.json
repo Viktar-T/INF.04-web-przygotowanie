@@ -17,5 +17,7 @@
     "Statistics showing task counts by priority",
     "Empty state handling for no tasks/filtered results",
     "Form validation preventing empty tasks"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 20
 }

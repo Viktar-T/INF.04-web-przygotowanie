@@ -19,5 +19,7 @@
     "Edge case handling for countries with no cities",
     "Form state management and validation",
     "Performance optimization with useMemo"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 24
 }

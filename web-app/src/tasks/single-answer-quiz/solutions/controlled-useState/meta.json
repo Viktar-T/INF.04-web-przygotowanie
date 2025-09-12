@@ -14,5 +14,7 @@
     "Immediate feedback display",
     "Quiz reset functionality",
     "Accessible form controls"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 11
 }

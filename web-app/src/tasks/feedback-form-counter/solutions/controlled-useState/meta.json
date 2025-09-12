@@ -17,5 +17,7 @@
     "Character limit enforcement",
     "Clear form functionality",
     "Visual character count display"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 15
 }

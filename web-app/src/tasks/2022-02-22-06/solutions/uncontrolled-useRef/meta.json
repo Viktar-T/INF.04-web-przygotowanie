@@ -5,5 +5,7 @@
   "skills": ["React", "useRef", "Uncontrolled Components", "Forms", "Bootstrap"],
   "approach": "Uses React's useRef hook to access form values without controlling state for course registration",
   "examYear": "2022",
-  "examDate": "2022-06-02"
+  "examDate": "2022-06-02",
+  "complexityLevel": "Level 1",
+  "weekNumber": 1
 }

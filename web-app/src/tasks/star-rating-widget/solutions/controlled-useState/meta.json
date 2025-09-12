@@ -18,5 +18,7 @@
     "Rating descriptions and statistics",
     "Keyboard help and instructions",
     "Event cleanup for keyboard listeners"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 21
 }

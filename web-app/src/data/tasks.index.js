@@ -6,19 +6,25 @@
 // - solutionType: kebab-case identifier for solution (e.g., 'controlled-useState')
 // - label: human-readable text for UI display
 // - skillTags: array of strings from controlled vocabulary in filters.js
+// - complexityLevel: string value ("Level 1", "Level 2", "Level 3")
+// - weekNumber: integer value for week assignment
 
 export const tasks = [
   {
     // Task identifier in kebab-case format (YYYY-MM-DD-NN)
     taskId: '2022-02-22-06',
     // Human-readable title for display
-    title: 'Course Registration Form',
+    title: 'Course Registration Form - 2022',
     // Official exam code
     examCode: 'INF.04-02-22.06-SG',
     // Year for filtering
     year: 2022,
     // Skills from controlled vocabulary - used for filtering and tagging
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log'],
+    // Complexity level for filtering
+    complexityLevel: 'Level 1',
+    // Week number for filtering
+    weekNumber: 1,
     // Available solutions - first solution is the default
     solutions: [
       {
@@ -35,10 +41,12 @@ export const tasks = [
   },
   {
     taskId: '2023-03-23-06',
-    title: 'Movie Form',
+    title: 'Movie Form - 2023',
     examCode: 'INF.04-03-23.06-SG',
     year: 2023,
     skillTags: ['forms', 'bootstrap', 'console.log'],
+    complexityLevel: 'Level 1',
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'basic-form',
@@ -48,10 +56,12 @@ export const tasks = [
   },
   {
     taskId: '2025-01-25-01',
-    title: 'Photo Gallery',
+    title: 'Photo Gallery - 2025',
     examCode: 'INF.04-01-25.01-SG',
     year: 2025,
     skillTags: ['arrays', 'filtering', 'images', 'state', 'bootstrap'],
+    complexityLevel: 'Level 2',
+    weekNumber: 3,
     solutions: [
       {
         solutionType: 'gallery-basic',
@@ -65,6 +75,8 @@ export const tasks = [
     examCode: 'INF.04-BOOK-MGMT',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'crud', 'arrays'],
+    complexityLevel: 'Level 1',
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'basic-book-management',
@@ -78,6 +90,8 @@ export const tasks = [
     examCode: 'INF.04-DIET-PLAN',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'data-management', 'arrays'],
+    complexityLevel: 'Level 1',
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'basic-diet-planning',
@@ -91,6 +105,8 @@ export const tasks = [
     examCode: 'INF.04-EXPENSE-TRACK',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'financial-management', 'arrays'],
+    complexityLevel: 'Level 1',
+    weekNumber: 6,
     solutions: [
       {
         solutionType: 'basic-expense-tracking',
@@ -104,6 +120,8 @@ export const tasks = [
     examCode: 'INF.04-QUIZ-MAKER',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'quiz-management', 'arrays'],
+    complexityLevel: 'Level 1',
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'basic-quiz-maker',
@@ -117,6 +135,8 @@ export const tasks = [
     examCode: 'INF.04-Course-Waitlist-Capacity',
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'capacity-management'],
+    complexityLevel: 'Level 2',
+    weekNumber: 8,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -134,6 +154,8 @@ export const tasks = [
     examCode: 'INF.04-Movie-Watchlist',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'duplicate-detection'],
+    complexityLevel: 'Level 1',
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -147,6 +169,8 @@ export const tasks = [
     examCode: 'INF.04-TAG-FILTERED-GALLERY',
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'conditional-rendering'],
+    complexityLevel: 'Level 2',
+    weekNumber: 10,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -160,6 +184,8 @@ export const tasks = [
     examCode: 'INF.04-SINGLE-ANSWER-QUIZ',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation'],
+    complexityLevel: 'Level 1',
+    weekNumber: 11,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -173,6 +199,8 @@ export const tasks = [
     examCode: 'INF.04-MINI-SHOP-LINE-TOTAL',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'arrays'],
+    complexityLevel: 'Level 2',
+    weekNumber: 12,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -186,6 +214,8 @@ export const tasks = [
     examCode: 'INF.04-PARKING-METER',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'validation'],
+    complexityLevel: 'Level 1',
+    weekNumber: 13,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -199,6 +229,8 @@ export const tasks = [
     examCode: 'INF.04-APPOINTMENT-PICKER',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'date-time', 'validation'],
+    complexityLevel: 'Level 2',
+    weekNumber: 14,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -212,6 +244,8 @@ export const tasks = [
     examCode: 'INF.04-FEEDBACK-FORM-COUNTER',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'character-count'],
+    complexityLevel: 'Level 1',
+    weekNumber: 15,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -225,6 +259,8 @@ export const tasks = [
     examCode: 'INF.04-SEARCHABLE-LIST',
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'search'],
+    complexityLevel: 'Level 2',
+    weekNumber: 16,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -238,6 +274,8 @@ export const tasks = [
     examCode: 'INF.04-TABS-NAV-PILLS',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'conditional-rendering', 'navigation'],
+    complexityLevel: 'Level 1',
+    weekNumber: 17,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -251,6 +289,8 @@ export const tasks = [
     examCode: 'INF.04-FAQ-ACCORDION',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'conditional-rendering', 'accordion'],
+    complexityLevel: 'Level 1',
+    weekNumber: 18,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -264,6 +304,8 @@ export const tasks = [
     examCode: 'INF.04-STOPWATCH',
     year: 2024,
     skillTags: ['state', 'refs', 'bootstrap', 'console.log', 'intervals', 'timers'],
+    complexityLevel: 'Level 2',
+    weekNumber: 19,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -277,6 +319,8 @@ export const tasks = [
     examCode: 'INF.04-TODO-WITH-PRIORITY',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'filtering', 'priority'],
+    complexityLevel: 'Level 2',
+    weekNumber: 20,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -290,6 +334,8 @@ export const tasks = [
     examCode: 'INF.04-STAR-RATING-WIDGET',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'keyboard-events', 'accessibility'],
+    complexityLevel: 'Level 2',
+    weekNumber: 21,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -303,6 +349,8 @@ export const tasks = [
     examCode: 'INF.04-PAGINATION-DEMO',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'pagination', 'memoization'],
+    complexityLevel: 'Level 2',
+    weekNumber: 22,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -316,6 +364,8 @@ export const tasks = [
     examCode: 'INF.04-SORTABLE-TABLE',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'sorting', 'memoization'],
+    complexityLevel: 'Level 2',
+    weekNumber: 23,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -329,6 +379,8 @@ export const tasks = [
     examCode: 'INF.04-DEPENDENT-DROPDOWNS',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'conditional-rendering', 'memoization'],
+    complexityLevel: 'Level 2',
+    weekNumber: 24,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -342,6 +394,8 @@ export const tasks = [
     examCode: 'INF.04-CONTROLLED-UNCONTROLLED-TOGGLE',
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'conditional-rendering'],
+    complexityLevel: 'Level 2',
+    weekNumber: 25,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -355,6 +409,8 @@ export const tasks = [
     examCode: 'INF.04-UNIT-CONVERTER',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'bidirectional'],
+    complexityLevel: 'Level 2',
+    weekNumber: 26,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -368,6 +424,8 @@ export const tasks = [
     examCode: 'INF.04-COLOR-PREVIEW-CONTRAST',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'color-calculations', 'memoization'],
+    complexityLevel: 'Level 3',
+    weekNumber: 27,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -381,6 +439,8 @@ export const tasks = [
     examCode: 'INF.04-KEYBOARD-SHORTCUTS',
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'keyboard-events', 'focus-management'],
+    complexityLevel: 'Level 2',
+    weekNumber: 28,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -394,6 +454,8 @@ export const tasks = [
     examCode: 'INF.04-TWO-STEP-FORM',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'multi-step', 'wizard'],
+    complexityLevel: 'Level 2',
+    weekNumber: 29,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -407,6 +469,8 @@ export const tasks = [
     examCode: 'INF.04-RANDOM-QUOTE',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'random-selection', 'statistics'],
+    complexityLevel: 'Level 2',
+    weekNumber: 30,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -420,6 +484,8 @@ export const tasks = [
     examCode: 'INF.04-VISUAL-BAR-LIST',
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'inline-styles', 'accessibility', 'form-validation'],
+    complexityLevel: 'Level 2',
+    weekNumber: 31,
     solutions: [
       {
         solutionType: 'controlled-useState',

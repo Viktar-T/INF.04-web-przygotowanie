@@ -20,5 +20,7 @@
     "Responsive design with two-column layout",
     "Color-coded bars for visual distinction",
     "Keyboard accessibility for bar selection"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 31
 }

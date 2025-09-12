@@ -9,7 +9,9 @@ const HomePage = () => {
   const [filters, setFilters] = useState({ 
     year: null, 
     skill: null, 
-    query: '' 
+    query: '',
+    complexityLevel: null,
+    weekNumber: null
   });
   
   // Track selected solutions per task (persists across filter changes)
@@ -42,6 +44,16 @@ const HomePage = () => {
       filtered = filtered.filter(task => 
         task.skillTags.includes(filters.skill)
       );
+    }
+
+    // Apply complexity level filter
+    if (filters.complexityLevel) {
+      filtered = filtered.filter(task => task.complexityLevel === filters.complexityLevel);
+    }
+
+    // Apply week number filter
+    if (filters.weekNumber) {
+      filtered = filtered.filter(task => task.weekNumber === filters.weekNumber);
     }
 
     // Apply search query filter
@@ -117,7 +129,7 @@ const HomePage = () => {
                   </p>
                   <button 
                     className="btn btn-outline-primary"
-                    onClick={() => setFilters({ year: null, skill: null, query: '' })}
+                    onClick={() => setFilters({ year: null, skill: null, query: '', complexityLevel: null, weekNumber: null })}
                   >
                     Clear all filters
                   </button>

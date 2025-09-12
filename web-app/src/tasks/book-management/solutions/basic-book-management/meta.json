@@ -5,5 +5,7 @@
   "skills": ["React", "useState", "Forms", "Bootstrap", "CRUD Operations"],
   "approach": "Uses React's useState hook to manage book data with basic CRUD operations for adding, editing, and removing books",
   "examYear": "2024",
-  "examDate": "2024-01-01"
+  "examDate": "2024-01-01",
+  "complexityLevel": "Level 1",
+  "weekNumber": 4
 }

@@ -16,5 +16,7 @@
     "Form validation with error messages",
     "ISO datetime string generation",
     "Clear form functionality"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 14
 }

@@ -19,5 +19,7 @@
     "Form validation and state management",
     "Demonstrates React form paradigms",
     "Unified submit handler for both modes"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 25
 }

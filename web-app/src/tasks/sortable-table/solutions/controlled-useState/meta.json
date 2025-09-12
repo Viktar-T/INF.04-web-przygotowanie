@@ -19,5 +19,7 @@
     "Statistics panel with averages and ranges",
     "Sort instructions and help",
     "Performance optimization with useMemo"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 23
 }

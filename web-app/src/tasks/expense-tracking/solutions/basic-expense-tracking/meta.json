@@ -5,5 +5,7 @@
   "skills": ["React", "useState", "Forms", "Bootstrap", "Financial Management"],
   "approach": "Uses React's useState hook to manage expense data with basic functionality for tracking income and expenses",
   "examYear": "2024",
-  "examDate": "2024-01-01"
+  "examDate": "2024-01-01",
+  "complexityLevel": "Level 1",
+  "weekNumber": 6
 }

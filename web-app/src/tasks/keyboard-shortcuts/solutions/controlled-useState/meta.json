@@ -19,5 +19,7 @@
     "Keyboard shortcuts information panel",
     "Statistics panel with item counts and averages",
     "Prevention of default keyboard behaviors"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 28
 }

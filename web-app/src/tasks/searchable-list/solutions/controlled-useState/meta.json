@@ -17,5 +17,7 @@
     "Two-column layout for better readability",
     "Empty state handling",
     "Numbered list with badges"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 16
 }

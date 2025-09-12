@@ -19,5 +19,7 @@
     "Page preview with active page indication",
     "Navigation help and instructions",
     "Efficient item slicing with useMemo"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 22
 }

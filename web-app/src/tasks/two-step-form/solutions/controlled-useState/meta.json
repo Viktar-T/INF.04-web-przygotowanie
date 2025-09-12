@@ -20,5 +20,7 @@
     "Reset functionality to start over",
     "Real-time validation feedback",
     "Disabled button states based on validation"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 29
 }

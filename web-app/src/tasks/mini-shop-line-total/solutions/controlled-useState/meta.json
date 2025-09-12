@@ -15,5 +15,7 @@
     "Item removal functionality",
     "Currency formatting with toFixed",
     "Form validation and reset"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 12
 }

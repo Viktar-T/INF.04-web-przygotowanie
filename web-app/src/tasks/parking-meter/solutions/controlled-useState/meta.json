@@ -15,5 +15,7 @@
     "Detailed calculation breakdown",
     "Clear form functionality",
     "Parking rules information display"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 13
 }

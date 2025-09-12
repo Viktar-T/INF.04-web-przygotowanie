@@ -13,5 +13,7 @@
     "Bootstrap card layout",
     "Responsive grid system",
     "Accessible image labels"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 10
 }

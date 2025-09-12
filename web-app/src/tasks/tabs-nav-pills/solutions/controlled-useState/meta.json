@@ -17,5 +17,7 @@
     "Accessible button-based navigation",
     "Form elements in settings tab",
     "List display in lista tab"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 17
 }

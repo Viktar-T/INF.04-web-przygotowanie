@@ -5,5 +5,7 @@
   "skills": ["React", "useState", "Forms", "Bootstrap", "Data Management"],
   "approach": "Uses React's useState hook to manage meal data with basic functionality for planning daily diet",
   "examYear": "2024",
-  "examDate": "2024-01-01"
+  "examDate": "2024-01-01",
+  "complexityLevel": "Level 1",
+  "weekNumber": 5
 }

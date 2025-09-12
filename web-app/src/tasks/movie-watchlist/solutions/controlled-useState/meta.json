@@ -5,5 +5,7 @@
   "skills": ["React", "useState", "Controlled Components", "Forms", "Bootstrap", "Array Manipulation"],
   "approach": "Uses React's useState hook to manage form state for movie watchlist with duplicate detection and movie list display",
   "examYear": "2024",
-  "examDate": "2024-12-09"
+  "examDate": "2024-12-09",
+  "complexityLevel": "Level 1",
+  "weekNumber": 9
 }

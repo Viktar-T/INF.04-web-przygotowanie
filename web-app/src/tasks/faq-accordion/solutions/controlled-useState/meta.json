@@ -17,5 +17,7 @@
     "FAQ summary with statistics",
     "Responsive design",
     "Interactive click handlers"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 18
 }

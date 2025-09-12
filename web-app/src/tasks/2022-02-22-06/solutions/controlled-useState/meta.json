@@ -5,5 +5,7 @@
   "skills": ["React", "useState", "Controlled Components", "Forms", "Bootstrap"],
   "approach": "Uses React's useState hook to manage form state for course registration with course list display and validation",
   "examYear": "2022",
-  "examDate": "2022-06-02"
+  "examDate": "2022-06-02",
+  "complexityLevel": "Level 1",
+  "weekNumber": 1
 }

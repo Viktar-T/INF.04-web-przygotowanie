@@ -24,6 +24,18 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
           <Badge type="secondary">{task.year}</Badge>
         </div>
 
+        {/* Complexity Level and Week Number */}
+        <div className="mb-3">
+          <div className="d-flex justify-content-between align-items-center mb-2">
+            <span className="text-muted small">
+              <strong>Complexity Level:</strong> {task.complexityLevel}
+            </span>
+            <span className="text-muted small">
+              <strong>Week Number:</strong> {task.weekNumber}
+            </span>
+          </div>
+        </div>
+
         {/* Skill Tags */}
         <div className="mb-3">
           <div className="d-flex flex-wrap gap-1">

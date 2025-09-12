@@ -5,5 +5,7 @@
   "skills": ["React", "Forms", "Uncontrolled Components", "Bootstrap", "Select"],
   "approach": "Uses uncontrolled form elements with form submission handler to log movie title and genre to console",
   "examYear": "2023",
-  "examDate": "2023-06-03"
+  "examDate": "2023-06-03",
+  "complexityLevel": "Level 1",
+  "weekNumber": 2
 }

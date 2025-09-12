@@ -19,5 +19,7 @@
     "Contrast description and recommendations",
     "Bootstrap color input and responsive design",
     "Performance optimization with useMemo"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 27
 }

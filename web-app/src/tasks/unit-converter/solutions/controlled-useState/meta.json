@@ -19,5 +19,7 @@
     "Temperature ranges reference",
     "Current values status display",
     "Clear button functionality"
-  ]
+  ],
+  "complexityLevel": "Level 1",
+  "weekNumber": 26
 }

@@ -12,5 +12,7 @@
     "Form validation",
     "Bootstrap styling", 
     "Console logging for verification"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 8
 }

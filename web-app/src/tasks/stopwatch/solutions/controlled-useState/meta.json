@@ -17,5 +17,7 @@
     "Status indicator badge",
     "Empty state handling for laps",
     "Proper component unmounting cleanup"
-  ]
+  ],
+  "complexityLevel": "Level 2",
+  "weekNumber": 19
 }
