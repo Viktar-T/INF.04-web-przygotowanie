@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Badge from './Badge';
+import { getWeekName } from '../data/filters';
 
 const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
   // Handle solution dropdown change
@@ -31,7 +32,7 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
               <strong>Complexity Level:</strong> {task.complexityLevel}
             </span>
             <span className="text-muted small">
-              <strong>Week Number:</strong> {task.weekNumber}
+              <strong>Week:</strong> {getWeekName(task.weekNumber)}
             </span>
           </div>
         </div>

@@ -1,6 +1,6 @@
 // Filter bar component for filtering tasks
 import React from 'react';
-import { YEARS, SKILLS, COMPLEXITY_LEVELS, WEEK_NUMBERS } from '../data/filters';
+import { YEARS, SKILLS, COMPLEXITY_LEVELS, WEEK_NUMBERS, getWeekName } from '../data/filters';
 
 const FilterBar = ({ filters, onFiltersChange }) => {
   // Handle filter changes and emit to parent
@@ -162,7 +162,7 @@ const FilterBar = ({ filters, onFiltersChange }) => {
                             onChange={handleWeekChange}
                           />
                           <label className="form-check-label small" htmlFor={`week-${week}`}>
-                            W{week}
+                            {getWeekName(week)}
                           </label>
                         </div>
                       </div>

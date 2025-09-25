@@ -61,7 +61,7 @@ export const tasks = [
     year: 2025,
     skillTags: ['arrays', 'filtering', 'images', 'state', 'bootstrap'],
     complexityLevel: 'Level 2',
-    weekNumber: 2,
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'gallery-basic',
@@ -76,7 +76,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'crud', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 3,
     solutions: [
       {
         solutionType: 'basic-book-management',
@@ -91,7 +91,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'data-management', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'basic-diet-planning',
@@ -106,7 +106,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'financial-management', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 6,
     solutions: [
       {
         solutionType: 'basic-expense-tracking',
@@ -121,7 +121,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'quiz-management', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'basic-quiz-maker',
@@ -136,7 +136,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'capacity-management'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 3,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -155,7 +155,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'duplicate-detection'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -170,7 +170,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'conditional-rendering'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -185,7 +185,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -200,7 +200,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'arrays'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -215,7 +215,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'validation'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -230,7 +230,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'date-time', 'validation'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -245,7 +245,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'character-count'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -260,7 +260,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'search'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 20,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -275,7 +275,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'conditional-rendering', 'navigation'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -290,7 +290,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'conditional-rendering', 'accordion'],
     complexityLevel: 'Level 1',
-    weekNumber: 0,
+    weekNumber: 11,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -305,7 +305,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'refs', 'bootstrap', 'console.log', 'intervals', 'timers'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -320,7 +320,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'filtering', 'priority'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 13,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -335,7 +335,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'keyboard-events', 'accessibility'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 10,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -350,7 +350,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'pagination', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 12,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -365,7 +365,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'sorting', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 10,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -380,7 +380,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'conditional-rendering', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 14,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -395,7 +395,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'conditional-rendering'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 8,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -410,7 +410,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'bidirectional'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 11,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -425,7 +425,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'color-calculations', 'memoization'],
     complexityLevel: 'Level 3',
-    weekNumber: 0,
+    weekNumber: 19,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -440,7 +440,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'keyboard-events', 'focus-management'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 15,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -455,7 +455,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'multi-step', 'wizard'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -470,7 +470,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'random-selection', 'statistics'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 17,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -485,7 +485,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'inline-styles', 'accessibility', 'form-validation'],
     complexityLevel: 'Level 2',
-    weekNumber: 0,
+    weekNumber: 17,
     solutions: [
       {
         solutionType: 'controlled-useState',

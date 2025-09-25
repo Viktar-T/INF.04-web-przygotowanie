@@ -10,6 +10,47 @@ export const COMPLEXITY_LEVELS = ['Level 1', 'Level 2'];
 // Week numbers for filtering (0-31 based on current task count)
 export const WEEK_NUMBERS = Array.from({ length: 32 }, (_, i) => i);
 
+// Custom week names mapping - you can modify these names as needed
+export const WEEK_NAMES = {
+  0: 'W0',
+  1: 'W1', 
+  2: 'W2',
+  3: 'W3-sp',
+  4: 'W4',
+  5: 'W5',
+  6: 'W6-sp',
+  7: 'W7',
+  8: 'W8',
+  9: 'W9-sp',
+  10: 'W10',
+  11: 'W11',
+  12: 'W12-sp',
+  13: 'W13',
+  14: 'W14',
+  15: 'W15-sp',
+  16: 'W16',
+  17: 'W17',
+  18: 'W18-sp',
+  19: 'W19',
+  20: 'W20',
+  21: 'W21-sp',
+  22: 'W22',
+  23: 'W23',
+  24: 'W24-sp',
+  25: 'W25',
+  26: 'W26',
+  27: 'W27-sp',
+  28: 'W28',
+  29: 'W29',
+  30: 'W30-sp',
+  31: 'W31'
+};
+
+// Function to get week name by number (with fallback to W{number} format)
+export const getWeekName = (weekNumber) => {
+  return WEEK_NAMES[weekNumber] || `W${weekNumber}`;
+};
+
 // Controlled vocabulary for skill tags - all task skillTags must use only these values
 // Keep in lowercase, kebab-case format for consistency
 export const SKILLS = [
@@ -58,5 +99,7 @@ export default {
   YEARS,
   SKILLS,
   COMPLEXITY_LEVELS,
-  WEEK_NUMBERS
+  WEEK_NUMBERS,
+  WEEK_NAMES,
+  getWeekName
 };

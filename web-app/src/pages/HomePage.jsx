@@ -72,11 +72,19 @@ const HomePage = () => {
       );
     }
 
-    // Sort by year desc, then by exam code asc
+    // Sort by week number first (ascending: W1 → W2 → W3 → ...), then by year desc, then by exam code asc
     filtered.sort((a, b) => {
+      // Primary sort: by week number (ascending)
+      if (a.weekNumber !== b.weekNumber) {
+        return a.weekNumber - b.weekNumber; // Ascending by week number
+      }
+      
+      // Secondary sort: by year (descending)
       if (a.year !== b.year) {
         return b.year - a.year; // Descending by year
       }
+      
+      // Tertiary sort: by exam code (ascending)
       return a.examCode.localeCompare(b.examCode); // Ascending by exam code
     });
 
