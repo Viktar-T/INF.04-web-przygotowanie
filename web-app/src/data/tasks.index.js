@@ -61,7 +61,7 @@ export const tasks = [
     year: 2025,
     skillTags: ['arrays', 'filtering', 'images', 'state', 'bootstrap'],
     complexityLevel: 'Level 2',
-    weekNumber: 5,
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'gallery-basic',
@@ -76,7 +76,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'crud', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 3,
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'basic-book-management',
@@ -91,7 +91,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'data-management', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 2,
+    weekNumber: 1,
     solutions: [
       {
         solutionType: 'basic-diet-planning',
@@ -105,8 +105,8 @@ export const tasks = [
     examCode: 'INF.04-EXPENSE-TRACK',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'financial-management', 'arrays'],
-    complexityLevel: 'Level 1',
-    weekNumber: 6,
+    complexityLevel: 'Level 2',
+    weekNumber: 3,
     solutions: [
       {
         solutionType: 'basic-expense-tracking',
@@ -121,7 +121,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'quiz-management', 'arrays'],
     complexityLevel: 'Level 1',
-    weekNumber: 4,
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'basic-quiz-maker',
@@ -136,7 +136,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'capacity-management'],
     complexityLevel: 'Level 2',
-    weekNumber: 3,
+    weekNumber: 6,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -149,17 +149,47 @@ export const tasks = [
     ]
   },
   {
+    taskId: 'course-waitlist-capacity-advance',
+    title: 'Course Waitlist & Capacity (Advanced)',
+    examCode: 'INF.04-Course-Waitlist-Capacity-Advance',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'capacity-management', 'localStorage', 'conditional-rendering', 'validation'],
+    complexityLevel: 'Level 3',
+    weekNumber: 16,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Course Waitlist (useState + localStorage)'
+      }
+    ]
+  },
+  {
     taskId: 'movie-watchlist',
     title: 'Movie Watchlist with Rating',
     examCode: 'INF.04-Movie-Watchlist',
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'duplicate-detection'],
     complexityLevel: 'Level 1',
-    weekNumber: 4,
+    weekNumber: 5,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'movie-watchlist-advance',
+    title: 'Movie Watchlist with Rating (Advanced)',
+    examCode: 'INF.04-Movie-Watchlist-Advance',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'duplicate-detection', 'genre-filtering', 'conditional-rendering', 'validation'],
+    complexityLevel: 'Level 3',
+    weekNumber: 16,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Movie Watchlist (useState + Genre Filtering)'
       }
     ]
   },
@@ -170,11 +200,26 @@ export const tasks = [
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'conditional-rendering'],
     complexityLevel: 'Level 2',
-    weekNumber: 7,
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'tag-filtered-gallery-advance',
+    title: 'Tag-Filtered Gallery (Chips) (Advanced)',
+    examCode: 'INF.04-TAG-FILTERED-GALLERY-ADVANCE',
+    year: 2024,
+    skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'conditional-rendering', 'download-counter', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 18,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Tag-Filtered Gallery (useState + Download Counter)'
       }
     ]
   },
@@ -185,11 +230,26 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation'],
     complexityLevel: 'Level 1',
-    weekNumber: 2,
+    weekNumber: 1,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'single-answer-quiz-advance',
+    title: 'Single-Answer Quiz (Advanced)',
+    examCode: 'INF.04-SINGLE-ANSWER-QUIZ-ADVANCE',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'attempt-counter', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 20,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Single-Answer Quiz (useState + Attempt Counter)'
       }
     ]
   },
@@ -200,11 +260,26 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'arrays'],
     complexityLevel: 'Level 2',
-    weekNumber: 7,
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'mini-shop-line-total-advance',
+    title: 'Mini Shop Line Total (Advanced)',
+    examCode: 'INF.04-MINI-SHOP-LINE-TOTAL-ADVANCE',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'arrays', 'transaction-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 22,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Mini Shop (useState + Transaction History)'
       }
     ]
   },
@@ -215,11 +290,26 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'validation'],
     complexityLevel: 'Level 1',
-    weekNumber: 4,
+    weekNumber: 2,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'parking-meter-advance',
+    title: 'Parking Meter (Advanced)',
+    examCode: 'INF.04-PARKING-METER-ADVANCE',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'validation', 'calculation-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 22,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Parking Meter (useState + Calculation History)'
       }
     ]
   },
@@ -245,7 +335,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'character-count'],
     complexityLevel: 'Level 1',
-    weekNumber: 2,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -260,7 +350,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['arrays', 'filtering', 'state', 'bootstrap', 'console.log', 'search'],
     complexityLevel: 'Level 2',
-    weekNumber: 20,
+    weekNumber: 13,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -290,7 +380,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'conditional-rendering', 'accordion'],
     complexityLevel: 'Level 1',
-    weekNumber: 11,
+    weekNumber: 6,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -305,7 +395,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'refs', 'bootstrap', 'console.log', 'intervals', 'timers'],
     complexityLevel: 'Level 2',
-    weekNumber: 5,
+    weekNumber: 7,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -320,7 +410,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'arrays', 'filtering', 'priority'],
     complexityLevel: 'Level 2',
-    weekNumber: 13,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -335,7 +425,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'keyboard-events', 'accessibility'],
     complexityLevel: 'Level 2',
-    weekNumber: 10,
+    weekNumber: 3,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -350,7 +440,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'pagination', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 12,
+    weekNumber: 8,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -365,7 +455,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'sorting', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 10,
+    weekNumber: 4,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -380,7 +470,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'conditional-rendering', 'memoization'],
     complexityLevel: 'Level 2',
-    weekNumber: 14,
+    weekNumber: 11,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -395,7 +485,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'conditional-rendering'],
     complexityLevel: 'Level 2',
-    weekNumber: 8,
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -410,7 +500,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'calculations', 'bidirectional'],
     complexityLevel: 'Level 2',
-    weekNumber: 11,
+    weekNumber: 13,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -425,7 +515,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'color-calculations', 'memoization'],
     complexityLevel: 'Level 3',
-    weekNumber: 19,
+    weekNumber: 30,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -440,7 +530,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'refs', 'bootstrap', 'console.log', 'keyboard-events', 'focus-management'],
     complexityLevel: 'Level 2',
-    weekNumber: 15,
+    weekNumber: 12,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -455,7 +545,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'multi-step', 'wizard'],
     complexityLevel: 'Level 2',
-    weekNumber: 9,
+    weekNumber: 10,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -470,7 +560,7 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'random-selection', 'statistics'],
     complexityLevel: 'Level 2',
-    weekNumber: 17,
+    weekNumber: 13,
     solutions: [
       {
         solutionType: 'controlled-useState',
@@ -485,11 +575,176 @@ export const tasks = [
     year: 2024,
     skillTags: ['state', 'bootstrap', 'console.log', 'inline-styles', 'accessibility', 'form-validation'],
     complexityLevel: 'Level 2',
-    weekNumber: 17,
+    weekNumber: 11,
     solutions: [
       {
         solutionType: 'controlled-useState',
         label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
+    taskId: 'appointment-picker-advance',
+    title: 'Appointment Picker (Advanced)',
+    examCode: 'INF.04-APPOINTMENT-PICKER-ADVANCE',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'date-time', 'appointment-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 15,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Appointment Picker (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'feedback-form-counter-advance',
+    title: 'Feedback Form with Counter (Advanced)',
+    examCode: 'INF.04-FEEDBACK-FORM-COUNTER-ADVANCE',
+    year: 2024,
+    skillTags: ['forms', 'state', 'bootstrap', 'console.log', 'validation', 'character-count', 'feedback-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 15,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Feedback Form (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'searchable-list-advance',
+    title: 'Searchable List (Advanced)',
+    examCode: 'INF.04-SEARCHABLE-LIST-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'arrays', 'filtering', 'search', 'search-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 18,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Searchable List (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'tabs-nav-pills-advance',
+    title: 'Tabs (Nav-Pills) (Advanced)',
+    examCode: 'INF.04-TABS-NAV-PILLS-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'navigation', 'tabs', 'navigation-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 18,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Tabs Navigation (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'faq-accordion-advance',
+    title: 'FAQ Accordion (Advanced)',
+    examCode: 'INF.04-FAQ-ACCORDION-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'accordion', 'collapse', 'accordion-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 21,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced FAQ Accordion (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'stopwatch-advance',
+    title: 'Stopwatch (Advanced)',
+    examCode: 'INF.04-STOPWATCH-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'stopwatch', 'interval', 'stopwatch-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 21,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Stopwatch (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'todo-with-priority-advance',
+    title: 'Todo with Priority (Advanced)',
+    examCode: 'INF.04-TODO-WITH-PRIORITY-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'todo', 'priority', 'filtering', 'sorting', 'todo-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 24,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Todo with Priority (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'star-rating-widget-advance',
+    title: 'Star Rating Widget (Advanced)',
+    examCode: 'INF.04-STAR-RATING-WIDGET-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'rating', 'stars', 'keyboard', 'accessibility', 'rating-history', 'localStorage'],
+    complexityLevel: 'Level 3',
+    weekNumber: 24,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Star Rating Widget (useState + History)'
+      }
+    ]
+  },
+  {
+    taskId: 'pagination-demo-advance',
+    title: 'Pagination Demo (Advanced)',
+    examCode: 'INF.04-PAGINATION-DEMO-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'pagination', 'validation', 'page-input', 'form-control'],
+    complexityLevel: 'Level 3',
+    weekNumber: 27,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Pagination Demo (useState + Direct Input)'
+      }
+    ]
+  },
+  {
+    taskId: 'sortable-table-advance',
+    title: 'Sortable Table (Advanced)',
+    examCode: 'INF.04-SORTABLE-TABLE-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'table', 'sorting', 'reset-sort', 'validation'],
+    complexityLevel: 'Level 3',
+    weekNumber: 27,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Sortable Table (useState + Reset Sort)'
+      }
+    ]
+  },
+  {
+    taskId: 'dependent-dropdowns-advance',
+    title: 'Dependent Dropdowns (Advanced)',
+    examCode: 'INF.04-DEPENDENT-DROPDOWNS-ADVANCE',
+    year: 2024,
+    skillTags: ['state', 'bootstrap', 'console.log', 'dropdowns', 'validation', 'no-cities-alert', 'form-control'],
+    complexityLevel: 'Level 3',
+    weekNumber: 30,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Advanced Dependent Dropdowns (useState + No Cities Alert)'
       }
     ]
   }

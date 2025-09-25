@@ -5,7 +5,7 @@
 export const YEARS = [2025, 2024, 2023, 2022];
 
 // Complexity levels for filtering
-export const COMPLEXITY_LEVELS = ['Level 1', 'Level 2'];
+export const COMPLEXITY_LEVELS = ['Level 1', 'Level 2', 'Level 3'];
 
 // Week numbers for filtering (0-31 based on current task count)
 export const WEEK_NUMBERS = Array.from({ length: 32 }, (_, i) => i);
@@ -92,7 +92,24 @@ export const SKILLS = [
   'random-selection', // Random data selection
   'statistics',   // Statistical calculations
   'inline-styles', // Inline CSS styling
-  'form-validation' // Form validation
+  'form-validation', // Form validation
+  'localStorage', // Browser localStorage functionality
+  'genre-filtering', // Genre filtering functionality
+  'download-counter', // Download counter functionality
+  'attempt-counter', // Attempt counter functionality
+  'transaction-history', // Transaction history functionality
+  'calculation-history', // Calculation history functionality
+  'appointment-history', // Appointment history functionality
+  'feedback-history', // Feedback history functionality
+  'search-history', // Search history functionality
+  'navigation-history', // Navigation history functionality
+  'accordion-history', // Accordion action history functionality
+  'stopwatch-history', // Stopwatch session history functionality
+  'todo-history', // Todo add history functionality
+  'rating-history', // Star rating history functionality
+  'page-input', // Direct page input functionality
+  'reset-sort', // Reset sort functionality
+  'no-cities-alert' // No cities alert functionality
 ];
 
 export default {

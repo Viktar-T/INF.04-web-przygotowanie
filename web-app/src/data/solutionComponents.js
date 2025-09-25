@@ -29,20 +29,38 @@ const solutionComponents = {
   'course-waitlist-capacity-controlled-useState': () => import('../tasks/course-waitlist-capacity/solutions/controlled-useState/App.jsx'),
   'course-waitlist-capacity-uncontrolled-useRef': () => import('../tasks/course-waitlist-capacity/solutions/uncontrolled-useRef/App.jsx'),
   
+  // course-waitlist-capacity-advance solutions
+  'course-waitlist-capacity-advance-controlled-useState': () => import('../tasks/course-waitlist-capacity-advance/solutions/controlled-useState/App.jsx'),
+  
   // movie-watchlist solutions
   'movie-watchlist-controlled-useState': () => import('../tasks/movie-watchlist/solutions/controlled-useState/App.jsx'),
+  
+  // movie-watchlist-advance solutions
+  'movie-watchlist-advance-controlled-useState': () => import('../tasks/movie-watchlist-advance/solutions/controlled-useState/App.jsx'),
   
   // tag-filtered-gallery solutions
   'tag-filtered-gallery-controlled-useState': () => import('../tasks/tag-filtered-gallery/solutions/controlled-useState/App.jsx'),
   
+  // tag-filtered-gallery-advance solutions
+  'tag-filtered-gallery-advance-controlled-useState': () => import('../tasks/tag-filtered-gallery-advance/solutions/controlled-useState/App.jsx'),
+  
   // single-answer-quiz solutions
   'single-answer-quiz-controlled-useState': () => import('../tasks/single-answer-quiz/solutions/controlled-useState/App.jsx'),
+  
+  // single-answer-quiz-advance solutions
+  'single-answer-quiz-advance-controlled-useState': () => import('../tasks/single-answer-quiz-advance/solutions/controlled-useState/App.jsx'),
   
   // mini-shop-line-total solutions
   'mini-shop-line-total-controlled-useState': () => import('../tasks/mini-shop-line-total/solutions/controlled-useState/App.jsx'),
   
+  // mini-shop-line-total-advance solutions
+  'mini-shop-line-total-advance-controlled-useState': () => import('../tasks/mini-shop-line-total-advance/solutions/controlled-useState/App.jsx'),
+  
   // parking-meter solutions
   'parking-meter-controlled-useState': () => import('../tasks/parking-meter/solutions/controlled-useState/App.jsx'),
+  
+  // parking-meter-advance solutions
+  'parking-meter-advance-controlled-useState': () => import('../tasks/parking-meter-advance/solutions/controlled-useState/App.jsx'),
   
   // appointment-picker solutions
   'appointment-picker-controlled-useState': () => import('../tasks/appointment-picker/solutions/controlled-useState/App.jsx'),
@@ -97,6 +115,39 @@ const solutionComponents = {
   
   // visual-bar-list solutions
   'visual-bar-list-controlled-useState': () => import('../tasks/visual-bar-list/solutions/controlled-useState/App.jsx'),
+  
+  // appointment-picker-advance solutions
+  'appointment-picker-advance-controlled-useState': () => import('../tasks/appointment-picker-advance/solutions/controlled-useState/App.jsx'),
+  
+  // feedback-form-counter-advance solutions
+  'feedback-form-counter-advance-controlled-useState': () => import('../tasks/feedback-form-counter-advance/solutions/controlled-useState/App.jsx'),
+  
+  // searchable-list-advance solutions
+  'searchable-list-advance-controlled-useState': () => import('../tasks/searchable-list-advance/solutions/controlled-useState/App.jsx'),
+  
+  // tabs-nav-pills-advance solutions
+  'tabs-nav-pills-advance-controlled-useState': () => import('../tasks/tabs-nav-pills-advance/solutions/controlled-useState/App.jsx'),
+  
+  // faq-accordion-advance solutions
+  'faq-accordion-advance-controlled-useState': () => import('../tasks/faq-accordion-advance/solutions/controlled-useState/App.jsx'),
+  
+  // stopwatch-advance solutions
+  'stopwatch-advance-controlled-useState': () => import('../tasks/stopwatch-advance/solutions/controlled-useState/App.jsx'),
+  
+  // todo-with-priority-advance solutions
+  'todo-with-priority-advance-controlled-useState': () => import('../tasks/todo-with-priority-advance/solutions/controlled-useState/App.jsx'),
+  
+  // star-rating-widget-advance solutions
+  'star-rating-widget-advance-controlled-useState': () => import('../tasks/star-rating-widget-advance/solutions/controlled-useState/App.jsx'),
+  
+  // pagination-demo-advance solutions
+  'pagination-demo-advance-controlled-useState': () => import('../tasks/pagination-demo-advance/solutions/controlled-useState/App.jsx'),
+  
+  // sortable-table-advance solutions
+  'sortable-table-advance-controlled-useState': () => import('../tasks/sortable-table-advance/solutions/controlled-useState/App.jsx'),
+  
+  // dependent-dropdowns-advance solutions
+  'dependent-dropdowns-advance-controlled-useState': () => import('../tasks/dependent-dropdowns-advance/solutions/controlled-useState/App.jsx'),
 };
 
 // Function to get the dynamic import for a specific task and solution

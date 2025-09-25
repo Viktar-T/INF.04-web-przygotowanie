@@ -1,5 +1,3 @@
-
-
 Analyze the structure of **`web-app\public\tasks\2022-02-22-06`** and all files inside.
 
 Implement a **similar folder structure** and create both **`problem.md`** and **`App.js`** for:
@@ -25,6 +23,4 @@ The **solution (`App.js`)** should implement the application.
 
 Do **not** include any “+20% Difficulty Option” in either the problem or the solution.
 
-==============
-
-Add web-app\public\tasks\movie-watchlist to my web-app
+==========================

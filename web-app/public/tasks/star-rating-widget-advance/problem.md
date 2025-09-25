@@ -1,0 +1,238 @@
+# EGZAMIN ZAWODOWY — INF.04 (INF.04-STAR-RATING-WIDGET-ADVANCE)
+
+## Informacje ogólne
+
+- **Czas trwania sprawdzinu:** 45 minut
+
+---
+
+## Część II. Aplikacja Web
+
+Wykonaj aplikację internetową typu front-end obsługującą widget oceniania gwiazdkami z zaawansowanymi funkcjami (+20% trudności) z zastosowaniem dostępnego na stanowisku egzaminacyjnym frameworka Angular lub biblioteki React. Zastosuj bibliotekę Bootstrap do zdefiniowania stylu aplikacji.
+
+---
+
+### Obraz referencyjny
+
+**Obraz 1b. Aplikacja React.js - Widget oceniania gwiazdkami (wersja zaawansowana)**
+![Obraz 1b](img/star-rating-advance-preview.png)
+
+Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po kliknięciu na gwiazdkę, wyświetleniu oceny w konsoli przeglądarki i użyciu przycisku "Wyczyść ocenę".
+W konsoli widoczne jest wyświetlenie komunikatu o wybranej ocenie i wyczyszczeniu.
+
+---
+
+### Założenia aplikacji
+
+- Aplikacja składa się z jednego komponentu.
+- Danymi komponentu są: aktualna ocena, tymczasowa ocena podczas najechania myszką, historia ocen. Dla uproszczenia dane mogą być zdefiniowane jako stan komponentu. Należy założyć, że struktura danych w przyszłości może się zmienić, co będzie miało wpływ na zachowanie i wygląd aplikacji.
+- Komponent wyświetla:
+  - Nagłówek drugiego stopnia o treści: „Widget oceniania gwiazdkami"
+  - Instrukcje użytkowania
+  - Widget z pięcioma gwiazdkami (1-5)
+  - Etykietę z aktualną oceną liczbową
+  - Przycisk "Wyczyść ocenę"
+  - Historię ocen
+  - Informację o obsłudze klawiatury
+- Aplikacja w stanie początkowym wyświetla pięć pustych gwiazdek i ocenę "0"
+- Elementy interfejsu są formatowane zgodnie z obrazem 1b za pomocą stylów biblioteki Bootstrap. Do budowy szablonu HTML należy wykorzystać pomoc zamieszczoną w Tabeli 1. Należy zastosować znaczące nazwy dla identyfikatorów elementów
+- Po najechaniu myszką na gwiazdkę jest generowane zdarzenie, które:
+  - Ustawia tymczasową ocenę (preview) bez zapisywania
+  - Podświetla gwiazdki od 1 do aktualnej pozycji myszy
+  - Nie wpływa na zapisaną ocenę
+- Po kliknięciu na gwiazdkę jest generowane zdarzenie, które:
+  - Ustawia aktualną ocenę na wybraną wartość (1-5)
+  - Wyświetla w konsoli przeglądarki komunikat w formacie: `"Ocena: N"` gdzie N to wartość oceny
+  - Aktualizuje etykietę z oceną liczbową
+- Po najechaniu myszką poza widget jest generowane zdarzenie, które:
+  - Resetuje tymczasową ocenę do aktualnej zapisanej oceny
+  - Usuwa podświetlenie preview
+- Obsługa klawiatury:
+  - Strzałki w lewo/prawo: zmiana oceny o 1 w odpowiednim kierunku
+  - Enter: potwierdzenie aktualnej oceny
+  - Escape: reset oceny do 0
+- Gwiazdki są dostępne (ARIA) z odpowiednimi rolami i etykietami
+
+### Funkcje zaawansowane (+20% trudności)
+
+- **Przycisk "Wyczyść ocenę"** - umożliwia wyczyszczenie oceny i loguje `"Ocena: 0"`
+- **Historia ocen** - śledzenie wszystkich zmian ocen z czasem
+- **Persystencja danych** - zapisywanie oceny i historii w `localStorage` i ładowanie przy starcie aplikacji
+- **Reset historii** - możliwość wyczyszczenia historii ocen
+
+- Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy stosować znaczące nazwy zmiennych i funkcji
+- Dokumentacja do programu wykonana zgodnie z wytycznymi z części III zadania egzaminacyjnego. Kod aplikacji przygotuj do nagrania na płytę. W podfolderze web powinno znaleźć się archiwum całego projektu o nazwie web.zip oraz pliki z kodem źródłowym, które były modyfikowane.
+
+---
+
+## Część III. Testy utworzonych aplikacji
+
+Wykonaj testy aplikacji konsolowej oraz dokumentację do aplikacji utworzonych na egzaminie.
+
+W podfolderze konsola w programie głównym aplikacji konsolowej należy sprawdzić działanie klasy poprzez, kolejno:
+
+- Wyświetlenie komunikatu „Liczba zarejestrowanych osób to ", gdzie jest wartością pobraną z pola statycznego klasy.
+- Utworzenie obiektu za pomocą konstruktora bezparametrowego.
+- Utworzenie obiektu za pomocą konstruktora z dwoma parametrami. Dane obiektu wprowadzane z klawiatury.
+- Utworzenie obiektu za pomocą konstruktora kopiującego (w Python konstruktora bezparametrowego i metody kopiującej). Obiekt z wypełnionymi polami jest źródłem kopiowania danych.
+- Wywołanie metody do wypisania imienia z parametrem wejściowym równym „Jan" dla wszystkich utworzonych obiektów.
+- Ponowne wyświetlenie komunikatu „Liczba zarejestrowanych osób to ", gdzie jest wartością pobraną z pola statycznego klasy
+
+Wykonaj zrzuty ekranu dokumentujące uruchomienie aplikacji utworzonych podczas egzaminu. Zrzuty powinny obejmować cały obszar ekranu monitora z widocznym paskiem zadań. Jeżeli aplikacja uruchamia się, na zrzucie należy umieścić okno z wynikiem działania programu oraz otwarte środowisko programistyczne z projektem lub okno terminala z kompilacją projektu. Jeżeli aplikacja nie uruchamia się z powodu błędów kompilacji, należy na zrzucie umieścić okno ze spisem błędów i widocznym otwartym środowiskiem programistycznym. Wykonać należy tyle zrzutów ile interakcji podejmuje aplikacja.
+
+**Wymagane zrzuty ekranu:**
+- Aplikacja konsolowa – dowolna liczba zrzutów nazwanych konsola1, konsola2 ...
+- Aplikacja web – dowolna liczba zrzutów nazwanych web1, web2 ... (np. stan początkowy, po najechaniu myszką na 3. gwiazdkę, po kliknięciu na 4. gwiazdkę, po użyciu klawiatury do zmiany oceny, po kliknięciu "Wyczyść ocenę", stan konsoli przeglądarki z wyświetlonymi komunikatami, test funkcji zaawansowanych)
+
+W edytorze tekstu pakietu biurowego utwórz plik z dokumentacją i nazwij go egzamin. Dokument powinien zawierać informacje:
+
+- Nazwę systemu operacyjnego, na którym pracował zdający
+- Nazwy środowisk programistycznych, z którymi zdający korzystał na egzaminie
+- Nazwy języków programowania / frameworków / bibliotek użytych podczas tworzenia aplikacji
+
+Zrzuty ekranu i dokument umieść w folderze o nazwie testy.
+
+**UWAGA:** Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować podfoldery: konsola, testy, web. W folderze konsola: spakowany cały projekt aplikacji konsolowej, pliki z kodem źródłowym, opcjonalnie plik uruchomieniowy. W folderze testy: pliki ze zrzutami oraz plik egzamin. W folderze web: spakowany cały projekt aplikacji web, pliki modyfikowane przez zdającego. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim numerem i pozostaw na stanowisku, zapakowaną w pudełku wraz z arkuszem egzaminacyjnym.
+
+**Czas przeznaczony na wykonanie zadania:** 180 minut
+
+**Ocenie będą podlegać 4 rezultaty:**
+- implementacja, kompilacja, uruchomienie programu
+- aplikacja konsolowa
+- aplikacja web
+- testy aplikacji
+
+---
+
+## Tabela 1. Wybrane elementy frameworka Angular, biblioteki React.js i biblioteki Bootstrap - przykłady
+
+### Angular
+
+To use ngModel i ngForm add: import { FormsModule } from '@angular/forms'; in app.module.ts file. Add FormsModule to imports table
+
+To use Bootstrap add to styles.css: @import "~bootstrap/dist/css/bootstrap.css";
+
+### React.js
+
+To use Bootstrap add: import 'bootstrap/dist/css/bootstrap.css';
+
+### Bootstrap Forms
+
+(Źródło https://getbootstrap.com/docs/4.0/components/forms/)
+
+Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.
+
+Textual form controls—like inputs, selects, and textareas—are styled with the .form-control class. Included are styles for general appearance, focus state, sizing, and more.
+
+```html
+<form> 
+  <div class="form-group"> 
+    <label for="exampleInputEmail1">Email address</label> 
+    <input type="email" class="form-control" id="exampleInputEmail1" /> 
+  </div> 
+  <div class="form-group">   
+    <label for="exampleText">Text</label>
+    <input type="text" class="form-control" id="exampleText" />
+  </div>
+</form>
+```
+
+**Important!** In React render method use className instead of class; htmlFor instead of for.
+
+### Bootstrap Radio Buttons
+
+(Źródło https://getbootstrap.com/docs/4.0/components/forms/)
+
+Radio buttons are used when you want to limit the user to just one choice from the list of preset options.
+
+```html
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Second default radio
+  </label>
+</div>
+```
+
+### Bootstrap Cards
+
+(Źródło https://getbootstrap.com/docs/4.0/components/card/)
+
+A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+
+```html
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <button class="btn btn-primary">Go somewhere</button>
+  </div>
+</div>
+```
+
+### Bootstrap Badges
+
+(Źródło https://getbootstrap.com/docs/4.0/components/badge/)
+
+Badges are small and simple components for displaying an indicator or count. They're commonly used in email clients like Outlook, or messaging clients like Slack for displaying unread message counts.
+
+```html
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+```
+
+### Bootstrap Buttons
+
+(Źródło https://getbootstrap.com/docs/4.0/components/buttons/)
+
+Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control. The btn classes are designed to be used with the `<button>` element. Add modifier classes as: btn-primary, btn-secondary, btn-success and more to btn class in order to add background colors.
+
+e.g. `<button type="button" class="btn btn-success">Success</button>`
+
+### Bootstrap Alerts
+
+(Źródło https://getbootstrap.com/docs/4.0/components/alerts/)
+
+Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight required contextual classes (e.g., .alert-success). For inline dismissal, use the alerts JavaScript plugin.
+
+```html
+<div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  This is a secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  This is a danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  This is a warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  This is an info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  This is a light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  This is a dark alert—check it out!
+</div>
+```
