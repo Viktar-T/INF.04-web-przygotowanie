@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { useState } from 'react'
 
 function App() {
-  const [courses, setCourses] = useState([
+  const [courses] = useState([
     'Programowanie w C#',
     'Angular dla początkujących',
     'Kurs Django',

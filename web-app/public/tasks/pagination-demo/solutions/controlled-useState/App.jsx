@@ -272,9 +272,9 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Wszystkie zmiany są logowane w formacie:
             <br />
-            <code className="ml-1">"Strona: {n}"</code> - przy zmianie strony
+            <code className="ml-1">"Strona: {currentPage}"</code> - przy zmianie strony
             <br />
-            <code className="ml-1">"Rozmiar: {k}"</code> - przy zmianie rozmiaru strony
+            <code className="ml-1">"Rozmiar: {pageSize}"</code> - przy zmianie rozmiaru strony
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

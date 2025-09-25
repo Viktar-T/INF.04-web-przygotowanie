@@ -218,7 +218,7 @@ function App() {
                 <div className="cities-list">
                   <small className="text-muted">Miasta:</small>
                   <div className="mt-1">
-                    {countryInfo.cities.map((city, index) => (
+                    {countryInfo.cities.map((city) => (
                       <span key={city} className="badge badge-light mr-1 mb-1">
                         {city}
                       </span>

@@ -128,7 +128,7 @@ function App() {
                     </tr>
                   </thead>
                   <tbody>
-                    {sortedData.map((item, index) => (
+                    {sortedData.map((item) => (
                       <tr key={`${item.name}-${item.score}`}>
                         <td>
                           <strong>{item.name}</strong>
@@ -259,7 +259,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Wszystkie zmiany sortowania są logowane w formacie:
             <br />
-            <code className="ml-1">"Sort: field={kolumna} dir={kierunek}"</code>
+            <code className="ml-1">"Sort: field={sortField} dir={sortDirection}"</code>
             <br />
             gdzie kolumna to "name" lub "score", kierunek to "asc" lub "desc".
             <br />

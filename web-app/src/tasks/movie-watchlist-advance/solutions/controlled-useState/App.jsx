@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { useState } from 'react'
 
 function App() {
-  const [genres, setGenres] = useState([
+  const [genres] = useState([
     'Dramat',
     'Komedia',
     'Akcja',

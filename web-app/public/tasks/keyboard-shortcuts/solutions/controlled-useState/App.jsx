@@ -42,7 +42,7 @@ function App() {
   // Handle keyboard events
   const handleKeyDown = (event) => {
     switch (event.key) {
-      case 'Enter':
+      case 'Enter': {
         event.preventDefault()
         const trimmedValue = inputValue.trim()
         if (trimmedValue) {
@@ -51,6 +51,7 @@ function App() {
           setLastAction('Dodano za pomocą Enter')
         }
         break
+      }
         
       case 'Escape':
         event.preventDefault()
@@ -238,7 +239,7 @@ function App() {
                   <h5 className="text-success">
                     {items.filter(item => item.text.length > 10).length}
                   </h5>
-                  <small className="text-muted">Długie (>10 znaków)</small>
+                  <small className="text-muted">Długie (&gt;10 znaków)</small>
                 </div>
                 <div className="col-4">
                   <h5 className="text-info">

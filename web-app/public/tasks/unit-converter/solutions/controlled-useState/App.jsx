@@ -261,21 +261,21 @@ function App() {
                 <div className="col-6">
                   <h6 className="text-primary">Celsjusz</h6>
                   <ul className="list-unstyled small">
-                    <li>< 0°C - Mróz</li>
+                    <li>&lt; 0°C - Mróz</li>
                     <li>0-10°C - Zimno</li>
                     <li>10-20°C - Chłodno</li>
                     <li>20-30°C - Ciepło</li>
-                    <li>> 30°C - Gorąco</li>
+                    <li>&gt; 30°C - Gorąco</li>
                   </ul>
                 </div>
                 <div className="col-6">
                   <h6 className="text-warning">Fahrenheit</h6>
                   <ul className="list-unstyled small">
-                    <li>< 32°F - Mróz</li>
+                    <li>&lt; 32°F - Mróz</li>
                     <li>32-50°F - Zimno</li>
                     <li>50-68°F - Chłodno</li>
                     <li>68-86°F - Ciepło</li>
-                    <li>> 86°F - Gorąco</li>
+                    <li>&gt; 86°F - Gorąco</li>
                   </ul>
                 </div>
               </div>

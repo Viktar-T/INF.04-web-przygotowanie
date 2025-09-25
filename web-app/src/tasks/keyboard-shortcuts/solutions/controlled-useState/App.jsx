@@ -42,7 +42,7 @@ function App() {
   // Handle keyboard events
   const handleKeyDown = (event) => {
     switch (event.key) {
-      case 'Enter':
+      case 'Enter': {
         event.preventDefault()
         const trimmedValue = inputValue.trim()
         if (trimmedValue) {
@@ -51,6 +51,7 @@ function App() {
           setLastAction('Dodano za pomocą Enter')
         }
         break
+      }
         
       case 'Escape':
         event.preventDefault()

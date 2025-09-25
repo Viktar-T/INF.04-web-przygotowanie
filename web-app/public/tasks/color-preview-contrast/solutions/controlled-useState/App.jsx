@@ -228,7 +228,7 @@ function App() {
                     </tr>
                     <tr className={parseFloat(contrastInfo.contrast) >= 3 ? 'table-warning' : 'table-danger'}>
                       <td>Nieodpowiedni</td>
-                      <td>< 3.0</td>
+                      <td>&lt; 3.0</td>
                       <td>Niewystarczający</td>
                     </tr>
                   </tbody>
@@ -277,7 +277,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Każda zmiana koloru tła jest logowana w formacie:
             <br />
-            <code className="ml-1">"Kontrast: {wartość} - {status}"</code>
+            <code className="ml-1">"Kontrast: {contrastInfo.contrast} - {contrastInfo.status}"</code>
             <br />
             gdzie wartość to współczynnik kontrastu, status to "OK" lub "Niski kontrast".
             <br />
