@@ -34,16 +34,7 @@ export const WEEK_NAMES = {
   19: 'W19',
   20: 'W20',
   21: 'W21-sp',
-  22: 'W22',
-  23: 'W23',
-  24: 'W24-sp',
-  25: 'W25',
-  26: 'W26',
-  27: 'W27-sp',
-  28: 'W28',
-  29: 'W29',
-  30: 'W30-sp',
-  31: 'W31'
+
 };
 
 // Function to get week name by number (with fallback to W{number} format)
