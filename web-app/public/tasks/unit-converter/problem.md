@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą konwerter jednoste
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js**
-![Obraz 1b](img/unit-converter-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wprowadzeniu wartości w stopniach Celsjusza i automatycznym przeliczeniu na Fahrenheita.
-W konsoli widoczne jest wyświetlenie komunikatu o konwersji.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

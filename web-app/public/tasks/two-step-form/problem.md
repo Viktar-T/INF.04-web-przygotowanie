@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą dwuetapowy formula
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js**
-![Obraz 1b](img/two-step-form-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po ukończeniu drugiego kroku formularza.
-W konsoli widoczne jest wyświetlenie komunikatu z połączonymi danymi z obu kroków.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 
