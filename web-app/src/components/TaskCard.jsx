@@ -13,6 +13,10 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
   // Get current solution for navigation
   const currentSolution = selectedSolution || task.solutions[0]?.solutionType;
 
+  // Check if this week has "sp" designation (should hide Code button)
+  const weekName = getWeekName(task.weekNumber);
+  const isSpWeek = weekName.includes('sp');
+
   return (
     <div className="card h-100 border-0 shadow-sm">
       <div className="card-body d-flex flex-column">
@@ -84,13 +88,15 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
               >
                 🚀 App
               </Link>
-              <Link
-                to={`/code/${task.taskId}/${currentSolution}`}
-                className="btn btn-success btn-sm flex-fill"
-                aria-label={`View code for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
-              >
-                💻 Code
-              </Link>
+              {!isSpWeek && (
+                <Link
+                  to={`/code/${task.taskId}/${currentSolution}`}
+                  className="btn btn-success btn-sm flex-fill"
+                  aria-label={`View code for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
+                >
+                  💻 Code
+                </Link>
+              )}
             </div>
           </div>
         </div>
