@@ -12,12 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą planowanie diety z
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1. Aplikacja React.js**
-![Obraz 1](img/image.png)
-
-Na obrazie przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po dodaniu kilku posiłków do planu diety.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

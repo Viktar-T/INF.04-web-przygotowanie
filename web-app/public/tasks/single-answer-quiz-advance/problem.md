@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą quiz z jedną odpo
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Quiz (wersja zaawansowana)**
-![Obraz 1b](img/quiz-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wybraniu odpowiedzi i naciśnięciu przycisku "Sprawdź" z licznikiem prób.
-W konsoli widoczne jest wyświetlenie komunikatu "Poprawna" lub "Błędna" na podstawie wybranej odpowiedzi.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

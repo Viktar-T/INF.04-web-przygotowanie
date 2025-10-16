@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą stoper z funkcją 
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Stoper (wersja zaawansowana)**
-![Obraz 1b](img/stopwatch-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po uruchomieniu stopera i zapisaniu kilku okrążeń z historią sesji.
-W konsoli widoczne jest wyświetlenie tablicy z czasami okrążeń.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą wyszukiwanie w li�
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Wyszukiwarka nazwisk (wersja zaawansowana)**
-![Obraz 1b](img/searchable-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wprowadzeniu frazy wyszukiwania z podświetlonymi dopasowaniami.
-W konsoli widoczne jest wyświetlenie liczby znalezionych wyników po każdej zmianie wyszukiwania.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

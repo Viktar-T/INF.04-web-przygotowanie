@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą zapisy na kursy z 
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Lista kursów z limitem miejsc (wersja zaawansowana)**
-![Obraz 1b](img/course-waitlist-advance.png)
-
-Na obrazie przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wybraniu przycisku „Zapisz" dla kursu z dostępnymi miejscami.
-W konsoli widoczne jest wyświetlenie imienia i nazwiska oraz nazwy kursu na podstawie danych wprowadzonych do formularza.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

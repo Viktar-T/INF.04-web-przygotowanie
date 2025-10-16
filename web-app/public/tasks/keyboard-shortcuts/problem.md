@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą skróty klawiaturo
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js**
-![Obraz 1b](img/keyboard-shortcuts-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po dodaniu elementu za pomocą skrótu klawiaturowego Enter.
-W konsoli widoczne jest wyświetlenie komunikatu o użytym skrócie.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

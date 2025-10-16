@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą mini sklep z oblic
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Mini Sklep (wersja zaawansowana)**
-![Obraz 1b](img/shop-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po dodaniu kilku pozycji do koszyka z historią transakcji.
-W konsoli widoczne jest wyświetlenie szczegółów każdej dodanej pozycji wraz z obliczoną sumą.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

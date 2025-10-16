@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą listę filmów do 
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Lista filmów do obejrzenia (wersja zaawansowana)**
-![Obraz 1b](img/movie-watchlist-advance.png)
-
-Na obrazie przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wybraniu przycisku „Dodaj" dla nowego filmu.
-W konsoli widoczne jest wyświetlenie obiektu z danymi filmu na podstawie danych wprowadzonych do formularza.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

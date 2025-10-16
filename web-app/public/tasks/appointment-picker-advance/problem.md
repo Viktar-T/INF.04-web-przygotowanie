@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą rezerwację termin
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Rezerwacja terminów (wersja zaawansowana)**
-![Obraz 1b](img/appointment-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wprowadzeniu danych i naciśnięciu przycisku "Zarezerwuj termin" z historią rezerwacji.
-W konsoli widoczne jest wyświetlenie danych rezerwacji wraz z datą i godziną w formacie ISO.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

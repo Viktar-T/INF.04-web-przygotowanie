@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą akordeon z pytania
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Akordeon FAQ (wersja zaawansowana)**
-![Obraz 1b](img/faq-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po otwarciu drugiego pytania w akordeonie z przyciskami "Otwórz wszystkie" i "Zamknij wszystkie".
-W konsoli widoczne jest wyświetlenie komunikatów o otwieraniu i zamykaniu paneli akordeonu.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

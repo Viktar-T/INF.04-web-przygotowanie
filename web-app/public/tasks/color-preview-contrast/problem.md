@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą podgląd kolorów 
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js**
-![Obraz 1b](img/color-preview-contrast-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wybraniu koloru tła i wprowadzeniu tekstu z wyświetleniem wskaźnika kontrastu.
-W konsoli widoczne jest wyświetlenie komunikatu o kontraście.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

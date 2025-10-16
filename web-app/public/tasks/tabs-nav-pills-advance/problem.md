@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą nawigację za pomo
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Nawigacja zakładek (wersja zaawansowana)**
-![Obraz 1b](img/tabs-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wybraniu zakładki "Lista" z historią nawigacji.
-W konsoli widoczne jest wyświetlenie nazwy aktywnej zakładki po każdej zmianie.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 

@@ -12,13 +12,9 @@ Wykonaj aplikację internetową typu front-end obsługującą kalkulator opłat 
 
 ---
 
-### Obraz referencyjny
+### Aplikacja referencyjna
 
-**Obraz 1b. Aplikacja React.js - Kalkulator opłat parkingowych (wersja zaawansowana)**
-![Obraz 1b](img/parking-advance-preview.png)
-
-Na obrazie 1b przedstawiono działanie aplikacji przygotowanej w środowisku React.js, stan po wprowadzeniu liczby minut i naciśnięciu przycisku "Oblicz" z historią obliczeń.
-W konsoli widoczne jest wyświetlenie szczegółów obliczenia opłaty parkingowej.
+Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
 
 ---
 
