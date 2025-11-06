@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { tasks } from '../data/tasks.index';
 import MarkdownRenderer from '../components/MarkdownRenderer';
+import { getWeekName } from '../data/filters';
 
 const TaskDescriptionPage = () => {
   const { taskId } = useParams();
@@ -163,12 +164,14 @@ const TaskDescriptionPage = () => {
                     >
                       View App ({solution.label})
                     </Link>
-                    <Link 
-                      to={`/code/${taskId}/${solution.solutionType}`}
-                      className="btn btn-success btn-sm"
-                    >
-                      View Code ({solution.label})
-                    </Link>
+                    {!getWeekName(task.weekNumber).endsWith('-sp') && (
+                      <Link 
+                        to={`/code/${taskId}/${solution.solutionType}`}
+                        className="btn btn-success btn-sm"
+                      >
+                        View Code ({solution.label})
+                      </Link>
+                    )}
                   </React.Fragment>
                 ))}
               </div>

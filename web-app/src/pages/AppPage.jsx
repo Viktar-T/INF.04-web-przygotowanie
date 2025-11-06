@@ -3,6 +3,7 @@ import React, { useState, useEffect, Suspense, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { tasks } from '../data/tasks.index';
 import { getSolutionComponent, hasSolutionComponent } from '../data/solutionComponents';
+import { getWeekName } from '../data/filters';
 
 const AppPage = () => {
   const { taskId, solutionType } = useParams();
@@ -194,12 +195,14 @@ const AppPage = () => {
               >
                 ← Task Description
               </Link>
-              <Link 
-                to={`/code/${taskId}/${solutionType}`}
-                className="btn btn-outline-success btn-sm"
-              >
-                View Code
-              </Link>
+              {!getWeekName(task.weekNumber).endsWith('-sp') && (
+                <Link 
+                  to={`/code/${taskId}/${solutionType}`}
+                  className="btn btn-outline-success btn-sm"
+                >
+                  View Code
+                </Link>
+              )}
             </div>
           </div>
         </div>
