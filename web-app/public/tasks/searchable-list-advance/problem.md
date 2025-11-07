@@ -8,7 +8,7 @@
 
 ## Część II. Aplikacja Web
 
-Wykonaj aplikację internetową typu front-end obsługującą wyszukiwanie w liście nazwisk z zaawansowanymi funkcjami (+20% trudności) z zastosowaniem dostępnego na stanowisku egzaminacyjnym frameworka Angular lub biblioteki React. Zastosuj bibliotekę Bootstrap do zdefiniowania stylu aplikacji.
+Wykonaj aplikację internetową typu front-end obsługującą wyszukiwanie w liście nazwisk z zastosowaniem dostępnego na stanowisku egzaminacyjnym frameworka Angular lub biblioteki React. Zastosuj bibliotekę Bootstrap do zdefiniowania stylu aplikacji.
 
 ---
 
@@ -28,7 +28,7 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
   - Wskaźnik liczby wyników o treści „Liczba wyników: N" (gdzie N to liczba znalezionych nazwisk)
   - Listę nazwisk wyświetlaną w formie numerowanej listy
 - Aplikacja w stanie początkowym wyświetla puste pole wyszukiwania i wszystkie nazwiska z tablicy
-- Elementy interfejsu są formatowane zgodnie z obrazem 1b za pomocą stylów biblioteki Bootstrap. Do budowy szablonu HTML należy wykorzystać pomoc zamieszczoną w Tabeli 1. Należy zastosować znaczące nazwy dla identyfikatorów elementów
+- Elementy interfejsu są formatowane zgodnie z Aplikacją referencyjną za pomocą stylów biblioteki Bootstrap. Do budowy szablonu HTML należy wykorzystać pomoc zamieszczoną w Tabeli 1. Należy zastosować znaczące nazwy dla identyfikatorów elementów
 - Po wprowadzeniu tekstu w pole wyszukiwania jest generowane zdarzenie, które:
   - Filtruje listę nazwisk na podstawie wprowadzonego tekstu (wyszukiwanie bez uwzględniania wielkości liter)
   - Wyświetla w konsoli przeglądarki liczbę znalezionych wyników po każdej zmianie
@@ -38,9 +38,7 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 
 ### Funkcje zaawansowane (+20% trudności)
 
-- **Podświetlanie dopasowań** - dopasowane fragmenty nazwisk są podświetlone wizualnie
 - **Historia wyszukiwań** - śledzenie wszystkich wykonywanych wyszukiwań z czasem
-- **Persystencja danych** - zapisywanie historii wyszukiwań w `localStorage` i ładowanie przy starcie aplikacji
 - **Reset historii** - możliwość wyczyszczenia historii wyszukiwań
 
 - Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy stosować znaczące nazwy zmiennych i funkcji
@@ -48,23 +46,13 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 
 ---
 
-## Część III. Testy utworzonych aplikacji
+## Część III. Testy utworzonej aplikacji
 
-Wykonaj testy aplikacji konsolowej oraz dokumentację do aplikacji utworzonych na egzaminie.
+Wykonaj testy aplikacji web oraz dokumentację do aplikacji utworzonej na egzaminie.
 
-W podfolderze konsola w programie głównym aplikacji konsolowej należy sprawdzić działanie klasy poprzez, kolejno:
-
-- Wyświetlenie komunikatu „Liczba zarejestrowanych osób to ", gdzie jest wartością pobraną z pola statycznego klasy.
-- Utworzenie obiektu za pomocą konstruktora bezparametrowego.
-- Utworzenie obiektu za pomocą konstruktora z dwoma parametrami. Dane obiektu wprowadzane z klawiatury.
-- Utworzenie obiektu za pomocą konstruktora kopiującego (w Python konstruktora bezparametrowego i metody kopiującej). Obiekt z wypełnionymi polami jest źródłem kopiowania danych.
-- Wywołanie metody do wypisania imienia z parametrem wejściowym równym „Jan" dla wszystkich utworzonych obiektów.
-- Ponowne wyświetlenie komunikatu „Liczba zarejestrowanych osób to ", gdzie jest wartością pobraną z pola statycznego klasy
-
-Wykonaj zrzuty ekranu dokumentujące uruchomienie aplikacji utworzonych podczas egzaminu. Zrzuty powinny obejmować cały obszar ekranu monitora z widocznym paskiem zadań. Jeżeli aplikacja uruchamia się, na zrzucie należy umieścić okno z wynikiem działania programu oraz otwarte środowisko programistyczne z projektem lub okno terminala z kompilacją projektu. Jeżeli aplikacja nie uruchamia się z powodu błędów kompilacji, należy na zrzucie umieścić okno ze spisem błędów i widocznym otwartym środowiskiem programistycznym. Wykonać należy tyle zrzutów ile interakcji podejmuje aplikacja.
+Wykonaj zrzuty ekranu dokumentujące uruchomienie aplikacji utworzonej podczas egzaminu. Zrzuty powinny obejmować cały obszar ekranu monitora z widocznym paskiem zadań. Jeżeli aplikacja uruchamia się, na zrzucie należy umieścić okno z wynikiem działania programu oraz otwarte środowisko programistyczne z projektem lub okno terminala z kompilacją projektu. Jeżeli aplikacja nie uruchamia się z powodu błędów kompilacji, należy na zrzucie umieścić okno ze spisem błędów i widocznym otwartym środowiskiem programistycznym. Wykonać należy tyle zrzutów ile interakcji podejmuje aplikacja.
 
 **Wymagane zrzuty ekranu:**
-- Aplikacja konsolowa – dowolna liczba zrzutów nazwanych konsola1, konsola2 ...
 - Aplikacja web – dowolna liczba zrzutów nazwanych web1, web2 ... (np. stan początkowy, po wprowadzeniu frazy "Kowalski", po wprowadzeniu frazy "Anna", po wyczyszczeniu wyszukiwania, stan konsoli przeglądarki z wyświetlonymi komunikatami, test funkcji zaawansowanych)
 
 W edytorze tekstu pakietu biurowego utwórz plik z dokumentacją i nazwij go egzamin. Dokument powinien zawierać informacje:
@@ -75,13 +63,12 @@ W edytorze tekstu pakietu biurowego utwórz plik z dokumentacją i nazwij go egz
 
 Zrzuty ekranu i dokument umieść w folderze o nazwie testy.
 
-**UWAGA:** Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować podfoldery: konsola, testy, web. W folderze konsola: spakowany cały projekt aplikacji konsolowej, pliki z kodem źródłowym, opcjonalnie plik uruchomieniowy. W folderze testy: pliki ze zrzutami oraz plik egzamin. W folderze web: spakowany cały projekt aplikacji web, pliki modyfikowane przez zdającego. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim numerem i pozostaw na stanowisku, zapakowaną w pudełku wraz z arkuszem egzaminacyjnym.
+**UWAGA:** Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować podfoldery: testy, web. W folderze testy: pliki ze zrzutami oraz plik egzamin. W folderze web: spakowany cały projekt aplikacji web, pliki modyfikowane przez zdającego. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim numerem i pozostaw na stanowisku, zapakowaną w pudełku wraz z arkuszem egzaminacyjnym.
 
 **Czas przeznaczony na wykonanie zadania:** 180 minut
 
-**Ocenie będą podlegać 4 rezultaty:**
+**Ocenie będą podlegać 3 rezultaty:**
 - implementacja, kompilacja, uruchomienie programu
-- aplikacja konsolowa
 - aplikacja web
 - testy aplikacji
 

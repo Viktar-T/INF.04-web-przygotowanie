@@ -38,9 +38,9 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 
 ---
 
-## Część III. Testy utworzonych aplikacji
+## Część III. Testy utworzonej aplikacji
 
-Wykonaj testy aplikacji oraz dokumentację do aplikacji utworzonych na egzaminie.
+Wykonaj testy aplikacji web oraz dokumentację do aplikacji utworzonej na egzaminie.
 
 **Wymagane zrzuty ekranu:**
 - Aplikacja web – dowolna liczba zrzutów nazwanych web1, web2 ... (np. stan początkowy, po dodaniu książek, po usunięciu książki)
@@ -55,8 +55,7 @@ Zrzuty ekranu i dokument umieść w folderze o nazwie testy.
 
 **Czas przeznaczony na wykonanie zadania:** 180 minut
 
-**Ocenie będą podlegać 4 rezultaty:**
+**Ocenie będą podlegać 3 rezultaty:**
 - implementacja, kompilacja, uruchomienie programu
-- aplikacja konsolowa
 - aplikacja web
 - testy aplikacji

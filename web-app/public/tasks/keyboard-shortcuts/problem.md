@@ -73,13 +73,12 @@ W edytorze tekstu pakietu biurowego utwórz plik z dokumentacją i nazwij go egz
 
 Zrzuty ekranu i dokument umieść w folderze o nazwie testy.
 
-**UWAGA:** Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować podfoldery: konsola, testy, web. W folderze konsola: spakowany cały projekt aplikacji konsolowej, pliki z kodem źródłowym, opcjonalnie plik uruchomieniowy. W folderze testy: pliki ze zrzutami oraz plik egzamin. W folderze web: spakowany cały projekt aplikacji web, pliki modyfikowane przez zdającego. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim numerem i pozostaw na stanowisku, zapakowaną w pudełku wraz z arkuszem egzaminacyjnym.
+**UWAGA:** Nagraj płytę z rezultatami pracy. W folderze z numerem zdającego powinny się znajdować podfoldery: testy, web. W folderze testy: pliki ze zrzutami oraz plik egzamin. W folderze web: spakowany cały projekt aplikacji web, pliki modyfikowane przez zdającego. Po nagraniu płyty sprawdź poprawność nagrania. Opisz płytę swoim numerem i pozostaw na stanowisku, zapakowaną w pudełku wraz z arkuszem egzaminacyjnym.
 
 **Czas przeznaczony na wykonanie zadania:** 180 minut
 
-**Ocenie będą podlegać 4 rezultaty:**
+**Ocenie będą podlegać 3 rezultaty:**
 - implementacja, kompilacja, uruchomienie programu
-- aplikacja konsolowa
 - aplikacja web
 - testy aplikacji
 

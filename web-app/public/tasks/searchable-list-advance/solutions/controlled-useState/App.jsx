@@ -43,24 +43,6 @@ function App() {
   // State for search history
   const [searchHistory, setSearchHistory] = useState([])
 
-  // Load search history from localStorage on mount
-  useEffect(() => {
-    const savedHistory = localStorage.getItem('searchHistory')
-    if (savedHistory) {
-      try {
-        const history = JSON.parse(savedHistory)
-        setSearchHistory(history)
-      } catch (error) {
-        console.error('Error loading search history from localStorage:', error)
-      }
-    }
-  }, [])
-
-  // Save search history to localStorage whenever history changes
-  useEffect(() => {
-    localStorage.setItem('searchHistory', JSON.stringify(searchHistory))
-  }, [searchHistory])
-
   // Filter names based on search term
   const filterNames = (term) => {
     if (!term.trim()) {
@@ -72,23 +54,6 @@ function App() {
     )
   }
 
-  // Highlight matching text in names
-  const highlightMatch = (name, searchTerm) => {
-    if (!searchTerm.trim()) {
-      return name
-    }
-    
-    const regex = new RegExp(`(${searchTerm})`, 'gi')
-    const parts = name.split(regex)
-    
-    return parts.map((part, index) => {
-      if (regex.test(part)) {
-        return <mark key={index}>{part}</mark>
-      }
-      return part
-    })
-  }
-
   // Handle search input change
   const handleSearchChange = (event) => {
     const value = event.target.value
@@ -97,15 +62,32 @@ function App() {
     const filtered = filterNames(value)
     setFilteredNames(filtered)
     
-    // Add to search history if search term is not empty
+    // Add to search history if search term is not empty and different from last entry
     if (value.trim()) {
-      const historyRecord = {
-        id: Date.now(),
-        searchTerm: value.trim(),
-        resultCount: filtered.length,
-        timestamp: new Date().toLocaleString()
-      }
-      setSearchHistory(prev => [...prev, historyRecord])
+      setSearchHistory(prev => {
+        const lastEntry = prev[prev.length - 1]
+        // Only add if this is a new search term (not the same as last entry)
+        if (!lastEntry || lastEntry.searchTerm !== value.trim()) {
+          const historyRecord = {
+            id: Date.now(),
+            searchTerm: value.trim(),
+            resultCount: filtered.length,
+            timestamp: new Date().toLocaleString()
+          }
+          return [...prev, historyRecord]
+        }
+        // Update last entry if same search term but result count changed
+        if (lastEntry.resultCount !== filtered.length) {
+          const updatedHistory = [...prev]
+          updatedHistory[updatedHistory.length - 1] = {
+            ...lastEntry,
+            resultCount: filtered.length,
+            timestamp: new Date().toLocaleString()
+          }
+          return updatedHistory
+        }
+        return prev
+      })
     }
     
     // Log filtered length after each change
@@ -171,11 +153,6 @@ function App() {
               <div className="mt-3">
                 <div className="alert alert-info mb-0">
                   <strong>Liczba wyników: {filteredNames.length}</strong>
-                  {searchTerm && (
-                    <span className="ml-2">
-                      (wyszukiwanie: "{searchTerm}")
-                    </span>
-                  )}
                 </div>
               </div>
             </div>
@@ -184,45 +161,17 @@ function App() {
           {/* Names List */}
           <div className="card mb-4">
             <div className="card-header">
-              <h5 className="card-title mb-0">
-                Lista nazwisk
-                {searchTerm && (
-                  <small className="text-muted ml-2">
-                    - przefiltrowane wyniki
-                  </small>
-                )}
-              </h5>
+              <h5 className="card-title mb-0">Lista nazwisk</h5>
             </div>
             <div className="card-body">
               {filteredNames.length > 0 ? (
-                <div className="row">
-                  <div className="col-md-6">
-                    <ol className="list-group list-group-flush">
-                      {filteredNames.slice(0, Math.ceil(filteredNames.length / 2)).map((name, index) => (
-                        <li key={name} className="list-group-item d-flex justify-content-between align-items-center">
-                          <span>{highlightMatch(name, searchTerm)}</span>
-                          <span className="badge badge-primary badge-pill">
-                            {index + 1}
-                          </span>
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
-                  {filteredNames.length > 1 && (
-                    <div className="col-md-6">
-                      <ol className="list-group list-group-flush" start={Math.ceil(filteredNames.length / 2) + 1}>
-                        {filteredNames.slice(Math.ceil(filteredNames.length / 2)).map((name, index) => (
-                          <li key={name} className="list-group-item d-flex justify-content-between align-items-center">
-                            <span>{highlightMatch(name, searchTerm)}</span>
-                            <span className="badge badge-primary badge-pill">
-                              {Math.ceil(filteredNames.length / 2) + index + 1}
-                            </span>
-                          </li>
-                        ))}
-                      </ol>
-                    </div>
-                  )}
-                </div>
+                <ol className="list-group list-group-flush">
+                  {filteredNames.map((name, index) => (
+                    <li key={name} className="list-group-item">
+                      {name}
+                    </li>
+                  ))}
+                </ol>
               ) : (
                 <div className="text-center py-4">
                   <div className="alert alert-warning">
@@ -276,25 +225,6 @@ function App() {
               </div>
             </div>
           )}
-
-          {/* Instructions */}
-          <div className="card">
-            <div className="card-header">
-              <h6 className="card-title mb-0">Instrukcje</h6>
-            </div>
-            <div className="card-body">
-              <ul className="list-unstyled mb-0">
-                <li>• Wprowadź tekst w pole wyszukiwania aby przefiltrować listę</li>
-                <li>• Wyszukiwanie jest bez uwzględniania wielkości liter</li>
-                <li>• Dopasowane fragmenty są podświetlone wizualnie</li>
-                <li>• Liczba wyników aktualizuje się automatycznie</li>
-                <li>• Puste pole wyszukiwania pokazuje wszystkie nazwiska</li>
-                <li>• Użyj przycisku "Wyczyść" aby zresetować wyszukiwanie</li>
-                <li>• Sprawdź konsolę przeglądarki aby zobaczyć logi liczby wyników</li>
-                <li>• Historia wyszukiwań jest automatycznie zapisywana</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
