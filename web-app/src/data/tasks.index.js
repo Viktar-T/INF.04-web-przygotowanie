@@ -271,6 +271,21 @@ export const tasks = [
     ]
   },
   {
+    taskId: '2025-preegzam',
+    title: 'Product List with Search and Sort',
+    examCode: 'INF.04-PREEZGAM-2025',
+    year: 2025,
+    skillTags: ['arrays', 'filtering', 'sorting', 'state', 'bootstrap', 'console.log', 'search'],
+    complexityLevel: 'Level 2',
+    weekNumber: 8,
+    solutions: [
+      {
+        solutionType: 'controlled-useState',
+        label: 'Controlled form (useState)'
+      }
+    ]
+  },
+  {
     taskId: 'appointment-picker',
     title: 'Appointment Picker',
     examCode: 'INF.04-APPOINTMENT-PICKER',

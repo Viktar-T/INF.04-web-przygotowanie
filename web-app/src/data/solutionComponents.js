@@ -13,6 +13,9 @@ const solutionComponents = {
   // 2025-01-25-01 solutions
   '2025-01-25-01-gallery-basic': () => import('../tasks/2025-01-25-01/solutions/gallery-basic/App.jsx'),
   
+  // 2025-preegzam solutions
+  '2025-preegzam-controlled-useState': () => import('../tasks/2025-preegzam/solutions/controlled-useState/App.jsx'),
+  
   // book-management solutions
   'book-management-basic-book-management': () => import('../tasks/book-management/solutions/basic-book-management/App.jsx'),
   
