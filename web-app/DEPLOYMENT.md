@@ -63,10 +63,16 @@ Vercel provides excellent support for React applications with automatic deployme
    - Build Command: `npm run build`
    - Output Directory: `dist`
    - Install Command: `npm install`
-3. **Environment Variables** (if needed):
+   - Root Directory: `web-app` (if deploying from monorepo root)
+3. **SPA Routing Configuration**:
+
+   - The project includes `vercel.json` which configures Vercel to handle client-side routing
+   - This ensures all routes (e.g., `/task/:taskId`) are served correctly
+   - The configuration rewrites all requests to `index.html`, allowing React Router to handle routing
+4. **Environment Variables** (if needed):
 
    - Add any required environment variables in the Vercel dashboard
-4. **Deploy**:
+5. **Deploy**:
 
    - Click "Deploy"
    - Vercel will automatically build and deploy your application
@@ -273,6 +279,11 @@ Ensure your server is configured for single-page applications:
 
 - All routes should serve `index.html`
 - Configure fallback routing
+- **For Vercel**: The `vercel.json` file is included in the project and handles this automatically
+- If you're still experiencing 404 errors on Vercel:
+  - Verify that `vercel.json` exists in the `web-app` directory
+  - Ensure the Root Directory in Vercel settings points to `web-app` (if deploying from monorepo)
+  - Redeploy after adding or updating `vercel.json`
 
 #### Asset Loading Issues
 
