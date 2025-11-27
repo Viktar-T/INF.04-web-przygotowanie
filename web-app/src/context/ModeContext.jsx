@@ -11,7 +11,7 @@ export const useMode = () => {
   return context;
 };
 
-const TEACHER_PASSWORD = 'teacher123'; // Simple password - can be changed later
+const TEACHER_PASSWORD = 'TeacherViktar6512043'; // Simple password - can be changed later
 const EXAM_PASSWORD = 'Exam123'; // Exam mode password
 const MODE_STORAGE_KEY = 'app_mode';
 const AUTH_MODE_STORAGE_KEY = 'auth_mode'; // Stores which mode we're authenticating for
