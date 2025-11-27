@@ -12,12 +12,6 @@ Wykonaj aplikację internetową typu front-end obsługującą galerię obrazów 
 
 ---
 
-### Aplikacja referencyjna
-
-Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
-
----
-
 ### Założenia aplikacji
 
 - Aplikacja składa się z jednego komponentu.
@@ -32,6 +26,14 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
   - Przełącza stan aktywności chipa (aktywny/nieaktywny)
   - Filtruje obrazy wyświetlane w galerii na podstawie aktywnych kategorii
   - Wyświetla w konsoli przeglądarki tablicę identyfikatorów widocznych obrazów w formacie `[1, 5, 9]`
+
+---
+
+### Przykłady działania aplikacji
+
+Proszę zbadać działanie aplikacji na podstawie zrzutów ekranu. Jeśli jakaś część zadania nie jest zrozumiała, proszę budować rozwiązanie zgodnie z przykładami przedstawionymi w rozdziale Przykłady działania aplikacji.
+
+---
 
 ### Funkcje zaawansowane (+20% trudności)
 

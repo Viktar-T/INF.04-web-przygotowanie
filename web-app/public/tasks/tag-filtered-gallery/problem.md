@@ -12,12 +12,6 @@ Wykonaj aplikację internetową typu front-end obsługującą galerię obrazów 
 
 ---
 
-### Aplikacja referencyjna
-
-Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
-
----
-
 ### Założenia aplikacji
 
 - Aplikacja składa się z jednego komponentu.
@@ -34,6 +28,12 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
   - Wyświetla w konsoli przeglądarki tablicę identyfikatorów widocznych obrazów w formacie `[1, 5, 9]`
 - Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy stosować znaczące nazwy zmiennych i funkcji
 - Dokumentacja do programu wykonana zgodnie z wytycznymi z części III zadania egzaminacyjnego. Kod aplikacji przygotuj do nagrania na płytę. W podfolderze web powinno znaleźć się archiwum całego projektu o nazwie web.zip oraz pliki z kodem źródłowym, które były modyfikowane.
+
+---
+
+### Przykłady działania aplikacji
+
+Proszę zbadać działanie aplikacji na podstawie zrzutów ekranu. Jeśli jakaś część zadania nie jest zrozumiała, proszę budować rozwiązanie zgodnie z przykładami przedstawionymi w rozdziale Przykłady działania aplikacji.
 
 ---
 

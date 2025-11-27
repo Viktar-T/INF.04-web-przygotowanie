@@ -12,12 +12,6 @@ Wykonaj aplikację internetową typu front-end obsługującą wyszukiwanie w li�
 
 ---
 
-### Aplikacja referencyjna
-
-Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
-
----
-
 ### Założenia aplikacji
 
 - Aplikacja składa się z jednego komponentu.
@@ -37,6 +31,18 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 - Jeśli pole wyszukiwania jest puste, wyświetlane są wszystkie nazwiska
 - Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy stosować znaczące nazwy zmiennych i funkcji
 - Dokumentacja do programu wykonana zgodnie z wytycznymi z części III zadania egzaminacyjnego. Kod aplikacji przygotuj do nagrania na płytę. W podfolderze web powinno znaleźć się archiwum całego projektu o nazwie web.zip oraz pliki z kodem źródłowym, które były modyfikowane.
+
+---
+
+### Przykłady działania aplikacji
+
+Proszę zbadać działanie aplikacji na podstawie zrzutów ekranu. Jeśli jakaś część zadania nie jest zrozumiała, proszę budować rozwiązanie zgodnie z przykładami przedstawionymi w rozdziale Przykłady działania aplikacji.
+
+![Obraz 1](img/image-1.png)
+**Obraz 1. Przykład działania aplikacji**
+
+![Obraz 2](img/image-2.png)
+**Obraz 2. Przykład działania aplikacji**
 
 ---
 

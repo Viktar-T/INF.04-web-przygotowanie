@@ -12,12 +12,6 @@ Wykonaj aplikację internetową typu front-end obsługującą listę zadań z pr
 
 ---
 
-### Aplikacja referencyjna
-
-Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
-
----
-
 ### Założenia aplikacji
 
 - Aplikacja składa się z jednego komponentu.
@@ -42,6 +36,24 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 - Zadania są wyświetlane z numeracją, tekstem i oznaczeniem priorytetu (badge)
 - Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy stosować znaczące nazwy zmiennych i funkcji
 - Dokumentacja do programu wykonana zgodnie z wytycznymi z części III zadania egzaminacyjnego. Kod aplikacji przygotuj do nagrania na płytę. W podfolderze web powinno znaleźć się archiwum całego projektu o nazwie web.zip oraz pliki z kodem źródłowym, które były modyfikowane.
+
+---
+
+### Przykłady działania aplikacji
+
+Proszę zbadać działanie aplikacji na podstawie zrzutów ekranu. Jeśli jakaś część zadania nie jest zrozumiała, proszę budować rozwiązanie zgodnie z przykładami przedstawionymi w rozdziale Przykłady działania aplikacji.
+
+![Obraz 1](img/image-1.png)
+**Obraz 1. Przykład działania aplikacji**
+
+![Obraz 2](img/image-2.png)
+**Obraz 2. Przykład działania aplikacji**
+
+![Obraz 3](img/image-3.png)
+**Obraz 3. Przykład działania aplikacji**
+
+![Obraz 4](img/image-4.png)
+**Obraz 4. Przykład działania aplikacji**
 
 ---
 

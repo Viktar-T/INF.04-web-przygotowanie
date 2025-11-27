@@ -12,12 +12,6 @@ Wykonaj aplikację internetową typu front-end obsługującą nawigację za pomo
 
 ---
 
-### Aplikacja referencyjna
-
-Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zadania. Jeśli jakaś część zadania nie jest zrozumiała proszę zbadać aplikację referencyjną. Przy sprawdzaniu zadania nauczyciel sprawdza czy zbudowana przez ucznia aplikacja działa jak aplikacja referencyjna.
-
----
-
 ### Założenia aplikacji
 
 - Aplikacja składa się z jednego komponentu.
@@ -36,6 +30,23 @@ Proszę zbadać Aplikację referencyjną która zbudowana na podstawie tego zada
 - Zakładka "Info" zawiera podstawowe informacje o aplikacji
 - Zakładka "Lista" zawiera przykładową listę elementów
 - Zakładka "Ustawienia" zawiera formularz z podstawowymi ustawieniami
+
+---
+
+### Przykłady działania aplikacji
+
+Proszę zbadać działanie aplikacji na podstawie zrzutów ekranu. Jeśli jakaś część zadania nie jest zrozumiała, proszę budować rozwiązanie zgodnie z przykładami przedstawionymi w rozdziale Przykłady działania aplikacji.
+
+![Obraz 1](img/image-1.png)
+**Obraz 1. Przykład działania aplikacji**
+
+![Obraz 2](img/image-2.png)
+**Obraz 2. Przykład działania aplikacji**
+
+![Obraz 3](img/image-3.png)
+**Obraz 3. Przykład działania aplikacji**
+
+---
 
 ### Funkcje zaawansowane (+20% trudności)
 

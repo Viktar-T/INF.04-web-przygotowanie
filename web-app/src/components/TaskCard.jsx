@@ -13,7 +13,7 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
   // Get current solution for navigation
   const currentSolution = selectedSolution || task.solutions[0]?.solutionType;
 
-  // Check if this week has "sp" designation (should hide Code button)
+  // Check if this week has "sp" designation (should hide App and Code buttons)
   const weekName = getWeekName(task.weekNumber);
   const isSpWeek = weekName.includes('sp');
 
@@ -75,20 +75,20 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
           <div className="d-grid gap-2">
             <Link
               to={`/task/${task.taskId}`}
-              className="btn btn-outline-primary btn-sm"
+              className="btn btn-info btn-sm"
               aria-label={`View task description for ${task.title}`}
             >
               📋 Task Description
             </Link>
-            <div className="d-grid gap-2 d-md-flex">
-              <Link
-                to={`/app/${task.taskId}/${currentSolution}`}
-                className="btn btn-primary btn-sm flex-fill"
-                aria-label={`View app for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
-              >
-                🚀 App
-              </Link>
-              {!isSpWeek && (
+            {!isSpWeek && (
+              <div className="d-grid gap-2 d-md-flex">
+                <Link
+                  to={`/app/${task.taskId}/${currentSolution}`}
+                  className="btn btn-primary btn-sm flex-fill"
+                  aria-label={`View app for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
+                >
+                  🚀 App
+                </Link>
                 <Link
                   to={`/code/${task.taskId}/${currentSolution}`}
                   className="btn btn-success btn-sm flex-fill"
@@ -96,8 +96,8 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
                 >
                   💻 Code
                 </Link>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
