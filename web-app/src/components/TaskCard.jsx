@@ -3,8 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Badge from './Badge';
 import { getWeekName } from '../data/filters';
+import { useMode } from '../context/ModeContext';
 
 const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
+  const { isTeacher, isExam } = useMode();
+
   // Handle solution dropdown change
   const handleSolutionChange = (event) => {
     onSolutionChange(task.taskId, event.target.value);
@@ -14,8 +17,12 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
   const currentSolution = selectedSolution || task.solutions[0]?.solutionType;
 
   // Check if this week has "sp" designation (should hide App and Code buttons)
+  // In exam mode, only show Task Description button
+  // In teacher mode, always show all buttons regardless of sp week
+  // In student mode, show App/Code buttons only if NOT sp week
   const weekName = getWeekName(task.weekNumber);
   const isSpWeek = weekName.includes('sp');
+  const shouldShowAppCodeButtons = isExam ? false : (isTeacher ? true : !isSpWeek);
 
   return (
     <div className="card h-100 border-0 shadow-sm">
@@ -80,7 +87,7 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
             >
               📋 Task Description
             </Link>
-            {!isSpWeek && (
+            {shouldShowAppCodeButtons && (
               <div className="d-grid gap-2 d-md-flex">
                 <Link
                   to={`/app/${task.taskId}/${currentSolution}`}

@@ -3,16 +3,21 @@
 
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ModeProvider, useMode } from '../context/ModeContext';
 import Navigation from '../components/Navigation';
+import TeacherLogin from '../components/TeacherLogin';
 import HomePage from '../pages/HomePage';
 import TaskDescriptionPage from '../pages/TaskDescriptionPage';
 import AppPage from '../pages/AppPage';
 import CodePage from '../pages/CodePage';
 
 const AppLayout = () => {
+  const { isAuthenticating } = useMode();
+
   return (
     <>
       <Navigation />
+      {isAuthenticating && <TeacherLogin />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/task/:taskId" element={<TaskDescriptionPage />} />
@@ -26,7 +31,9 @@ const AppLayout = () => {
 const Router = () => {
   return (
     <BrowserRouter>
-      <AppLayout />
+      <ModeProvider>
+        <AppLayout />
+      </ModeProvider>
     </BrowserRouter>
   );
 };

@@ -3,8 +3,12 @@ import React, { useState, useMemo } from 'react';
 import FilterBar from '../components/FilterBar';
 import TaskCard from '../components/TaskCard';
 import { tasks } from '../data/tasks.index';
+import { useMode } from '../context/ModeContext';
+import { getWeekName } from '../data/filters';
 
 const HomePage = () => {
+  const { mode, isStudent, isExam } = useMode();
+
   // State management for filters and solution selections
   const [filters, setFilters] = useState({ 
     year: null, 
@@ -30,9 +34,25 @@ const HomePage = () => {
     }));
   };
 
-  // Filter and sort tasks based on current filters
+  // Filter and sort tasks based on current filters and mode
   const filteredTasks = useMemo(() => {
     let filtered = [...tasks];
+
+    // Apply mode-based filtering first
+    if (isStudent) {
+      // Student mode: exclude tasks with "sp" in week name
+      filtered = filtered.filter(task => {
+        const weekName = getWeekName(task.weekNumber);
+        return !weekName.includes('sp');
+      });
+    } else if (isExam) {
+      // Exam mode: show only tasks with "sp" in week name
+      filtered = filtered.filter(task => {
+        const weekName = getWeekName(task.weekNumber);
+        return weekName.includes('sp');
+      });
+    }
+    // Teacher mode: show all tasks (no filtering)
 
     // Apply year filter
     if (filters.year) {
@@ -89,7 +109,7 @@ const HomePage = () => {
     });
 
     return filtered;
-  }, [filters]);
+  }, [filters, mode, isStudent, isExam]);
 
   return (
     <div className="container-fluid py-4">
