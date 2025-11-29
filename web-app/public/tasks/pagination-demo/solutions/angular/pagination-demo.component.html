@@ -1,0 +1,144 @@
+<div class="container">
+    <h2 class="mb-4">Demonstracja paginacji</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Kontrolki paginacji</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <label for="displayAmount" class="form-label">Rozmiar strony:</label>
+                            <select name="displayAmount" id="displayAmount" class="form-select" (change)="changeAmount($event)">
+                                <option value="5">5 elementów</option>
+                                <option value="10">10 elementów</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-primary" [disabled]="!currentPage" (click)="previousClick()">Poprzednia</button>
+                                <button type="button" class="btn btn-outline-primary" [disabled]="this.totalPages - 1 == currentPage" (click)="nextClick()">Następna</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">Informacje o pozycjach</h6>
+                </div>
+                <div class="card-body">
+                    <p class="mb-0"><strong>Pozycje {{this.currentPage*this.displayPerPage+1}}-{{Math.min((this.currentPage + 1) * this.displayPerPage, this.items.length)}}  z {{this.items.length}}</strong></p>
+                    <small class="text-muted">Wyświetlane elementy: {{this.displayPerPage}} z {{this.items.length}}</small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">Lista elementów - Strona {{currentPage+1}}</h6>
+                </div>
+                <div class="card-body">
+                    <div class="list-group list-group-flush">
+                        @for (item of items.slice(this.currentPage*this.displayPerPage, this.currentPage*this.displayPerPage + this.displayPerPage); track $index) {
+                            <div class="list-group-item">
+                                <h6 class="mb-1">Element {{item}}</h6>
+                                <p class="mb-1 text-muted">Opis elementu numer {{item}}</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">Statystyki</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <h5 class="text-primary">{{items.length}}</h5>
+                            <small class="text-muted">Łącznie elementów</small>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-success">{{totalPages}}</h5>
+                            <small class="text-muted">Łącznie stron</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <h5 class="text-info">{{this.currentPage == this.totalPages-1 ? this.items.length % this.displayPerPage : this.displayPerPage}}</h5>
+                            <small class="text-muted">Na tej stronie</small>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-warning">{{this.displayPerPage}}</h5>
+                            <small class="text-muted">Rozmiar strony</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">Nawigacja</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <strong>Rozmiar strony:</strong>
+                            <br>
+                            <small class="text-muted">Wybierz ile elementów ma być wyświetlonych na stronie</small>
+                        </li>
+                        <li class="mb-2">
+                            <strong>Poprzednia/Następna:</strong>
+                            <br>
+                            <small class="text-muted">Przechodzenie między stronami</small>
+                        </li>
+                        <li>
+                            <strong>Automatyczne wyłączenie:</strong>
+                            <br>
+                            <small class="text-muted">Przyciski są wyłączane na granicach</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title mb-0">Podgląd stron</h6>
+                </div>
+                <div class="card-body">
+                    <div class="text-center">
+                        <div class="btn-group-vertical w-100" role="group">
+                            @for (btn of buttons; track $index) {
+                                <button [classList]="$index == this.currentPage ? 'btn btn-sm btn-primary': 'btn btn-sm btn-outline-secondary'" disabled>Strona {{btn}} @if (this.currentPage == $index) {(aktywna)}</button>
+                            }
+                            @if (totalPages > 5) {
+                                <button [classList]="currentPage >= 5 ? 'btn btn-sm btn-primary': 'btn btn-sm btn-outline-secondary'" disabled>... i {{totalPages - 5}} więcej</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h6 class="card-title mb-0">Informacje o logowaniu</h6>
+        </div>
+        <div class="card-body">
+            <p class="mb-0">
+                <strong>Konsola przeglądarki:</strong>
+                Wszystkie zmiany są logowane w formacie:
+                <br>
+                <code class="ml-1">"Strona: 1"</code> - przy zmianie strony
+                <br>
+                <code class="ml-1">"Rozmiar: 5"</code> - przy zmianie rozmiaru strony
+                <br>
+                Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
+            </p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,63 @@
+<h2>Demonstracja kontrolowanych i niekontrolowanych komponentów</h2>
+
+<div class="card">
+  <div class="card-header">
+    Tryby formularza
+  </div>
+  <div class="card-body">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="controlled_mode" [checked]="controlled" (change)="changeMode(true)">
+        <label class="form-check-label" for="controlled_mode">
+            <strong>Kontrolowany</strong><br><small class="text-muted">Wartości kontrolowane przez ngModel</small>
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="mode" id="uncontrolled_mode" [checked]="!controlled" (change)="changeMode(false)">
+        <label class="form-check-label" for="uncontrolled_mode">
+            <strong>Niekontrolowany</strong><br><small class="text-muted">Wartości kontrolowane przez &#64;ViewChild() ElementRef</small>
+        </label>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Formularz kontaktowy
+  </div>
+  <div class="card-body">
+    <div [hidden]="!controlled">
+        <h4>Controlled Form</h4>
+        <form (submit)="controlledSubmit()">
+            <label for="name1">Imię</label>
+            <input class="form-control" type="text" name="name" id="name1" [(ngModel)]="info.name">
+            <label for="email1">Email</label>
+            <input class="form-control" type="text" name="email" id="email1" [(ngModel)]="info.email">
+            <label for="message1">Wiadomość</label>
+            <input class="form-control" type="text" name="message" id="message1" [(ngModel)]="info.message">
+            <button class="btn btn-primary" type="submit">Wyślij</button>
+        </form>
+    </div>
+
+    <div [hidden]="controlled">
+        <h4>Uncontrolled Form</h4>
+        <form #formReference (submit)="uncontrolledSubmit($event)">
+            <label for="name">Imię</label>
+            <input class="form-control" type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" name="email" id="email">
+            <label for="message">Wiadomość</label>
+            <input class="form-control" type="text" name="message" id="message">
+            <button class="btn btn-primary" type="submit">Wyślij</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+<div>
+    <h4>Podgląd danych</h4>
+    <data>
+        {{ `{ name: ${info.name}, email: ${info.email}, message: ${info.message}, mode: ${this.controlled ? "controlled" : "uncontrolled" } }` }}
+    </data>
+    <p>Otwórz konsolę w narzędziach deweloperskich za pomocą <code>CTRL + SHIFT + J</code>, aby zobaczyć logi.</p>
+</div>
+

@@ -1,0 +1,35 @@
+<h2>Quiz z jedną odpowiedzią</h2>
+<div class="card" style="width: 54rem;">
+  <div class="card-header">
+    <h5 class="m-0">Pytanie</h5>
+  </div>
+  <div class="card-body">
+    <p>{{question.content}}</p>
+    <form>
+        @for (item of question.answers; track $index) {
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="answer" [id]="'answer'+$index" [value]="item" (change)="choose($index)">
+                <label class="form-check-label" [for]="'answer'+$index">
+                    {{item}}
+                </label>
+            </div>
+        }
+        <button type="button" class="btn btn-primary mt-3" (click)="check()" [disabled]="this.selected == null">Sprawdź</button>
+    </form>
+    @if (!this.result_hidden && this.selected == this.question.correct) {
+        <div class="alert alert-success">
+            <h6 class="alert-heading">Wynik: </h6>
+            <p class="mb-0">Gratulacje! Twoja odpowiedź jest poprawna.</p>
+        </div>
+    }
+    @if (!this.result_hidden && this.selected != this.question.correct) {
+        <div class="alert alert-danger mt-3">
+            <h6 class="alert-heading">Wynik: </h6>
+            <p class="mb-0">Niestety, odpowiedź jest niepoprawna. Spróbuj ponownie.</p>
+            <p class="mb-0 mt-2"><small>Poprawna odpowiedź: <strong>{{this.question.answers[this.question.correct]}}</strong></small></p>
+        </div>
+    }
+
+  </div>
+</div>
+

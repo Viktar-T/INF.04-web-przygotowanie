@@ -62,11 +62,24 @@ const AngularCodePage = () => {
 
         // Helper function to try loading a file
         const tryLoadFile = async (fileName, isTs) => {
-          // Try multiple approaches to load the file
-          
-          // Approach 1: Try dynamic import with ?raw (works in dev)
+          // Try fetch from public folder first (works in both dev and production)
           try {
-            // Use template literal to construct path - Vite should handle this
+            const publicPath = `/tasks/${taskId}/solutions/angular/${fileName}`;
+            const response = await fetch(publicPath);
+            if (response.ok) {
+              const content = await response.text();
+              // Check if we got HTML page (SPA fallback)
+              const trimmed = content.trim();
+              if (!trimmed.startsWith('<!doctype') && !trimmed.startsWith('<!DOCTYPE') && !trimmed.startsWith('<html')) {
+                return content;
+              }
+            }
+          } catch (fetchError) {
+            console.debug(`Fetch from public failed for ${fileName}:`, fetchError.message);
+          }
+          
+          // Fallback: Try dynamic import with ?raw (works in dev only)
+          try {
             const module = await import(`../tasks/${taskId}/solutions/angular/${fileName}?raw`);
             const content = module.default;
             
@@ -79,24 +92,7 @@ const AngularCodePage = () => {
             }
             return content;
           } catch (importError) {
-            // If import fails, try fetch approach
-            console.debug(`Import failed for ${fileName}, trying fetch...`);
-          }
-          
-          // Approach 2: Try fetch from public folder (for production builds)
-          try {
-            const publicPath = `/tasks/${taskId}/solutions/angular/${fileName}`;
-            const response = await fetch(publicPath);
-            if (response.ok) {
-              const content = await response.text();
-              // Check if we got HTML page
-              const trimmed = content.trim();
-              if (!trimmed.startsWith('<!doctype') && !trimmed.startsWith('<!DOCTYPE') && !trimmed.startsWith('<html')) {
-                return content;
-              }
-            }
-          } catch (fetchError) {
-            console.debug(`Fetch failed for ${fileName}:`, fetchError.message);
+            console.debug(`Import failed for ${fileName}:`, importError.message);
           }
           
           return null;
