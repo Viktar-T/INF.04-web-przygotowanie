@@ -62,24 +62,44 @@ const AngularCodePage = () => {
 
         // Helper function to try loading a file
         const tryLoadFile = async (fileName, isTs) => {
-          // Angular files are in src folder, use dynamic import with ?raw
+          // Try multiple approaches to load the file
+          
+          // Approach 1: Try dynamic import with ?raw (works in dev)
           try {
+            // Use template literal to construct path - Vite should handle this
             const module = await import(`../tasks/${taskId}/solutions/angular/${fileName}?raw`);
             const content = module.default;
-            // Check if we got HTML page instead of actual file (SPA fallback)
+            
+            // Check if we got HTML page instead of actual file
             if (content && typeof content === 'string') {
               const trimmed = content.trim();
               if (trimmed.startsWith('<!doctype') || trimmed.startsWith('<!DOCTYPE') || trimmed.startsWith('<html')) {
-                console.warn(`Got HTML instead of file content for ${fileName}`);
-                return null; // This is HTML, not the file we want
+                throw new Error('Got HTML instead of file');
               }
             }
             return content;
-          } catch (e) {
-            // File not found or import failed
-            console.debug(`Failed to load ${fileName}:`, e.message);
-            return null;
+          } catch (importError) {
+            // If import fails, try fetch approach
+            console.debug(`Import failed for ${fileName}, trying fetch...`);
           }
+          
+          // Approach 2: Try fetch from public folder (for production builds)
+          try {
+            const publicPath = `/tasks/${taskId}/solutions/angular/${fileName}`;
+            const response = await fetch(publicPath);
+            if (response.ok) {
+              const content = await response.text();
+              // Check if we got HTML page
+              const trimmed = content.trim();
+              if (!trimmed.startsWith('<!doctype') && !trimmed.startsWith('<!DOCTYPE') && !trimmed.startsWith('<html')) {
+                return content;
+              }
+            }
+          } catch (fetchError) {
+            console.debug(`Fetch failed for ${fileName}:`, fetchError.message);
+          }
+          
+          return null;
         };
 
         // Try loading .ts file
@@ -108,7 +128,8 @@ const AngularCodePage = () => {
         setHtmlFileName(foundHtmlName);
 
         if (!tsLoaded && !htmlLoaded) {
-          throw new Error('Could not find Angular component files (.ts or .html)');
+          const triedFiles = [...possibleTsNames, ...possibleHtmlNames].join(', ');
+          throw new Error(`Could not find Angular component files (.ts or .html). Tried: ${triedFiles}`);
         }
 
         if (!tsLoaded) {
