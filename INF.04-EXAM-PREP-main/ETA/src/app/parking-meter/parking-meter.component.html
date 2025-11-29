@@ -1,0 +1,37 @@
+<h2>Kalkulator opłat parkingowych</h2>
+<div class="card mb-4" style="width: 30rem;">
+  <div class="card-header">
+    Oblicz opłatę parkingową
+  </div>
+  <div class="card-body">
+    <form name="form">
+        <label for="time">Minuty:</label>
+        <input type="number" min="0" inputmode="numeric" id="time" name="time" class="form-control" placeholder="Wprowadź liczbę minut" (change)="total_cost=0" [(ngModel)]="minutes">
+        <button type="button" class="btn btn-primary" [disabled]="this.minutes == 0 || this.minutes == null" (click)="calc()">Oblicz</button>
+    </form>
+  </div>
+</div>
+@if (this.minutes && total_cost) {
+    <div class="card" style="width: 30rem;">
+      <div class="card-header">
+        Wynik obliczenia
+      </div>
+      <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h6 class="text-muted">Minuty</h6>
+                <h4 class="text-primary">{{minutes}}</h4>
+            </div>
+            <div class="col-md-4 text-center">
+                <h6 class="text-muted">Bloki</h6>
+                <h4 class="text-info">{{total_blocks}}</h4>
+            </div>
+            <div class="col-md-4 text-center">
+                <h6 class="text-muted">Opłata</h6>
+                <h4 class="text-success">{{ total_cost | number:"1.2-2" }} PLN</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+}
+

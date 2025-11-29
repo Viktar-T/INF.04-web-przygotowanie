@@ -1,0 +1,66 @@
+<h2>Śledzenie wydatków</h2>
+<form (submit)="addItem($event)">
+    <label for="description" class="form-label">Opis:</label>
+    <input type="text" name="description" class="form-control" id="description" [(ngModel)]="this.item.description">
+
+    <label for="amount" class="form-label">Kwota:</label>
+    <input type="number" inputmode="numeric" name="amount" class="form-control" step="0.01" min="0" id="amount" [(ngModel)]="this.item.amount">
+
+    <label for="date" class="form-label">Data:</label>
+    <input type="date" name="date" class="form-control" id="date" [(ngModel)]="this.item.date">
+
+    <label for="category" class="form-label">Kategoria:</label>
+    <select name="category" id="category" class="form-select" [(ngModel)]="this.item.category">
+        @for (category of categories; track $index) {
+            <option [ngValue]="$index">{{category}}</option>
+        }
+    </select>
+
+    <label for="type" class="form-label">Typ:</label>
+    <select name="type" id="type" class="form-select" [(ngModel)]="this.item.type">
+        <option [ngValue]="true">Income</option>
+        <option [ngValue]="false">Expense</option>
+    </select>
+
+    <button class="btn btn-primary" type="submit">Dodaj transakcję</button>
+</form>
+
+<ol class="list-group list-group-flush">
+    @for (item of items; track $index) {
+        <li [class]="item.type ? 'list-group-item list-group-item-success' : 'list-group-item list-group-item-danger'">
+            <div class='row d-flex justify-content-between'>
+                <span class="col-md-4">Opis: {{item.description}}</span>
+                <span class="col-md-2">Kategoria: {{this.categories[item.category]}}</span>
+                <span class="col-md-2">Kwota: <span [class]="item.type ? 'text-success' : 'text-danger'">{{item.type ? item.amount : -item.amount | number:'1.2-2'}}</span></span>
+                <time class="col-md-2">Data: {{item.date}}</time>
+                <button type="button" class="btn btn-close" (click)="removeItem($index)"></button>
+            </div>
+        </li>
+    }
+</ol>
+
+<div class="card">
+  <div class="card-header">
+    Podsumowanie
+  </div>
+  <div class="card-body">
+    <div class="row text-center">
+        <div class="col">
+            <h5 class="text-primary">{{this.items.length}}</h5>
+            <small class="text-muted">Ilość Transakcji</small>
+        </div>
+        <div class="col">
+            <h5 class="text-info">{{getIncomeCount()}}</h5>
+            <small class="text-muted">Ilość dochodów</small>
+        </div>
+        <div class="col">
+            <h5 class="text-warning">{{getExpensesCount()}}</h5>
+            <small class="text-muted">Ilość wydatków</small>
+        </div>
+        <div class="col">
+            <h5 [class]="sumItems() >= 0 ? 'text-success' : 'text-danger'">{{sumItems() | number : '1.2-2' }}</h5>
+            <small class="text-muted">Łącznie</small>
+        </div>
+    </div>
+  </div>
+</div>

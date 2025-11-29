@@ -1,0 +1,23 @@
+<h2>Planowanie diety</h2>
+<form class="form-group"(submit)="submitForm()">
+    <label for="name">Nazwa posiłku:</label>
+    <input type="text" name="name" id="name" class="form-control" [(ngModel)]="this.meal.name">
+    <label for="calories">Kalorie:</label>
+    <input type="number" inputmode="numeric" name="calories" id="calories" class="form-control" [(ngModel)]="this.meal.calories">
+    <label for="time">Czas spożycia:</label>
+    <input type="text" name="time" id="time" class="form-control" [(ngModel)]="this.meal.time">
+    <label for="type">Typ posiłku:</label>
+    <select id="type" name="type" class="form-control" [(ngModel)]="this.meal.type">
+        @for (item of ["Śniadanie", "Obiad", "Kolacja", "Przekąska"]; track $index) {
+            <option>{{item}}</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-primary">Dodaj posiłek</button>
+</form>
+
+<ul>
+    @for (meal of meals; track $index) {
+        <li>{{meal.name}} - {{meal.type}} <button type="button" class="btn btn-close" (click)="remove($index)"></button></li>
+    }
+</ul>
+<h3>Lącznie kalorii: {{this.calSum}}</h3>

@@ -1,0 +1,88 @@
+<h2>Aplikacja z zakładkami</h2>
+<ul class="nav nav-pills">
+    @for (item of tabs; track $index) {
+        <li class="nav-item">
+          <button type="button" [className]="active_tab == item.id ? 'nav-link active' : 'nav-link'" style="cursor: pointer;" (click)="handleClick(item.id)">{{item.label}}</button>
+        </li>
+    }
+</ul>
+@if (this.active_tab == "info") {
+    <div class="card" style="width: 50rem;">
+        <div class="card-header">
+            <h5 class="m-0">Informacje o aplikacji</h5>
+        </div>
+        <div class="card-body">
+            <div>
+                <h6>Opis aplikacji:</h6>
+                <p>Aplikacja została wykonana z użyciem Angulara 20 przez AdamrePL - Technikum Łączności i Multimediów Cyfrowych w Szczecinie - 5TC 2025</p>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div >
+                <h6>Funkcjonalność: </h6>
+                <ul>
+                    <li>Nawigacja za pomocą zakładek</li>
+                    <li>Przełączanie treści w zależności od aktywnej zakładki</li>
+                    <li>Logowanie zmian zakładek w konsoli</li>
+                    <li>Stylizacja zrobiona z pomocą Bootstrapa (mimo braku dokładnych poleceń odnośnie styli w opisie zadania)</li>
+                </ul>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <h6>Technologie:</h6>
+                <ul>
+                    <li>Angular 20.3.9</li>
+                    <li>Bootstrap 4</li>
+                    <li>Typescript</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+}
+@if (this.active_tab == "list") {
+    <div class="card" style="width: 50rem;">
+        <div class="card-header">
+            <h5>Lista elementów</h5>
+        </div>
+        <div class="card-body">
+            <h6>Przykładowa lista</h6>
+            <ol class="list-group list-group-flush">
+                @for (item of list_items; track $index) {
+                    <li class="list-group-item">Element {{item}}</li>
+                }
+            </ol>
+            <p class="m-0 mt-2"><small class="text-muted">Lista zawiera {{list_items.length}} elementów z numeracją.</small></p>
+        </div>
+    </div>
+}
+@if (this.active_tab == "settings") {
+    <div class="card" style="width: 50rem;">
+        <div class="card-header">
+            <h5>Ustawienia aplikacji</h5>
+        </div>
+        <div class="card-body">
+            <form>
+                <label for="theme">Motyw:</label>
+                <select id="theme" class="form-control">
+                    <option value="light">Jasny</option>
+                    <option value="dark">Ciemny</option>
+                    <option value="auto">Automatyczny</option>
+                </select>
+                <label for="lang">Motyw:</label>
+                <select id="lang" class="form-control">
+                    <option value="pl">Polski</option>
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                </select>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="notifications" id="notifications">
+                    <label class="form-check-label" for="notifications">Powiadomienia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="analytics" id="analytics">
+                    <label class="form-check-label" for="analytics">Analityka</label>
+                </div>
+                <button class="btn btn-primary" type="button">Zapisz ustawienia</button>
+            </form>
+        </div>
+    </div>
+}

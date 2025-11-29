@@ -1,0 +1,40 @@
+<h2>Lista filmów do obejrzenia</h2>
+<form (submit)="processForm()">
+    <label for="title">Tytuł: </label>
+    <input class="form-control" type="text" id="title" name="title" [(ngModel)]="movie.title" >
+    <label for="genre">Gatunek: </label>
+    <select class="form-control" id="genre" name="genre" [(ngModel)]="movie.genre">
+        @for (genre of this.genres; track $index) {
+            <option value="{{$index}}">{{genre}}</option>
+        }
+    </select>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rating" id="rb1" value="1" [(ngModel)]="movie.rating">
+            <label class="form-check-label" for="rb1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rating" id="rb2" value="2" [(ngModel)]="movie.rating">
+            <label class="form-check-label" for="rb2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rating" id="rb3" value="3" [(ngModel)]="movie.rating">
+            <label class="form-check-label" for="rb3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rating" id="rb4" value="4" [(ngModel)]="movie.rating">
+            <label class="form-check-label" for="rb4">4</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="rating" id="rb5" value="5" [(ngModel)]="movie.rating">
+            <label class="form-check-label" for="rb5">5</label>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Dodaj</button>
+</form>
+
+<ol class="list-group">
+    @for (movie of movies; track $index) {
+        <li class="list-group-item"><strong>{{movie.title}}</strong> - {{movie.genre}} - Ocena: {{movie.rating}}</li>
+    }
+</ol>

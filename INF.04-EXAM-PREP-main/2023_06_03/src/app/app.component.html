@@ -1,0 +1,16 @@
+<main>
+<form (submit)="onSubmit()">
+  <div class="form-group">
+    <label for="title">Tytuł filmu</label>
+    <input name="title" type="text" id="title" class="form-control" [(ngModel)]="movie.tytul">
+    <label for="category">Rodzaj</label>
+    <select class="form-control" id="category" name="category" [(ngModel)]="movie.kategoria">
+      <option selected></option>
+      @for (item of items; track $index) {
+        <option value="{{item.val}}">{{item.name}}</option>
+      }
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>
+</main>

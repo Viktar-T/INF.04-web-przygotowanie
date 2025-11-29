@@ -1,0 +1,41 @@
+<h2>Najczęściej zadawane pytania</h2>
+<div class="accordion" id="accordionExample">
+    @for (item of this.pytania; track $index) {
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" (click)="toggle(item.id)">
+                {{item.title}}
+              </button>
+            </h5>
+          </div>
+          <div [className]="currentOpen == item.id ? 'collapse.show' : 'collapse'">
+            <div class="card-body">
+              {{item.content}}
+            </div>
+          </div>
+        </div>
+    }
+</div>
+<!-- Niewymagane poniżej, dodałem tylko dlatego, że było na podglądzie, ale nie w poleceniu -->
+<div class="card">
+  <div class="card-header">
+    Podsumowanie
+  </div>
+  <div class="card-body">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h5 class="text-primary">{{pytania.length}}</h5>
+            <small class="text-muted">Pytania</small>
+        </div>
+        <div class="col-md-4">
+            <h5 class="text-info">{{currentOpen != null ? openCount : 0}}</h5>
+            <small class="text-muted">Otwarte</small>
+        </div>
+        <div class="col-md-4">
+            <h5 class="text-primary">{{currentOpen != null ? pytania.length - openCount : pytania.length}}</h5>
+            <small class="text-muted">Zamknięte</small>
+        </div>
+    </div>
+  </div>
+</div>

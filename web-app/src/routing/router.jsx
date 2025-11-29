@@ -10,6 +10,7 @@ import HomePage from '../pages/HomePage';
 import TaskDescriptionPage from '../pages/TaskDescriptionPage';
 import AppPage from '../pages/AppPage';
 import CodePage from '../pages/CodePage';
+import AngularCodePage from '../pages/AngularCodePage';
 
 const AppLayout = () => {
   const { isAuthenticating } = useMode();
@@ -23,6 +24,7 @@ const AppLayout = () => {
         <Route path="/task/:taskId" element={<TaskDescriptionPage />} />
         <Route path="/app/:taskId/:solutionType" element={<AppPage />} />
         <Route path="/code/:taskId/:solutionType" element={<CodePage />} />
+        <Route path="/code-angular/:taskId" element={<AngularCodePage />} />
       </Routes>
     </>
   );

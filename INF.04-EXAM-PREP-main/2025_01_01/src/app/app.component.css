@@ -1,0 +1,14 @@
+img {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.images {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+}
+
+.form-switch {
+  display: inline;
+}

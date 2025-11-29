@@ -1,0 +1,37 @@
+<h3>Tworzenie quizów</h3>
+<form (submit)="addQuestion()">
+    <label for="content">Treść pytania:</label>
+    <input type="text" name="content" id="content" class="form-control" [(ngModel)]="this.question.content">
+    @for (key of answerKeys; track $index) {
+        <label [for]="key">Opcja {{key}}:</label>
+        <input class="form-control" [name]="key" type="text" [id]="key" [(ngModel)]="this.question.answers[key]">
+    }
+    <label for="correct">Poprawna odpowiedź:</label>
+    <select name="correct" id="correct" class="form-control" [(ngModel)]="this.question.correct">
+        @for (item of answerKeys; track $index) {
+            <option>{{item}}</option>
+        }
+    </select>
+    <button class="btn btn-primary" type="submit">Dodaj pytanie</button>
+
+    <ol class="list-group list-group-numbered">
+        @for (item of questions; track $index) {
+            <li class="list-group-item d-flex">
+                <span class="flex-grow-1 px-2">
+                    Pytanie: {{item.content}};
+                    Odpowiedzi:
+                        @for (key of answerKeys; track $index) { {{key}}: {{item.answers[key]}} }
+                    - Poprawna odpowiedz: {{item.correct}}
+                </span>
+                <button type="button" class="btn btn-close" (click)="remove($index)"></button>
+            </li>
+        }
+    </ol>
+
+    <!--
+        Następny przykład zadania, którego polecenie jest nie jasne, ponieważ zostało wygenerowane oczywiście z AI...
+        Co mają na myśli przez: "Przycisk „Rozpocznij quiz" do przejścia w tryb rozwiązywania", "W trybie rozwiązywania: wyświetlanie pytań pojedynczo z możliwością wyboru odpowiedzi", "Wynik quizu po zakończeniu"
+        Skoro nawet aplikacja na podglądzie tego nie ma, czym jest ten 'tryb rozwiązywania'?
+        Aplikacja ma być z 1 komponentu, aplikacja która jest dla rozwiązywania jest w następnym zadaniu.
+    -->
+</form>

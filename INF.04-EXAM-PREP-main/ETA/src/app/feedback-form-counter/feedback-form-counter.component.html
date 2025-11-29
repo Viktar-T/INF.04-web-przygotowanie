@@ -1,0 +1,48 @@
+<h2>Formularz opinii</h2>
+<div class="card" style="width: 50rem;">
+  <div class="card-header">
+    Wyślij swoją opinię
+  </div>
+  <div class="card-body">
+      <form>
+          <label for="name">Imię:</label>
+          <input class="form-control" type="text" name="name" id="name" [(ngModel)]="data.name">
+          <label for="email">Email:</label>
+          <input class="form-control" type="email" name="email" id="email" [(ngModel)]="data.email">
+          <label for="comment">Komentarz:</label>
+          <textarea class="form-control" id="comment" rows="3" maxlength="200" name="comment" [(ngModel)]="data.comment"></textarea>
+          <div style="display: flex; justify-content: space-between;">
+              <small class="text-muted">Pozostało: {{max - data.comment.length}}</small>
+              <small class="text-muted">{{data.comment.length}}/{{max}}</small>
+          </div>
+          <button class="btn btn-primary" type="button" (click)="verifyForm()">Wyślij opinię</button>
+      </form>
+  </div>
+</div>
+@if (valid) {
+    <!-- STYLIZACJA TUTAJ JEST ZBĘDNA GDYŻ W POLECENIU NIE BYŁO PRZYKŁADÓW, ANI PODANYCH STYLI ELEMENTÓ/KLAS BOOSTRAPA ABY ODWZOROWAĆ WYGLĄD -->
+    <div class="card" style="width: 50rem;">
+        <div class="card-header bg-success text-white text">
+            <h5 class="card-title mb-0">Opinia została wysłana pomyślnie!</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h6>Podsumowanie</h6>
+                    <ul style="display: flex; flex-direction: column-reverse;">
+                        <!-- UŻYŁEM TUTAJ RURY DLA UŁATWIENIA - MOŻECIE TO INACZEJ ZROBIĆ -->
+                        @for (item of data | keyvalue; track $index) {
+                            <li><strong>{{item.key}}:</strong> {{item.value}}</li>
+                        }
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>Komentarz</h6>
+                    <div class="bg-light p-3 rounded">
+                        <p class="mb-0">{{data.comment}}aa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

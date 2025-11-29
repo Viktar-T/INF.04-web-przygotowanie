@@ -1,0 +1,41 @@
+<h2>Rezerwacja terminów</h2>
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">Zarezerwuj termin</h5>
+    </div>
+    <div class="card-body">
+        <form>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" class="form-control" [(ngModel)]="this.formDetails.name" (change)="this.sent = false">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" class="form-control" [min]="getFullDateOrTime(false)" [(ngModel)]="this.formDetails.date" (change)="this.sent = false">
+            <label for="time">Godzina:</label>
+            <input type="time" id="time" name="time" class="form-control" [min]="this.formDetails.date == getFullDateOrTime(false) ? getFullDateOrTime(true).substring(0,5) : '00:00'" [(ngModel)]="this.formDetails.time" (change)="this.sent = false">
+            <button type="button" (click)="clickHandler()" class="btn btn-primary">Zarezerwój termin</button>
+        </form>
+    </div>
+</div>
+
+@if (sent) {
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h5 class="card-title mb-0">Termin zarezerwowany pomyślnie!</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Szczegóły rezerwacji:</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Imię: </strong>{{this.formDetails.name}}</li>
+                        <li><strong>Data: </strong>{{this.formDetails.date}}</li>
+                        <li><strong>Godzina: </strong>{{this.formDetails.time}}</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h6>Format ISO:</h6>
+                    <code class="d-block bg-light p-2 rounded">{{this.results.iso}}</code>
+                </div>
+            </div>
+        </div>
+    </div>
+}

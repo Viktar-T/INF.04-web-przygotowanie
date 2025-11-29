@@ -1,0 +1,21 @@
+<main>
+    <h2>Liczba kursów: {{items.length}}</h2>
+    <ol>
+        @for (item of items; track $index) {
+            <li>{{item}}</li>
+        }
+    </ol>
+    <form (submit)="submit()">
+        <div class="form-group">
+            <label for="fullname">Imię i nazwisko:</label>
+            <input type="text" name="fullname" id="fullname" class="form-control" [(ngModel)]="applicant">
+        </div>
+        <div class="form-group">
+            <label for="course">Numer kursu:</label>
+            <input type="number" inputmode="numeric" name="course" id="course" class="form-control" [(ngModel)]="course">
+        </div>
+        <button type="submit" class="btn btn-primary">Zapisz do kursu</button>
+    </form>
+</main>
+<!-- Wygląd, a dokładniej odstępy między elementami mogą różnić się od tych na zdjęciu w formularzu egzaminu,
+ ponieważ w poleceniu nie podano wartości ani nie zlecono ustawienia ich, a mowa tu w szczególności o przycisku gdyż styka się on z inputem -->

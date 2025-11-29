@@ -1,0 +1,29 @@
+<main>
+  <h1>Kategorie zdjęć</h1>
+  <div>
+    <div class="form-switch">
+      <input type="checkbox" [defaultChecked]="true" name="flowers" id="flowers" class="form-check-input" (change)="ontoggle(0)">
+      <label for="flowers" class="form-check-label">Kwiaty</label>
+    </div>
+    <div class="form-switch">
+      <input type="checkbox" [defaultChecked]="true" name="animals" id="animals" class="form-check-input" (change)="ontoggle(1)">
+      <label for="animals" class="form-check-label">Zwierzęta</label>
+    </div>
+    <div class="form-switch">
+      <input type="checkbox" [defaultChecked]="true" name="cars" id="cars" class="form-check-input" (change)="ontoggle(2)">
+      <label for="cars" class="form-check-label">Samochody</label>
+    </div>
+  </div>
+  <div class="images">
+    @for (item of imgs; track $index) {
+      @if (checked[item.category-1]) {
+        <div>
+          <img alt="{{item.alt}}" src="assets/{{item.filename}}">
+          <h4>Pobrań: {{item.downloads}}</h4>
+          <button type="button" (click)="increment_downloads(item.id)" class="btn btn-success">Pobierz</button>
+        </div>
+      }
+    }
+  </div>
+</main>
+

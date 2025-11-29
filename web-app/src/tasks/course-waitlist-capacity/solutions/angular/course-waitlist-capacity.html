@@ -1,0 +1,13 @@
+<h2>Lista kursów</h2>
+<form (submit)="onSubmit()">
+    <label for="fullname">Imię i Nazwisko:</label>
+    <input type="text" name="fullname" id="fullname" class="form-control" [(ngModel)]="fullname">
+    <label for="course">Kurs:</label>
+    <select id="course" name="course" class="form-control" [(ngModel)]="selectedCourse">
+        @for (item of courses; track $index) {
+            <option [value]="item.id">{{item.name}} (Pozostało: {{item.capacity - item.enrolled}})</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-primary">Zapisz</button>
+</form>
+

@@ -90,6 +90,13 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
             {shouldShowAppCodeButtons && (
               <div className="d-grid gap-2 d-md-flex">
                 <Link
+                  to={`/code/${task.taskId}/${currentSolution}`}
+                  className="btn btn-success btn-sm flex-fill"
+                  aria-label={`View React code for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
+                >
+                  💻 Code in React
+                </Link>
+                <Link
                   to={`/app/${task.taskId}/${currentSolution}`}
                   className="btn btn-primary btn-sm flex-fill"
                   aria-label={`View app for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
@@ -97,11 +104,11 @@ const TaskCard = ({ task, selectedSolution, onSolutionChange }) => {
                   🚀 App
                 </Link>
                 <Link
-                  to={`/code/${task.taskId}/${currentSolution}`}
-                  className="btn btn-success btn-sm flex-fill"
-                  aria-label={`View code for ${task.title} - ${task.solutions.find(s => s.solutionType === currentSolution)?.label}`}
+                  to={`/code-angular/${task.taskId}`}
+                  className="btn btn-outline-success btn-sm flex-fill"
+                  aria-label={`View Angular code for ${task.title}`}
                 >
-                  💻 Code
+                  ⚡ Code in Angular
                 </Link>
               </div>
             )}
