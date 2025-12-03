@@ -277,7 +277,7 @@ export const tasks = [
     year: 2025,
     skillTags: ['arrays', 'filtering', 'sorting', 'state', 'bootstrap', 'console.log', 'search'],
     complexityLevel: 'Level 2',
-    weekNumber: 8,
+    weekNumber: 9,
     solutions: [
       {
         solutionType: 'controlled-useState',
