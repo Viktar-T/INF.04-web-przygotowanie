@@ -244,7 +244,7 @@ function App() {
               {/* Current Rating Display */}
               <div className="rating-display mb-3">
                 <h4 className="mb-2">
-                  <span className="badge badge-primary badge-lg" style={{ fontSize: '1.5rem', padding: '0.5rem 1rem' }}>
+                  <span className="badge bg-primary" style={{ fontSize: '1.5rem', padding: '0.5rem 1rem' }}>
                     Ocena: {currentRating}
                   </span>
                 </h4>
@@ -303,10 +303,10 @@ function App() {
                         <tr key={record.id}>
                           <th scope="row">{index + 1}</th>
                           <td>
-                            <span className="badge badge-primary">{record.rating}</span>
+                            <span className="badge bg-primary">{record.rating}</span>
                           </td>
                           <td>
-                            <span className="badge badge-info">
+                            <span className="badge bg-info">
                               {record.action === 'cleared' ? 'Wyczyszczono' : 
                                record.action === 'keyboard' ? 'Klawiatura' : 'Kliknięcie'}
                             </span>
@@ -389,7 +389,7 @@ function App() {
         <div className="card-body">
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Wszystkie zmiany oceny są logowane w formacie 
-            <code className="ml-1">"Ocena: N"</code> gdzie N to wartość od 0 do 5.
+            <code className="ms-1">"Ocena: N"</code> gdzie N to wartość od 0 do 5.
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>
         </div>

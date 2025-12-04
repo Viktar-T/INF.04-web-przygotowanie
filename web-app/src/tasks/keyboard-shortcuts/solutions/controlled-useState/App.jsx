@@ -118,7 +118,7 @@ function App() {
                 <div className="form-group">
                   <button
                     type="submit"
-                    className="btn btn-primary mr-2"
+                    className="btn btn-primary me-2"
                     disabled={!inputValue.trim()}
                   >
                     Dodaj
@@ -154,7 +154,7 @@ function App() {
           <div className="card mb-4">
             <div className="card-header d-flex justify-content-between align-items-center">
               <h6 className="card-title mb-0">Lista elementów</h6>
-              <span className="badge badge-primary">
+              <span className="badge bg-primary">
                 {items.length} elementów
               </span>
             </div>
@@ -165,7 +165,7 @@ function App() {
                     <div key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
                       <div>
                         <span className="font-weight-bold">{index + 1}.</span>
-                        <span className="ml-2">{item.text}</span>
+                        <span className="ms-2">{item.text}</span>
                         <br />
                         <small className="text-muted">Dodano: {item.timestamp}</small>
                       </div>
@@ -262,9 +262,9 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Użycie skrótów klawiaturowych jest logowane w formacie:
             <br />
-            <code className="ml-1">"Submit: Enter"</code> - po naciśnięciu Enter
+            <code className="ms-1">"Submit: Enter"</code> - po naciśnięciu Enter
             <br />
-            <code className="ml-1">"Clear: Escape"</code> - po naciśnięciu Escape
+            <code className="ms-1">"Clear: Escape"</code> - po naciśnięciu Escape
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

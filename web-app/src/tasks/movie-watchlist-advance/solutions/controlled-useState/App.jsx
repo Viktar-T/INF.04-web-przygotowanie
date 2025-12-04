@@ -90,7 +90,7 @@ function App() {
           <h4>Statystyki gatunków:</h4>
           <div className="d-flex flex-wrap gap-2">
             {genres.map((genre, index) => (
-              <span key={`count-${index}`} className="badge badge-primary">
+              <span key={`count-${index}`} className="badge bg-primary">
                 {genre}: {genreCounts[genre]}
               </span>
             ))}
@@ -184,7 +184,7 @@ function App() {
         <div className="mt-4">
           <h3>
             {genreFilter ? `Filmy gatunku: ${genreFilter}` : 'Dodane filmy:'}
-            <span className="badge badge-secondary ml-2">{filteredMovies.length}</span>
+            <span className="badge bg-secondary ms-2">{filteredMovies.length}</span>
           </h3>
           <ul className="list-group">
             {filteredMovies.map((movie, index) => (

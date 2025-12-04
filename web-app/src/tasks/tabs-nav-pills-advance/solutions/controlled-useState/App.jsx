@@ -112,23 +112,23 @@ function App() {
         <ol className="list-group list-group-flush">
           <li className="list-group-item d-flex justify-content-between align-items-center">
             Element pierwszy
-            <span className="badge badge-primary badge-pill">1</span>
+            <span className="badge bg-primary rounded-pill">1</span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
             Element drugi
-            <span className="badge badge-primary badge-pill">2</span>
+            <span className="badge bg-primary rounded-pill">2</span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
             Element trzeci
-            <span className="badge badge-primary badge-pill">3</span>
+            <span className="badge bg-primary rounded-pill">3</span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
             Element czwarty
-            <span className="badge badge-primary badge-pill">4</span>
+            <span className="badge bg-primary rounded-pill">4</span>
           </li>
           <li className="list-group-item d-flex justify-content-between align-items-center">
             Element piąty
-            <span className="badge badge-primary badge-pill">5</span>
+            <span className="badge bg-primary rounded-pill">5</span>
           </li>
         </ol>
         

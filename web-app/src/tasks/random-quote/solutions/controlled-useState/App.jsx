@@ -105,7 +105,7 @@ function App() {
           <div className="card mb-4">
             <div className="card-header d-flex justify-content-between align-items-center">
               <h5 className="card-title mb-0">Aktualny cytat</h5>
-              <span className="badge badge-primary">
+              <span className="badge bg-primary">
                 Cytat #{currentQuoteIndex + 1}
               </span>
             </div>
@@ -177,12 +177,12 @@ function App() {
                     >
                       <div className="flex-grow-1">
                         <div className="d-flex align-items-center mb-1">
-                          <span className="font-weight-bold mr-2">#{index + 1}</span>
+                          <span className="font-weight-bold me-2">#{index + 1}</span>
                           {isMostViewed && (
-                            <span className="badge badge-warning mr-1">Najczęściej</span>
+                            <span className="badge bg-warning me-1">Najczęściej</span>
                           )}
                           {isCurrent && (
-                            <span className="badge badge-light text-dark">Aktualny</span>
+                            <span className="badge bg-light text-dark">Aktualny</span>
                           )}
                         </div>
                         <p className="mb-1 small">
@@ -191,7 +191,7 @@ function App() {
                       </div>
                       <div className="text-right">
                         <span className={`badge ${
-                          isCurrent ? 'badge-light' : 'badge-secondary'
+                          isCurrent ? 'bg-light text-dark' : 'bg-secondary'
                         }`}>
                           {viewCounts[index]}
                         </span>
@@ -216,7 +216,7 @@ function App() {
                   </p>
                   {getMostViewedQuotes().map(index => (
                     <div key={index} className="mb-2">
-                      <span className="badge badge-warning mr-2">#{index + 1}</span>
+                      <span className="badge bg-warning me-2">#{index + 1}</span>
                       <small>{quotes[index].substring(0, 40)}...</small>
                     </div>
                   ))}
@@ -254,7 +254,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Za każdym razem gdy wyświetlany jest cytat, logowany jest jego indeks:
             <br />
-            <code className="ml-1">"Quote: i"</code> - gdzie i to indeks cytatu (0, 1, 2, ...)
+            <code className="ms-1">"Quote: i"</code> - gdzie i to indeks cytatu (0, 1, 2, ...)
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

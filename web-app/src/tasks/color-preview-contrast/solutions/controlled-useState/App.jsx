@@ -41,11 +41,11 @@ function App() {
   // Get contrast status and color info
   const contrastInfo = useMemo(() => {
     const rgb = hexToRgb(backgroundColor)
-    if (!rgb) return { contrast: 0, status: 'Błąd', badgeClass: 'badge-danger' }
+    if (!rgb) return { contrast: 0, status: 'Błąd', badgeClass: 'bg-danger' }
     
     const contrast = calculateContrast(rgb)
     const status = contrast >= 4.5 ? 'OK' : 'Niski kontrast'
-    const badgeClass = contrast >= 4.5 ? 'badge-success' : 'badge-warning'
+    const badgeClass = contrast >= 4.5 ? 'bg-success' : 'bg-warning'
     
     return {
       contrast: contrast.toFixed(2),
@@ -168,7 +168,7 @@ function App() {
               </div>
               <div className="mb-2">
                 <strong>RGB:</strong>
-                <span className="badge badge-info ml-2">
+                <span className="badge bg-info ms-2">
                   R: {contrastInfo.rgb?.r || 0}, G: {contrastInfo.rgb?.g || 0}, B: {contrastInfo.rgb?.b || 0}
                 </span>
               </div>
@@ -277,7 +277,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Każda zmiana koloru tła jest logowana w formacie:
             <br />
-            <code className="ml-1">"Kontrast: {contrastInfo.contrast} - {contrastInfo.status}"</code>
+            <code className="ms-1">"Kontrast: {contrastInfo.contrast} - {contrastInfo.status}"</code>
             <br />
             gdzie wartość to współczynnik kontrastu, status to "OK" lub "Niski kontrast".
             <br />

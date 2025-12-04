@@ -93,7 +93,7 @@ function App() {
             <div className="card-header">
               <h5 className="card-title mb-0">
                 Tabela wyników
-                <span className="badge badge-primary ml-2">
+                <span className="badge bg-primary ms-2">
                   {sortedData.length} rekordów
                 </span>
               </h5>
@@ -110,7 +110,7 @@ function App() {
                         style={{ cursor: 'pointer', userSelect: 'none' }}
                       >
                         Nazwa
-                        <span className="ml-2 sort-indicator">
+                        <span className="ms-2 sort-indicator">
                           {getSortIndicator('name')}
                         </span>
                       </th>
@@ -121,7 +121,7 @@ function App() {
                         style={{ cursor: 'pointer', userSelect: 'none' }}
                       >
                         Wynik
-                        <span className="ml-2 sort-indicator">
+                        <span className="ms-2 sort-indicator">
                           {getSortIndicator('score')}
                         </span>
                       </th>
@@ -135,9 +135,9 @@ function App() {
                         </td>
                         <td>
                           <span className={`badge ${
-                            item.score >= 90 ? 'badge-success' :
-                            item.score >= 80 ? 'badge-warning' :
-                            'badge-danger'
+                            item.score >= 90 ? 'bg-success' :
+                            item.score >= 80 ? 'bg-warning' :
+                            'bg-danger'
                           }`}>
                             {item.score}
                           </span>
@@ -160,19 +160,19 @@ function App() {
             <div className="card-body">
               <div className="mb-3">
                 <strong>Kolumna:</strong>
-                <span className="badge badge-info ml-2">
+                <span className="badge bg-info ms-2">
                   {sortField === 'name' ? 'Nazwa' : 'Wynik'}
                 </span>
               </div>
               <div className="mb-3">
                 <strong>Kierunek:</strong>
-                <span className="badge badge-secondary ml-2">
+                <span className="badge bg-secondary ms-2">
                   {sortDirection === 'asc' ? 'Rosnąco ▲' : 'Malejąco ▼'}
                 </span>
               </div>
               <div>
                 <strong>Status:</strong>
-                <span className="badge badge-success ml-2">
+                <span className="badge bg-success ms-2">
                   Posortowano
                 </span>
               </div>
@@ -259,7 +259,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Wszystkie zmiany sortowania są logowane w formacie:
             <br />
-            <code className="ml-1">"Sort: field={sortField} dir={sortDirection}"</code>
+            <code className="ms-1">"Sort: field={sortField} dir={sortDirection}"</code>
             <br />
             gdzie kolumna to "name" lub "score", kierunek to "asc" lub "desc".
             <br />

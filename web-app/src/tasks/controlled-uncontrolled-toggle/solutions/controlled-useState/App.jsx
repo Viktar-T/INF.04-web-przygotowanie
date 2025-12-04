@@ -154,7 +154,7 @@ function App() {
             <div className="card-header">
               <h5 className="card-title mb-0">
                 Formularz kontaktowy
-                <span className={`badge ml-2 ${isControlledMode ? 'badge-primary' : 'badge-secondary'}`}>
+                <span className={`badge ms-2 ${isControlledMode ? 'bg-primary' : 'bg-secondary'}`}>
                   {isControlledMode ? 'Kontrolowany' : 'Niekontrolowany'}
                 </span>
               </h5>
@@ -261,19 +261,19 @@ function App() {
             <div className="card-body">
               <div className="mb-3">
                 <strong>Aktualny tryb:</strong>
-                <span className={`badge ml-2 ${isControlledMode ? 'badge-primary' : 'badge-secondary'}`}>
+                <span className={`badge ms-2 ${isControlledMode ? 'bg-primary' : 'bg-secondary'}`}>
                   {isControlledMode ? 'Kontrolowany' : 'Niekontrolowany'}
                 </span>
               </div>
               <div className="mb-3">
                 <strong>Źródło danych:</strong>
-                <span className="badge badge-info ml-2">
+                <span className="badge bg-info ms-2">
                   {isControlledMode ? 'React State' : 'DOM Refs'}
                 </span>
               </div>
               <div className="mb-3">
                 <strong>Czyszczenie formularza:</strong>
-                <span className="badge badge-warning ml-2">
+                <span className="badge bg-warning ms-2">
                   {isControlledMode ? 'setState()' : 'ref.current.value = ""'}
                 </span>
               </div>
@@ -288,19 +288,19 @@ function App() {
             <div className="card-body">
               <div className="mb-2">
                 <strong>Imię:</strong>
-                <span className="badge badge-light ml-2">
+                <span className="badge bg-light text-dark ms-2">
                   {currentValues.name || 'Puste'}
                 </span>
               </div>
               <div className="mb-2">
                 <strong>Email:</strong>
-                <span className="badge badge-light ml-2">
+                <span className="badge bg-light text-dark ms-2">
                   {currentValues.email || 'Puste'}
                 </span>
               </div>
               <div className="mb-2">
                 <strong>Wiadomość:</strong>
-                <span className="badge badge-light ml-2">
+                <span className="badge bg-light text-dark ms-2">
                   {currentValues.message || 'Pusta'}
                 </span>
               </div>
@@ -374,7 +374,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Po przesłaniu formularza zostanie wyświetlony komunikat w formacie:
             <br />
-            <code className="ml-1">{"{ name: \"Imię\", email: \"email@example.com\", message: \"Treść\", mode: \"controlled\" }"}</code>
+            <code className="ms-1">{"{ name: \"Imię\", email: \"email@example.com\", message: \"Treść\", mode: \"controlled\" }"}</code>
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

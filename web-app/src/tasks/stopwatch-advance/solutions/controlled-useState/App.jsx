@@ -155,7 +155,7 @@ function App() {
                 {formatTime(elapsedSeconds)}s
               </div>
               <div className="mt-3">
-                <span className={`badge ${isRunning ? 'badge-success' : 'badge-secondary'}`}>
+                <span className={`badge ${isRunning ? 'bg-success' : 'bg-secondary'}`}>
                   {isRunning ? 'Uruchomiony' : 'Zatrzymany'}
                 </span>
               </div>
@@ -214,7 +214,7 @@ function App() {
             <div className="card-header">
               <h6 className="card-title mb-0">
                 Okrążenia 
-                <span className="badge badge-primary ml-2">{laps.length}</span>
+                <span className="badge bg-primary ms-2">{laps.length}</span>
               </h6>
             </div>
             <div className="card-body">
@@ -223,7 +223,7 @@ function App() {
                   {laps.map((lapTime, index) => (
                     <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
                       <span>Okrążenie {index + 1}</span>
-                      <span className="badge badge-primary badge-pill">
+                      <span className="badge bg-primary rounded-pill">
                         {formatTime(lapTime)}s
                       </span>
                     </li>
@@ -268,7 +268,7 @@ function App() {
                           <td>{session.startTime}</td>
                           <td>{formatTime(session.duration)}s</td>
                           <td>
-                            <span className="badge badge-info">{session.laps}</span>
+                            <span className="badge bg-info">{session.laps}</span>
                           </td>
                         </tr>
                       ))}

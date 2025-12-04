@@ -274,3 +274,4 @@ Tablica produktów powinna zawierać następujące elementy:
 'Router WiFi', 299.99 zł;
 ```
 
+

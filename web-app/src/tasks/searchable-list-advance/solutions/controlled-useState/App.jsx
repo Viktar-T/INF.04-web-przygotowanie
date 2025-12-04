@@ -172,7 +172,7 @@ function App() {
                 <div className="alert alert-info mb-0">
                   <strong>Liczba wyników: {filteredNames.length}</strong>
                   {searchTerm && (
-                    <span className="ml-2">
+                    <span className="ms-2">
                       (wyszukiwanie: "{searchTerm}")
                     </span>
                   )}
@@ -187,7 +187,7 @@ function App() {
               <h5 className="card-title mb-0">
                 Lista nazwisk
                 {searchTerm && (
-                  <small className="text-muted ml-2">
+                  <small className="text-muted ms-2">
                     - przefiltrowane wyniki
                   </small>
                 )}
@@ -201,7 +201,7 @@ function App() {
                       {filteredNames.slice(0, Math.ceil(filteredNames.length / 2)).map((name, index) => (
                         <li key={name} className="list-group-item d-flex justify-content-between align-items-center">
                           <span>{highlightMatch(name, searchTerm)}</span>
-                          <span className="badge badge-primary badge-pill">
+                          <span className="badge bg-primary rounded-pill">
                             {index + 1}
                           </span>
                         </li>
@@ -214,7 +214,7 @@ function App() {
                         {filteredNames.slice(Math.ceil(filteredNames.length / 2)).map((name, index) => (
                           <li key={name} className="list-group-item d-flex justify-content-between align-items-center">
                             <span>{highlightMatch(name, searchTerm)}</span>
-                            <span className="badge badge-primary badge-pill">
+                            <span className="badge bg-primary rounded-pill">
                               {Math.ceil(filteredNames.length / 2) + index + 1}
                             </span>
                           </li>

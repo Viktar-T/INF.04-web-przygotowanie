@@ -127,7 +127,7 @@ function App() {
                       </div>
                       <div className="text-right">
                         <span className={`badge ${
-                          selectedItemId === item.id ? 'badge-light' : 'badge-secondary'
+                          selectedItemId === item.id ? 'bg-light text-dark' : 'bg-secondary'
                         }`}>
                           #{item.id}
                         </span>
@@ -280,7 +280,7 @@ function App() {
                 <div className="text-center">
                   <h5 className="text-primary">{selectedItem.label}</h5>
                   <div className="mb-3">
-                    <span className="badge badge-primary badge-lg">
+                    <span className="badge bg-primary" style={{ fontSize: '1.5rem', padding: '0.5rem 1rem' }}>
                       {selectedItem.valuePercent}%
                     </span>
                   </div>
@@ -328,7 +328,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Po kliknięciu w pasek logowana jest nazwa i wartość elementu:
             <br />
-            <code className="ml-1">"Klik: label=value"</code> - gdzie label to nazwa, value to wartość procentowa
+            <code className="ms-1">"Klik: label=value"</code> - gdzie label to nazwa, value to wartość procentowa
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

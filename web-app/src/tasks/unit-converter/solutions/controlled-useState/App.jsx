@@ -328,7 +328,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Każda konwersja jest logowana w formacie:
             <br />
-            <code className="ml-1">"C→F: 20 → 68"</code> lub <code className="ml-1">"F→C: 86 → 30"</code>
+            <code className="ms-1">"C→F: 20 → 68"</code> lub <code className="ms-1">"F→C: 86 → 30"</code>
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

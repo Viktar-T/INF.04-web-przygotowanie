@@ -93,7 +93,7 @@ function App() {
           <div className="card">
             <div className="card-header d-flex justify-content-between align-items-center">
               <h5 className="card-title mb-0">Pytanie</h5>
-              <span className="badge badge-info">
+              <span className="badge bg-info">
                 Liczba prób: {attemptCount}
               </span>
             </div>

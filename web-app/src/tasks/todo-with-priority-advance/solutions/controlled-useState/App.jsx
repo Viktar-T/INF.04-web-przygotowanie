@@ -126,13 +126,13 @@ function App() {
   const getPriorityBadgeClass = (priority) => {
     switch (priority) {
       case 'Wysoki':
-        return 'badge-danger'
+        return 'bg-danger'
       case 'Średni':
-        return 'badge-warning'
+        return 'bg-warning'
       case 'Niski':
-        return 'badge-success'
+        return 'bg-success'
       default:
-        return 'badge-secondary'
+        return 'bg-secondary'
     }
   }
 
@@ -236,7 +236,7 @@ function App() {
                   onChange={() => handleFilterToggle('Niski')}
                 />
                 <label className="form-check-label" htmlFor="filterLow">
-                  <span className="badge badge-success mr-2">Niski</span>
+                  <span className="badge bg-success me-2">Niski</span>
                   Pokaż zadania o niskim priorytecie
                 </label>
               </div>
@@ -249,7 +249,7 @@ function App() {
                   onChange={() => handleFilterToggle('Średni')}
                 />
                 <label className="form-check-label" htmlFor="filterMed">
-                  <span className="badge badge-warning mr-2">Średni</span>
+                  <span className="badge bg-warning me-2">Średni</span>
                   Pokaż zadania o średnim priorytecie
                 </label>
               </div>
@@ -262,7 +262,7 @@ function App() {
                   onChange={() => handleFilterToggle('Wysoki')}
                 />
                 <label className="form-check-label" htmlFor="filterHigh">
-                  <span className="badge badge-danger mr-2">Wysoki</span>
+                  <span className="badge bg-danger me-2">Wysoki</span>
                   Pokaż zadania o wysokim priorytecie
                 </label>
               </div>
@@ -276,7 +276,7 @@ function App() {
             <div className="card-header">
               <h6 className="card-title mb-0">
                 Lista zadań (posortowana)
-                <span className="badge badge-primary ml-2">
+                <span className="badge bg-primary ms-2">
                   {filteredAndSortedTasks.length} / {tasks.length}
                 </span>
               </h6>
@@ -288,7 +288,7 @@ function App() {
                     <li key={task.id} className="list-group-item d-flex justify-content-between align-items-center">
                       <div>
                         <span className="font-weight-bold">{index + 1}.</span>
-                        <span className="ml-2">{task.text}</span>
+                        <span className="ms-2">{task.text}</span>
                       </div>
                       <span className={`badge ${getPriorityBadgeClass(task.priority)}`}>
                         {task.priority}

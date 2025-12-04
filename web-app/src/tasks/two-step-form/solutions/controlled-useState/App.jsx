@@ -294,7 +294,7 @@ function App() {
         <div className="form-group">
           <button
             type="button"
-            className="btn btn-secondary mr-2"
+            className="btn btn-secondary me-2"
             onClick={goToPreviousStep}
           >
             Wstecz
@@ -366,7 +366,7 @@ function App() {
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center mb-3">
             <h6 className="mb-0">Postęp wypełniania formularza</h6>
-            <span className="badge badge-primary">
+            <span className="badge bg-primary">
               Krok {currentStep}/2
             </span>
           </div>
@@ -388,13 +388,13 @@ function App() {
             <div className="col-6">
               <div className={`p-2 rounded ${currentStep >= 1 ? 'bg-primary text-white' : 'bg-light'}`}>
                 <strong>1. Dane osobowe</strong>
-                {currentStep >= 1 && <span className="ml-1">✓</span>}
+                {currentStep >= 1 && <span className="ms-1">✓</span>}
               </div>
             </div>
             <div className="col-6">
               <div className={`p-2 rounded ${currentStep >= 2 ? 'bg-success text-white' : 'bg-light'}`}>
                 <strong>2. Preferencje</strong>
-                {currentStep >= 2 && <span className="ml-1">✓</span>}
+                {currentStep >= 2 && <span className="ms-1">✓</span>}
               </div>
             </div>
           </div>
@@ -448,12 +448,12 @@ function App() {
             </div>
             <div className="card-body">
               <div className="mb-2">
-                <span className={`badge ${isStep1Valid() ? 'badge-success' : 'badge-secondary'}`}>
+                <span className={`badge ${isStep1Valid() ? 'bg-success' : 'bg-secondary'}`}>
                   Krok 1: {isStep1Valid() ? 'Poprawny' : 'Niepoprawny'}
                 </span>
               </div>
               <div className="mb-2">
-                <span className={`badge ${isStep2Valid() ? 'badge-success' : 'badge-secondary'}`}>
+                <span className={`badge ${isStep2Valid() ? 'bg-success' : 'bg-secondary'}`}>
                   Krok 2: {isStep2Valid() ? 'Poprawny' : 'Niepoprawny'}
                 </span>
               </div>
@@ -479,7 +479,7 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Po ukończeniu formularza wyświetlany jest obiekt zawierający dane z obu kroków:
             <br />
-            <code className="ml-1">{`{ personalData: {...}, preferences: {...} }`}</code>
+            <code className="ms-1">{`{ personalData: {...}, preferences: {...} }`}</code>
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

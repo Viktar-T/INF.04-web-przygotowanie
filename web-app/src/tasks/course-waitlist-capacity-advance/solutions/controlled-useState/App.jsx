@@ -109,7 +109,7 @@ function App() {
                 <p className="card-text">
                   Zapisanych: {course.enrolled}/{course.capacity}
                 </p>
-                <span className={`badge ${getRemainingSeats(course) > 0 ? 'badge-success' : 'badge-danger'}`}>
+                <span className={`badge ${getRemainingSeats(course) > 0 ? 'bg-success' : 'bg-danger'}`}>
                   Pozostało: {getRemainingSeats(course)}
                 </span>
               </div>

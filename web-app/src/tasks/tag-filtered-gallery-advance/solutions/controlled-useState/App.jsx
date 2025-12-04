@@ -148,8 +148,8 @@ function App() {
             <span
               key={category}
               className={`badge ${activeCategories.includes(category) 
-                ? 'badge-primary' 
-                : 'badge-outline-primary'
+                ? 'bg-primary' 
+                : 'border border-primary text-primary'
               }`}
               style={{
                 cursor: 'pointer',
@@ -182,7 +182,7 @@ function App() {
                     Kategorie: {image.categories.join(', ')}
                   </small>
                   <div className="mt-2 d-flex justify-content-between align-items-center">
-                    <span className="badge badge-info">
+                    <span className="badge bg-info">
                       Pobrania: {downloadCounts[image.id] || 0}
                     </span>
                     <button 

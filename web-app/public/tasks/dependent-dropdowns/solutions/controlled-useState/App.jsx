@@ -185,19 +185,19 @@ function App() {
             <div className="card-body">
               <div className="mb-3">
                 <strong>Wybrany kraj:</strong>
-                <span className="badge badge-primary ml-2">
+                <span className="badge bg-primary ms-2">
                   {selectedCountry || 'Brak wyboru'}
                 </span>
               </div>
               <div className="mb-3">
                 <strong>Wybrane miasto:</strong>
-                <span className="badge badge-success ml-2">
+                <span className="badge bg-success ms-2">
                   {selectedCity || 'Brak wyboru'}
                 </span>
               </div>
               <div className="mb-3">
                 <strong>Status formularza:</strong>
-                <span className={`badge ml-2 ${isFormValid ? 'badge-success' : 'badge-warning'}`}>
+                <span className={`badge ms-2 ${isFormValid ? 'bg-success' : 'bg-warning'}`}>
                   {isFormValid ? 'Gotowy do wysłania' : 'Wymaga wypełnienia'}
                 </span>
               </div>
@@ -219,7 +219,7 @@ function App() {
                   <small className="text-muted">Miasta:</small>
                   <div className="mt-1">
                     {countryInfo.cities.map((city) => (
-                      <span key={city} className="badge badge-light mr-1 mb-1">
+                      <span key={city} className="badge bg-light text-dark me-1 mb-1">
                         {city}
                       </span>
                     ))}

@@ -114,7 +114,7 @@ function App() {
                 
                 <div className="col-md-4">
                   <div className="text-end">
-                    <span className="badge badge-primary badge-lg">
+                    <span className="badge bg-primary" style={{ fontSize: '1.2rem', padding: '0.5rem 1rem' }}>
                       Strona {currentPage} z {totalPages}
                     </span>
                   </div>
@@ -155,10 +155,10 @@ function App() {
                         <p className="mb-1 text-muted">{item.description}</p>
                       </div>
                       <div>
-                        <span className="badge badge-secondary mr-2">
+                        <span className="badge bg-secondary me-2">
                           ID: {item.id}
                         </span>
-                        <span className="badge badge-info">
+                        <span className="badge bg-info">
                           Kategoria: {item.category}
                         </span>
                       </div>
@@ -247,7 +247,7 @@ function App() {
                         disabled
                       >
                         Strona {pageNum}
-                        {isActive && <span className="ml-1">(aktywna)</span>}
+                        {isActive && <span className="ms-1">(aktywna)</span>}
                       </button>
                     )
                   })}
@@ -272,9 +272,9 @@ function App() {
           <p className="mb-0">
             <strong>Konsola przeglądarki:</strong> Wszystkie zmiany są logowane w formacie:
             <br />
-            <code className="ml-1">"Strona: {currentPage}"</code> - przy zmianie strony
+            <code className="ms-1">"Strona: {currentPage}"</code> - przy zmianie strony
             <br />
-            <code className="ml-1">"Rozmiar: {pageSize}"</code> - przy zmianie rozmiaru strony
+            <code className="ms-1">"Rozmiar: {pageSize}"</code> - przy zmianie rozmiaru strony
             <br />
             Otwórz narzędzia deweloperskie (F12) aby zobaczyć logi.
           </p>

@@ -118,8 +118,8 @@ function App() {
             <span
               key={category}
               className={`badge ${activeCategories.includes(category) 
-                ? 'badge-primary' 
-                : 'badge-outline-primary'
+                ? 'bg-primary' 
+                : 'border border-primary text-primary'
               }`}
               style={{
                 cursor: 'pointer',
